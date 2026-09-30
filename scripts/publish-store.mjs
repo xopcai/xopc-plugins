@@ -31,6 +31,12 @@ for (const plugin of release.plugins) {
       method: 'POST', headers: { 'x-api-key': process.env.XOPC_ADMIN_API_KEY },
     })
     if (!approval.ok) throw new Error(`${plugin.name}: approval failed (${approval.status})`)
+    const verification = await fetch(`${store}/api/v1/admin/packages/${encodeURIComponent(plugin.name)}/publisher-verification`, {
+      method: 'POST',
+      headers: { 'x-api-key': process.env.XOPC_ADMIN_API_KEY, 'content-type': 'application/json' },
+      body: JSON.stringify({ verified: true }),
+    })
+    if (!verification.ok) throw new Error(`${plugin.name}: publisher verification failed (${verification.status})`)
     console.log(`Published ${plugin.name}@${plugin.version}`)
   }
 }
