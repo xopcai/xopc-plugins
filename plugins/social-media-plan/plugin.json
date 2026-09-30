@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "social-media-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a channel-specific social plan with audience value, production rhythm, and measurable learning.",
   "author": {
     "name": "XOPC",

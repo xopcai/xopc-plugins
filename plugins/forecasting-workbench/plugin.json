@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "forecasting-workbench",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build a forecast with baseline, drivers, uncertainty, backtesting, and decision thresholds.",
   "author": {
     "name": "XOPC",

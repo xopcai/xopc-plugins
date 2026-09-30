@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "training-course-outline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design an outcome-based course with assessments, practice, sequencing, and accessibility considerations.",
   "author": {
     "name": "XOPC",

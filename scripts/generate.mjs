@@ -5,6 +5,7 @@ import { root } from './lib.mjs'
 
 const schema = 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json'
 const mcpSchema = 'https://agent-plugins.org/schemas/1.0.0/mcp.schema.json'
+const generatedVersion = '1.0.1'
 const pluginsRoot = join(root, 'plugins')
 const existingCatalog = JSON.parse(readFileSync(join(root, 'catalog.json'), 'utf8'))
 const handMaintained = existingCatalog.plugins.filter(entry => !entry.generated)
@@ -25,7 +26,7 @@ for (const plugin of generatedPlugins) {
   const manifest = {
     $schema: schema,
     name: plugin.name,
-    version: '1.0.0',
+    version: generatedVersion,
     description: plugin.description,
     author: { name: 'XOPC', url: 'https://xopc.ai' },
     homepage: `https://github.com/xopcai/xopc-plugins/tree/main/plugins/${plugin.name}`,
@@ -58,7 +59,7 @@ for (const plugin of generatedPlugins) {
 
 const generatedEntries = generatedPlugins.map(plugin => ({
   name: plugin.name,
-  version: '1.0.0',
+  version: generatedVersion,
   category: plugin.category,
   phase: plugin.phase,
   path: `plugins/${plugin.name}`,

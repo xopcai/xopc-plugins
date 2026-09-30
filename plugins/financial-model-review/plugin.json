@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financial-model-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Review a financial model for structural integrity, assumptions, sensitivities, and decision relevance.",
   "author": {
     "name": "XOPC",

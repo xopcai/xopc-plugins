@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ux-research-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a focused UX research plan connecting decisions to participants, methods, evidence, and ethics.",
   "author": {
     "name": "XOPC",

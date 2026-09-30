@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "roadmap-prioritization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prioritize roadmap candidates using transparent evidence, capacity constraints, and strategic fit.",
   "author": {
     "name": "XOPC",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cloudflare-workspace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inspect and operate Cloudflare resources through Cloudflare’s official OAuth-enabled remote MCP server.",
   "author": {
     "name": "XOPC",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "compensation-benchmark-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plan a compensation benchmark study with job matching, data quality, geography, and governance controls.",
   "author": {
     "name": "XOPC",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "onboarding-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a role-specific onboarding plan with access, learning, relationships, outcomes, and checkpoints.",
   "author": {
     "name": "XOPC",

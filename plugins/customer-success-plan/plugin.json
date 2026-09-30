@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "customer-success-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a mutual success plan connecting customer outcomes, adoption signals, milestones, and risks.",
   "author": {
     "name": "XOPC",

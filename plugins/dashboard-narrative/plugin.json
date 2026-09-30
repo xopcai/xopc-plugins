@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "dashboard-narrative",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn dashboard metrics into a concise narrative that distinguishes signal, noise, and required action.",
   "author": {
     "name": "XOPC",

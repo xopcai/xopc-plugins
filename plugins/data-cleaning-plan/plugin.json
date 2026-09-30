@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "data-cleaning-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Profile a dataset and produce a reproducible cleaning plan with validation rules and auditability.",
   "author": {
     "name": "XOPC",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "performance-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Draft an evidence-based performance review covering outcomes, behaviors, growth, and forward expectations.",
   "author": {
     "name": "XOPC",

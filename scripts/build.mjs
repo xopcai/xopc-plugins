@@ -6,8 +6,9 @@ import { catalog, filesUnder, root, sha256 } from './lib.mjs'
 const output = join(root, 'dist')
 rmSync(output, { recursive: true, force: true })
 mkdirSync(output, { recursive: true })
-// Stay inside ZIP's 1980 lower bound after conversion in every common timezone.
-const sourceDate = new Date('1980-01-02T00:00:00.000Z')
+// ZIP stores a timezone-free DOS calendar value. Constructing local midnight
+// keeps those calendar fields identical on macOS and Linux builders.
+const sourceDate = new Date(1980, 0, 1, 0, 0, 0)
 const release = { schemaVersion: 1, repository: catalog().repository, plugins: [] }
 
 for (const entry of catalog().plugins) {

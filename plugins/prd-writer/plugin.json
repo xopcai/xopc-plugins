@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "prd-writer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn a product idea into a testable product requirements document with scope, acceptance criteria, and open decisions.",
   "author": {
     "name": "XOPC",

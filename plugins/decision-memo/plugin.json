@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "decision-memo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Frame a decision, compare realistic options, and record the rationale, risks, and follow-up conditions.",
   "author": {
     "name": "XOPC",

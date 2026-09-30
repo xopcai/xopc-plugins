@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "qualitative-coding",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create and apply a transparent qualitative coding framework with evidence, disagreement, and iteration.",
   "author": {
     "name": "XOPC",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "strategy-offsite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design a strategy offsite that converts evidence and disagreement into choices, owners, and follow-through.",
   "author": {
     "name": "XOPC",

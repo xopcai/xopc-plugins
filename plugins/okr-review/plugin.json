@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "okr-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Review OKR progress using evidence, confidence, root causes, and concrete corrective actions.",
   "author": {
     "name": "XOPC",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "test-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build a risk-based test plan spanning functional, integration, failure, security, and rollout validation.",
   "author": {
     "name": "XOPC",

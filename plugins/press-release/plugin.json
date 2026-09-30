@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "press-release",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Draft a factual press release with clear news value, verified claims, and stakeholder-ready supporting material.",
   "author": {
     "name": "XOPC",

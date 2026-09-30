@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "compliance-checklist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Translate a policy or regulatory requirement into an owned, evidence-based compliance checklist.",
   "author": {
     "name": "XOPC",

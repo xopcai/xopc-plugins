@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "job-description-writer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write an inclusive, outcome-focused job description with realistic qualifications and transparent expectations.",
   "author": {
     "name": "XOPC",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "go-to-market-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build a coordinated go-to-market plan covering audience, positioning, channels, enablement, and measurement.",
   "author": {
     "name": "XOPC",

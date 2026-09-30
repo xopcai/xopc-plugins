@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "linear-workspace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plan and execute issue, project, and team workflows through Linear’s official remote MCP server.",
   "author": {
     "name": "XOPC",

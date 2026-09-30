@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "seo-content-brief",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a search-focused content brief grounded in user intent, credible sources, and differentiated value.",
   "author": {
     "name": "XOPC",

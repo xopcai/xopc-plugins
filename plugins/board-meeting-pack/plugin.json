@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "board-meeting-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Assemble a concise board pack focused on performance, strategic decisions, risk, and governance.",
   "author": {
     "name": "XOPC",

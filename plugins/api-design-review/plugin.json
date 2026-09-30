@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "api-design-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Review an API contract for consistency, evolvability, security, failure behavior, and developer usability.",
   "author": {
     "name": "XOPC",

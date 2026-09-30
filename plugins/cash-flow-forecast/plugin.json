@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cash-flow-forecast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build a scenario-based cash-flow forecast with assumptions, timing, and liquidity risks.",
   "author": {
     "name": "XOPC",
