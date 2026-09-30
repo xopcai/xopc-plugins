@@ -1,0 +1,21 @@
+name: Publish to XOPC Store
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: store-production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10.17.1 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm validate && pnpm test && pnpm publish:store
+        env:
+          XOPC_STORE_URL: https://store.xopc.ai
+          XOPC_API_KEY: ${{ secrets.XOPC_STORE_API_KEY }}
+          XOPC_ADMIN_API_KEY: ${{ secrets.XOPC_STORE_ADMIN_API_KEY }}

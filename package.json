@@ -1,0 +1,16 @@
+{
+  "name": "@xopcai/xopc-plugins-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "publish:store": "node scripts/publish-store.mjs"
+  },
+  "devDependencies": {
+    "fflate": "^0.8.2"
+  }
+}

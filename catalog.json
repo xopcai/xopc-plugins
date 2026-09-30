@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "plugins": [
+    { "name": "research-brief", "version": "1.0.0", "category": "research", "path": "plugins/research-brief" },
+    { "name": "meeting-actions", "version": "1.0.0", "category": "productivity", "path": "plugins/meeting-actions" },
+    { "name": "data-toolkit", "version": "1.0.0", "category": "data-analysis", "path": "plugins/data-toolkit" }
+  ]
+}
