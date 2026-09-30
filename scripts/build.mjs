@@ -6,7 +6,8 @@ import { catalog, filesUnder, root, sha256 } from './lib.mjs'
 const output = join(root, 'dist')
 rmSync(output, { recursive: true, force: true })
 mkdirSync(output, { recursive: true })
-const sourceDate = new Date('1980-01-01T00:00:00.000Z')
+// Stay inside ZIP's 1980 lower bound after conversion in every common timezone.
+const sourceDate = new Date('1980-01-02T00:00:00.000Z')
 const release = { schemaVersion: 1, repository: catalog().repository, plugins: [] }
 
 for (const entry of catalog().plugins) {
