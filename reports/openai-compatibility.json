@@ -1,0 +1,2534 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "repository": "https://github.com/openai/plugins",
+    "commit": "11c74d6ba24d3a6d48f54a194cd00ef3beea18f9"
+  },
+  "counts": {
+    "license-review": 10,
+    "platform-adapter-required": 156,
+    "portable-skill-review": 14
+  },
+  "plugins": [
+    {
+      "name": "actively",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "aiera",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "airtable",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "alation",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "alpaca",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "amplitude",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "apollo",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "asana",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "atlassian-rovo",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "attio",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "base44",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "binance",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "biorender",
+      "category": "Creativity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "boltz-api-cli",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "box",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "brand24",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "brex",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "brighthire",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "build-ios-apps",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": false,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "build-macos-apps",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": true,
+        "commands": true,
+        "hooks": false
+      }
+    },
+    {
+      "name": "build-web-apps",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "build-web-data-visualization",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "calendly",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "canva",
+      "category": "Creativity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "carta-crm",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "catalyst-by-zoho",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "cb-insights",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "channel99",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "chronograph-gp",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "chronograph-lp",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "circleback",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "circleci",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "clay",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "clickup",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "close",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "cloudflare",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": false,
+        "agents": false,
+        "commands": true,
+        "hooks": false
+      }
+    },
+    {
+      "name": "cloudinary",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "coderabbit",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "codex-security",
+      "category": "Security",
+      "license": "Proprietary",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "cogedim",
+      "category": "Other",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "common-room",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "conductor",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "convex",
+      "category": "Developer Tools",
+      "license": "UNLICENSED",
+      "status": "license-review",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "coupler-io",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "coveo",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "cube",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "daloopa",
+      "category": "Finance",
+      "license": "Apache-2.0",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "datadog",
+      "category": "Developer Tools",
+      "license": "Apache-2.0",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "datasite",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "deepnote",
+      "category": "Data & Analytics",
+      "license": "Apache-2.0",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "demandbase",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "digitalocean",
+      "category": "Developer Tools",
+      "license": null,
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "dnb-finance-analytics",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "docket",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "docusign",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "domotz-preview",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "dovetail",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "dow-jones-factiva",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "egnyte",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "expo",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": true,
+        "commands": true,
+        "hooks": false
+      }
+    },
+    {
+      "name": "factset",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "fal",
+      "category": "Creativity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "figma",
+      "category": "Creativity",
+      "license": "LicenseRef-Figma-Developer-Terms",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": true,
+        "agents": true,
+        "commands": true,
+        "hooks": false
+      }
+    },
+    {
+      "name": "finn",
+      "category": "Travel",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "fireflies",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "fiscal-ai",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "fyxer",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "game-studio",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "github",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "glean",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "gmail",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "google-calendar",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "google-drive",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "govtribe",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "granola",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "happenstance",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "hebbia",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "help-scout",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "hex",
+      "category": "Data & Analytics",
+      "license": "Proprietary",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "heygen",
+      "category": "Creativity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "hg-insights",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "highlevel",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "hostinger",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "hubspot",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "hugging-face",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "hyperframes",
+      "category": "Creativity",
+      "license": "Apache-2.0",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "intercom",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "jam",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "keybid-puls",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "life-science-research",
+      "category": "Education & Research",
+      "license": "Proprietary",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "linear",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "lovable",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "lseg",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "magicpath",
+      "category": "Developer Tools",
+      "license": "UNLICENSED",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "marcopolo",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "mem",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "meticulate",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "midpage",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "mixpanel",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "mixpanel-headless",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "monday-com",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "moody-s",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "morningstar",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "motherduck",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "mt-newswires",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "myregistry-com",
+      "category": "Other",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "neon-postgres",
+      "category": "Developer Tools",
+      "license": "Apache-2.0",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "netlify",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "network-solutions",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "ngs-analysis",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "notion",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": true,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "nvidia",
+      "category": "Developer Tools",
+      "license": "Apache-2.0 AND CC-BY-4.0",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "omni-analytics",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "openai-ads-conversions",
+      "category": "Developer Tools",
+      "license": "Proprietary",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "openai-developers",
+      "category": "Developer Tools",
+      "license": "Proprietary",
+      "status": "license-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": true,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "otter-ai",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "outlook-calendar",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "outlook-email",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "outreach",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "particl-market-research",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "picsart",
+      "category": "Creativity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "pipedrive",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "pitchbook",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "plugin-eval",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "policynote",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "posthog",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "pylon",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "quartr",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "quickbooks",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "quicknode",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "ranked-ai",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "razorpay",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "read-ai",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "readwise",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "remotion",
+      "category": "Creativity",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "render",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "replayio",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "replit",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "responsive",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "rox",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "s-p",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "scite",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "semrush",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "sendgrid",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "sentry",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "setu-bharat-connect-billpay",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "sharepoint",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "shopify",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "shutterstock",
+      "category": "Creativity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "signnow",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "similarweb",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "skywatch",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "slack",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "statsig",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "streak",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "stripe",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "supabase",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "superhuman",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "superpowers",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "taxdown",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "teams",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "teamwork-com",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "temporal",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "test-android-apps",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": true,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "third-bridge",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "thoughtspot",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "tinman-ai",
+      "category": "Finance",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "twilio-developer-kit",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "united-rentals",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "vantage",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "vercel",
+      "category": "Developer Tools",
+      "license": "Apache-2.0",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": true,
+        "commands": true,
+        "hooks": false
+      }
+    },
+    {
+      "name": "waldo",
+      "category": "Productivity",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "weatherpromise",
+      "category": "Travel",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "windsor-ai",
+      "category": "Data & Analytics",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "wix",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "yepcode",
+      "category": "Developer Tools",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "zoho",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "zoom",
+      "category": "Communication",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": true,
+        "agents": true,
+        "commands": true,
+        "hooks": false
+      }
+    },
+    {
+      "name": "zoominfo",
+      "category": "Business & Operations",
+      "license": "MIT",
+      "status": "platform-adapter-required",
+      "surfaces": {
+        "skills": false,
+        "mcp": false,
+        "app": true,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    },
+    {
+      "name": "zotero",
+      "category": "Education & Research",
+      "license": "MIT",
+      "status": "portable-skill-review",
+      "surfaces": {
+        "skills": true,
+        "mcp": false,
+        "app": false,
+        "agents": false,
+        "commands": false,
+        "hooks": false
+      }
+    }
+  ]
+}

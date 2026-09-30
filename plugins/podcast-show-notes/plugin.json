@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "podcast-show-notes",
+  "version": "1.0.0",
+  "description": "Create accurate, searchable podcast show notes with chapters, references, and promotional excerpts.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/podcast-show-notes",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "content-creation",
+    "podcast",
+    "show",
+    "notes"
+  ]
+}

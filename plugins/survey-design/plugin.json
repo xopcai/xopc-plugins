@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "survey-design",
+  "version": "1.0.0",
+  "description": "Design a survey that connects research questions to unbiased items, sampling, and analysis.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/survey-design",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "research",
+    "survey",
+    "design"
+  ]
+}

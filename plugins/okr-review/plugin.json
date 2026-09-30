@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "okr-review",
+  "version": "1.0.0",
+  "description": "Review OKR progress using evidence, confidence, root causes, and concrete corrective actions.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/okr-review",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "business-operations",
+    "okr",
+    "review"
+  ]
+}

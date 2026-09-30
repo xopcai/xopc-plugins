@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "organization-design",
+  "version": "1.0.0",
+  "description": "Evaluate an organization design against strategy, decision flow, accountability, capacity, and coordination cost.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/organization-design",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "hr",
+    "organization",
+    "design"
+  ]
+}

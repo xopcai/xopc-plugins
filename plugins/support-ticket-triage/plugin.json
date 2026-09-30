@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "support-ticket-triage",
+  "version": "1.0.0",
+  "description": "Classify support tickets by severity, product area, reproducibility, and next action.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/support-ticket-triage",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "customer-support",
+    "support",
+    "ticket",
+    "triage"
+  ]
+}

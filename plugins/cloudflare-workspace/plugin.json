@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cloudflare-workspace",
+  "version": "1.0.0",
+  "description": "Inspect and operate Cloudflare resources through Cloudflare’s official OAuth-enabled remote MCP server.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/cloudflare-workspace",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "cloudflare",
+    "infrastructure",
+    "security",
+    "oauth",
+    "mcp"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "relationship": "format-and-endpoint-reference",
+  "source": {
+    "repository": "https://github.com/openai/plugins",
+    "plugin": "notion",
+    "commit": "11c74d6ba24d3a6d48f54a194cd00ef3beea18f9",
+    "license": "MIT"
+  },
+  "note": "XOPC-authored skill content. The referenced upstream manifest supplied interoperability metadata only."
+}

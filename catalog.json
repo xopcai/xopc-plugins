@@ -1,9 +1,753 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repository": "https://github.com/xopcai/xopc-plugins",
   "plugins": [
-    { "name": "research-brief", "version": "1.0.0", "category": "research", "path": "plugins/research-brief" },
-    { "name": "meeting-actions", "version": "1.0.0", "category": "productivity", "path": "plugins/meeting-actions" },
-    { "name": "data-toolkit", "version": "1.0.0", "category": "data-analysis", "path": "plugins/data-toolkit" }
+    {
+      "name": "accessibility-review",
+      "version": "1.0.0",
+      "category": "product",
+      "phase": "P2",
+      "path": "plugins/accessibility-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "analytics-tracking-plan",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P2",
+      "path": "plugins/analytics-tracking-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "api-design-review",
+      "version": "1.0.0",
+      "category": "engineering",
+      "phase": "P1",
+      "path": "plugins/api-design-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "architecture-decision-record",
+      "version": "1.0.0",
+      "category": "engineering",
+      "phase": "P1",
+      "path": "plugins/architecture-decision-record",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "board-meeting-pack",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P2",
+      "path": "plugins/board-meeting-pack",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "brand-voice-guide",
+      "version": "1.0.0",
+      "category": "content-creation",
+      "phase": "P2",
+      "path": "plugins/brand-voice-guide",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "budget-variance-analysis",
+      "version": "1.0.0",
+      "category": "finance",
+      "phase": "P1",
+      "path": "plugins/budget-variance-analysis",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "campaign-retrospective",
+      "version": "1.0.0",
+      "category": "marketing-sales",
+      "phase": "P0",
+      "path": "plugins/campaign-retrospective",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "cash-flow-forecast",
+      "version": "1.0.0",
+      "category": "finance",
+      "phase": "P1",
+      "path": "plugins/cash-flow-forecast",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "cloudflare-workspace",
+      "version": "1.0.0",
+      "category": "engineering",
+      "phase": "P1",
+      "path": "plugins/cloudflare-workspace",
+      "generated": true,
+      "authentication": "oauth-on-first-use"
+    },
+    {
+      "name": "compensation-benchmark-plan",
+      "version": "1.0.0",
+      "category": "hr",
+      "phase": "P2",
+      "path": "plugins/compensation-benchmark-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "competitor-analysis",
+      "version": "1.0.0",
+      "category": "research",
+      "phase": "P0",
+      "path": "plugins/competitor-analysis",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "compliance-checklist",
+      "version": "1.0.0",
+      "category": "legal-compliance",
+      "phase": "P1",
+      "path": "plugins/compliance-checklist",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "content-calendar",
+      "version": "1.0.0",
+      "category": "content-creation",
+      "phase": "P0",
+      "path": "plugins/content-calendar",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "contract-review-brief",
+      "version": "1.0.0",
+      "category": "legal-compliance",
+      "phase": "P2",
+      "path": "plugins/contract-review-brief",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "crisis-communications",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P2",
+      "path": "plugins/crisis-communications",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "crm-pipeline-review",
+      "version": "1.0.0",
+      "category": "marketing-sales",
+      "phase": "P1",
+      "path": "plugins/crm-pipeline-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "customer-feedback-insights",
+      "version": "1.0.0",
+      "category": "product",
+      "phase": "P0",
+      "path": "plugins/customer-feedback-insights",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "customer-success-plan",
+      "version": "1.0.0",
+      "category": "customer-support",
+      "phase": "P1",
+      "path": "plugins/customer-success-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "dashboard-narrative",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P0",
+      "path": "plugins/dashboard-narrative",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "data-cleaning-plan",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P0",
+      "path": "plugins/data-cleaning-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "data-quality-audit",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P2",
+      "path": "plugins/data-quality-audit",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "data-toolkit",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "path": "plugins/data-toolkit"
+    },
+    {
+      "name": "decision-memo",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P0",
+      "path": "plugins/decision-memo",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "ecommerce-listing",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "phase": "P1",
+      "path": "plugins/ecommerce-listing",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "executive-brief",
+      "version": "1.0.0",
+      "category": "productivity",
+      "phase": "P0",
+      "path": "plugins/executive-brief",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "experiment-analysis",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P0",
+      "path": "plugins/experiment-analysis",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "figma-workspace",
+      "version": "1.0.0",
+      "category": "content-creation",
+      "phase": "P1",
+      "path": "plugins/figma-workspace",
+      "generated": true,
+      "authentication": "oauth-on-first-use"
+    },
+    {
+      "name": "financial-model-review",
+      "version": "1.0.0",
+      "category": "finance",
+      "phase": "P1",
+      "path": "plugins/financial-model-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "forecasting-workbench",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P2",
+      "path": "plugins/forecasting-workbench",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "go-to-market-plan",
+      "version": "1.0.0",
+      "category": "marketing-sales",
+      "phase": "P1",
+      "path": "plugins/go-to-market-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "hiring-scorecard",
+      "version": "1.0.0",
+      "category": "hr",
+      "phase": "P0",
+      "path": "plugins/hiring-scorecard",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "incident-postmortem",
+      "version": "1.0.0",
+      "category": "engineering",
+      "phase": "P0",
+      "path": "plugins/incident-postmortem",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "interview-debrief",
+      "version": "1.0.0",
+      "category": "hr",
+      "phase": "P2",
+      "path": "plugins/interview-debrief",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "inventory-plan",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "phase": "P1",
+      "path": "plugins/inventory-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "invoice-review",
+      "version": "1.0.0",
+      "category": "finance",
+      "phase": "P1",
+      "path": "plugins/invoice-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "job-description-writer",
+      "version": "1.0.0",
+      "category": "hr",
+      "phase": "P2",
+      "path": "plugins/job-description-writer",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "knowledge-base-writer",
+      "version": "1.0.0",
+      "category": "customer-support",
+      "phase": "P1",
+      "path": "plugins/knowledge-base-writer",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "linear-workspace",
+      "version": "1.0.0",
+      "category": "productivity",
+      "phase": "P1",
+      "path": "plugins/linear-workspace",
+      "generated": true,
+      "authentication": "oauth-on-first-use"
+    },
+    {
+      "name": "localization-review",
+      "version": "1.0.0",
+      "category": "content-creation",
+      "phase": "P2",
+      "path": "plugins/localization-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "meeting-actions",
+      "version": "1.0.0",
+      "category": "productivity",
+      "path": "plugins/meeting-actions"
+    },
+    {
+      "name": "metric-definition",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P2",
+      "path": "plugins/metric-definition",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "notion-workspace",
+      "version": "1.0.0",
+      "category": "productivity",
+      "phase": "P1",
+      "path": "plugins/notion-workspace",
+      "generated": true,
+      "authentication": "oauth-on-first-use"
+    },
+    {
+      "name": "okr-review",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P0",
+      "path": "plugins/okr-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "onboarding-plan",
+      "version": "1.0.0",
+      "category": "hr",
+      "phase": "P1",
+      "path": "plugins/onboarding-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "organization-design",
+      "version": "1.0.0",
+      "category": "hr",
+      "phase": "P2",
+      "path": "plugins/organization-design",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "performance-review",
+      "version": "1.0.0",
+      "category": "hr",
+      "phase": "P2",
+      "path": "plugins/performance-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "personal-learning-plan",
+      "version": "1.0.0",
+      "category": "education",
+      "phase": "P2",
+      "path": "plugins/personal-learning-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "podcast-show-notes",
+      "version": "1.0.0",
+      "category": "content-creation",
+      "phase": "P2",
+      "path": "plugins/podcast-show-notes",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "policy-writer",
+      "version": "1.0.0",
+      "category": "legal-compliance",
+      "phase": "P2",
+      "path": "plugins/policy-writer",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "prd-writer",
+      "version": "1.0.0",
+      "category": "product",
+      "phase": "P0",
+      "path": "plugins/prd-writer",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "press-release",
+      "version": "1.0.0",
+      "category": "content-creation",
+      "phase": "P2",
+      "path": "plugins/press-release",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "privacy-impact-assessment",
+      "version": "1.0.0",
+      "category": "legal-compliance",
+      "phase": "P1",
+      "path": "plugins/privacy-impact-assessment",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "process-sop",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P1",
+      "path": "plugins/process-sop",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "procurement-rfp",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P2",
+      "path": "plugins/procurement-rfp",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "project-risk-review",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P1",
+      "path": "plugins/project-risk-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "promotion-plan",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "phase": "P1",
+      "path": "plugins/promotion-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "qualitative-coding",
+      "version": "1.0.0",
+      "category": "research",
+      "phase": "P2",
+      "path": "plugins/qualitative-coding",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "release-plan",
+      "version": "1.0.0",
+      "category": "engineering",
+      "phase": "P0",
+      "path": "plugins/release-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "requirements-review",
+      "version": "1.0.0",
+      "category": "product",
+      "phase": "P1",
+      "path": "plugins/requirements-review",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "research-brief",
+      "version": "1.0.0",
+      "category": "research",
+      "path": "plugins/research-brief"
+    },
+    {
+      "name": "research-literature-map",
+      "version": "1.0.0",
+      "category": "research",
+      "phase": "P2",
+      "path": "plugins/research-literature-map",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "review-insights",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "phase": "P1",
+      "path": "plugins/review-insights",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "roadmap-prioritization",
+      "version": "1.0.0",
+      "category": "product",
+      "phase": "P1",
+      "path": "plugins/roadmap-prioritization",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "sales-account-plan",
+      "version": "1.0.0",
+      "category": "marketing-sales",
+      "phase": "P1",
+      "path": "plugins/sales-account-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "sales-call-coach",
+      "version": "1.0.0",
+      "category": "marketing-sales",
+      "phase": "P1",
+      "path": "plugins/sales-call-coach",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "security-threat-model",
+      "version": "1.0.0",
+      "category": "security",
+      "phase": "P1",
+      "path": "plugins/security-threat-model",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "seo-content-brief",
+      "version": "1.0.0",
+      "category": "marketing-sales",
+      "phase": "P0",
+      "path": "plugins/seo-content-brief",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "service-blueprint",
+      "version": "1.0.0",
+      "category": "product",
+      "phase": "P2",
+      "path": "plugins/service-blueprint",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "social-media-plan",
+      "version": "1.0.0",
+      "category": "marketing-sales",
+      "phase": "P2",
+      "path": "plugins/social-media-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "sql-analyst",
+      "version": "1.0.0",
+      "category": "data-analysis",
+      "phase": "P0",
+      "path": "plugins/sql-analyst",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "stakeholder-update",
+      "version": "1.0.0",
+      "category": "productivity",
+      "phase": "P1",
+      "path": "plugins/stakeholder-update",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "strategy-offsite",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P2",
+      "path": "plugins/strategy-offsite",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "support-ticket-triage",
+      "version": "1.0.0",
+      "category": "customer-support",
+      "phase": "P1",
+      "path": "plugins/support-ticket-triage",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "survey-design",
+      "version": "1.0.0",
+      "category": "research",
+      "phase": "P2",
+      "path": "plugins/survey-design",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "sustainability-report",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P2",
+      "path": "plugins/sustainability-report",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "test-plan",
+      "version": "1.0.0",
+      "category": "engineering",
+      "phase": "P1",
+      "path": "plugins/test-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "training-course-outline",
+      "version": "1.0.0",
+      "category": "education",
+      "phase": "P1",
+      "path": "plugins/training-course-outline",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "travel-planner",
+      "version": "1.0.0",
+      "category": "productivity",
+      "phase": "P2",
+      "path": "plugins/travel-planner",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "user-interview-synthesis",
+      "version": "1.0.0",
+      "category": "research",
+      "phase": "P1",
+      "path": "plugins/user-interview-synthesis",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "ux-research-plan",
+      "version": "1.0.0",
+      "category": "research",
+      "phase": "P2",
+      "path": "plugins/ux-research-plan",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "vendor-comparison",
+      "version": "1.0.0",
+      "category": "business-operations",
+      "phase": "P1",
+      "path": "plugins/vendor-comparison",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "video-production-brief",
+      "version": "1.0.0",
+      "category": "content-creation",
+      "phase": "P2",
+      "path": "plugins/video-production-brief",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
+      "name": "weekly-report",
+      "version": "1.0.0",
+      "category": "productivity",
+      "phase": "P0",
+      "path": "plugins/weekly-report",
+      "generated": true,
+      "authentication": "none"
+    }
   ]
 }

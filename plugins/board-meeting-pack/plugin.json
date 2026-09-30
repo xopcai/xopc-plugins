@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "board-meeting-pack",
+  "version": "1.0.0",
+  "description": "Assemble a concise board pack focused on performance, strategic decisions, risk, and governance.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/board-meeting-pack",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "business-operations",
+    "board",
+    "meeting",
+    "pack"
+  ]
+}

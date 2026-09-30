@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "analytics-tracking-plan",
+  "version": "1.0.0",
+  "description": "Design an event tracking plan that is minimal, testable, privacy-aware, and tied to decisions.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/analytics-tracking-plan",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "data-analysis",
+    "analytics",
+    "tracking",
+    "plan"
+  ]
+}

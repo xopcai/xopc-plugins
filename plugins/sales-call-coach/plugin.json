@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sales-call-coach",
+  "version": "1.0.0",
+  "description": "Review a sales call for discovery quality, buyer evidence, objections, commitments, and coaching opportunities.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/sales-call-coach",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "marketing-sales",
+    "sales",
+    "call",
+    "coach"
+  ]
+}

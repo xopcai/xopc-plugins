@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "training-course-outline",
+  "version": "1.0.0",
+  "description": "Design an outcome-based course with assessments, practice, sequencing, and accessibility considerations.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/training-course-outline",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "education",
+    "training",
+    "course",
+    "outline"
+  ]
+}

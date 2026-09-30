@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "stakeholder-update",
+  "version": "1.0.0",
+  "description": "Write a clear stakeholder update centered on outcomes, changes, risks, and decisions needed.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/stakeholder-update",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "productivity",
+    "stakeholder",
+    "update"
+  ]
+}

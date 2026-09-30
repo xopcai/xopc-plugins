@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "customer-success-plan",
+  "version": "1.0.0",
+  "description": "Create a mutual success plan connecting customer outcomes, adoption signals, milestones, and risks.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/customer-success-plan",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "customer-support",
+    "customer",
+    "success",
+    "plan"
+  ]
+}

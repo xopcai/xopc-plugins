@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "figma-workspace",
+  "version": "1.0.0",
+  "description": "Inspect Figma design context and support design-to-implementation workflows through Figma’s official remote MCP server.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/figma-workspace",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "figma",
+    "design",
+    "ui",
+    "oauth",
+    "mcp"
+  ]
+}

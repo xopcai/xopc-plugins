@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "video-production-brief",
+  "version": "1.0.0",
+  "description": "Turn a communication goal into a production-ready video brief with story, shots, assets, and approvals.",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/video-production-brief",
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "content-creation",
+    "video",
+    "production",
+    "brief"
+  ]
+}
