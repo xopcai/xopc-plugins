@@ -41,6 +41,18 @@
       "category": "engineering"
     },
     {
+      "name": "application-threat-model",
+      "source": {
+        "source": "local",
+        "path": "./plugins/application-threat-model"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_DEMAND"
+      },
+      "category": "security"
+    },
+    {
       "name": "architecture-decision-record",
       "source": {
         "source": "local",
@@ -795,18 +807,6 @@
         "authentication": "ON_DEMAND"
       },
       "category": "marketing-sales"
-    },
-    {
-      "name": "security-threat-model",
-      "source": {
-        "source": "local",
-        "path": "./plugins/security-threat-model"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "security"
     },
     {
       "name": "seo-content-brief",

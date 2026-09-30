@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "research-brief",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Research a question, compare sources, and produce a concise evidence-backed brief.",
   "author": { "name": "XOPC", "url": "https://xopc.ai" },
   "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/research-brief",

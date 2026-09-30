@@ -30,6 +30,15 @@
       "authentication": "none"
     },
     {
+      "name": "application-threat-model",
+      "version": "1.0.0",
+      "category": "security",
+      "phase": "P1",
+      "path": "plugins/application-threat-model",
+      "generated": true,
+      "authentication": "none"
+    },
+    {
       "name": "architecture-decision-record",
       "version": "1.0.0",
       "category": "engineering",
@@ -202,7 +211,7 @@
     },
     {
       "name": "data-toolkit",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "data-analysis",
       "path": "plugins/data-toolkit"
     },
@@ -361,7 +370,7 @@
     },
     {
       "name": "meeting-actions",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "productivity",
       "path": "plugins/meeting-actions"
     },
@@ -538,7 +547,7 @@
     },
     {
       "name": "research-brief",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "research",
       "path": "plugins/research-brief"
     },
@@ -584,15 +593,6 @@
       "category": "marketing-sales",
       "phase": "P1",
       "path": "plugins/sales-call-coach",
-      "generated": true,
-      "authentication": "none"
-    },
-    {
-      "name": "security-threat-model",
-      "version": "1.0.0",
-      "category": "security",
-      "phase": "P1",
-      "path": "plugins/security-threat-model",
       "generated": true,
       "authentication": "none"
     },

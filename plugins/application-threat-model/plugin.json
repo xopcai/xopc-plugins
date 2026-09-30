@@ -1,17 +1,18 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "security-threat-model",
+  "name": "application-threat-model",
   "version": "1.0.0",
   "description": "Create a practical threat model with assets, trust boundaries, abuse cases, mitigations, and residual risk.",
   "author": {
     "name": "XOPC",
     "url": "https://xopc.ai"
   },
-  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/security-threat-model",
+  "homepage": "https://github.com/xopcai/xopc-plugins/tree/main/plugins/application-threat-model",
   "repository": "https://github.com/xopcai/xopc-plugins",
   "license": "Apache-2.0",
   "keywords": [
     "security",
+    "application",
     "threat",
     "model"
   ]

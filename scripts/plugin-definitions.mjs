@@ -205,7 +205,7 @@ export const generatedPlugins = [
     ['Change scope', 'Architecture and user journeys', 'Risk and environment constraints'],
     ['Map risks to observable tests', 'Cover happy path, boundaries, and failures', 'Define fixtures, environments, and ownership', 'Specify release gates and regression scope'],
     ['Test matrix', 'Environment plan', 'Release gates', 'Traceability map']),
-  workflow('P1', 'security-threat-model', 'security', 'Security Threat Model', 'Create a practical threat model with assets, trust boundaries, abuse cases, mitigations, and residual risk.',
+  workflow('P1', 'application-threat-model', 'security', 'Application Threat Model', 'Create a practical threat model with assets, trust boundaries, abuse cases, mitigations, and residual risk.',
     ['Architecture and data flows', 'Assets and actors', 'Deployment and trust assumptions'],
     ['Map data flows and trust boundaries', 'Enumerate attacker goals and abuse cases', 'Evaluate existing controls', 'Prioritize mitigations and validation'],
     ['System model', 'Threat register', 'Mitigation plan', 'Residual-risk summary'],

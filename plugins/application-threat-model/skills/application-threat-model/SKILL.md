@@ -1,11 +1,11 @@
 ---
-name: security-threat-model
+name: application-threat-model
 description: Create a practical threat model with assets, trust boundaries, abuse cases, mitigations, and residual risk.
 license: Apache-2.0
 compatibility: Works with user-provided context and available XOPC tools; it does not add network access.
 ---
 
-# Security Threat Model
+# Application Threat Model
 
 Use this skill when the user needs to create a practical threat model with assets, trust boundaries, abuse cases, mitigations, and residual risk.
 
