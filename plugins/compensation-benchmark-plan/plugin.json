@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "compensation-benchmark-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Plan a compensation benchmark study with job matching, data quality, geography, and governance controls.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Compensation Benchmark Plan"
+          "displayName": "Compensation Benchmark Plan",
+          "description": "Plan a compensation benchmark study with job matching, data quality, geography, and governance controls."
         },
         "zh-CN": {
-          "displayName": "薪酬对标方案"
+          "displayName": "薪酬对标方案",
+          "description": "规划涵盖岗位匹配、数据质量、地域差异与治理控制的薪酬对标研究。"
         }
       }
     }

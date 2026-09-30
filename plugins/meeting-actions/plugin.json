@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "meeting-actions",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Turn meeting notes into decisions, owners, deadlines, risks, and ready-to-send follow-ups.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Meeting Actions"
+          "displayName": "Meeting Actions",
+          "description": "Turn meeting notes into decisions, owners, deadlines, risks, and ready-to-send follow-ups."
         },
         "zh-CN": {
-          "displayName": "会议行动项"
+          "displayName": "会议行动项",
+          "description": "将会议记录整理为决策、负责人、截止日期、风险与可直接发送的跟进内容。"
         }
       }
     }

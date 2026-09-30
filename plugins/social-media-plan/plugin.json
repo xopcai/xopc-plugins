@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "social-media-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a channel-specific social plan with audience value, production rhythm, and measurable learning.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Social Media Plan"
+          "displayName": "Social Media Plan",
+          "description": "Create a channel-specific social plan with audience value, production rhythm, and measurable learning."
         },
         "zh-CN": {
-          "displayName": "社交媒体计划"
+          "displayName": "社交媒体计划",
+          "description": "制定体现受众价值、生产节奏与可衡量学习目标的渠道化社交媒体计划。"
         }
       }
     }

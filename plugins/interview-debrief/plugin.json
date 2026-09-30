@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "interview-debrief",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Run a structured interview debrief that weighs independent evidence against the role scorecard.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Interview Debrief"
+          "displayName": "Interview Debrief",
+          "description": "Run a structured interview debrief that weighs independent evidence against the role scorecard."
         },
         "zh-CN": {
-          "displayName": "面试复盘"
+          "displayName": "面试复盘",
+          "description": "开展结构化面试复盘，依据岗位评估表权衡独立证据。"
         }
       }
     }

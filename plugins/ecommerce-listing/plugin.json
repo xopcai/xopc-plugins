@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ecommerce-listing",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create accurate, channel-ready product listings from verified product facts and audience needs.",
   "author": {
     "name": "XOPC",
@@ -21,10 +21,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "E-commerce Listing"
+          "displayName": "E-commerce Listing",
+          "description": "Create accurate, channel-ready product listings from verified product facts and audience needs."
         },
         "zh-CN": {
-          "displayName": "电商商品文案"
+          "displayName": "电商商品文案",
+          "description": "基于已核实的商品事实和受众需求生成可直接投放到各渠道的商品信息。"
         }
       }
     }

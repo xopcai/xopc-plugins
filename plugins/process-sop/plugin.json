@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "process-sop",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Document a repeatable operating procedure with controls, exceptions, ownership, and evidence.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Process SOP"
+          "displayName": "Process SOP",
+          "description": "Document a repeatable operating procedure with controls, exceptions, ownership, and evidence."
         },
         "zh-CN": {
-          "displayName": "流程标准作业程序"
+          "displayName": "流程标准作业程序",
+          "description": "记录包含控制、例外、责任归属与证据要求的可重复操作流程。"
         }
       }
     }

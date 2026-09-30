@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "decision-memo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Frame a decision, compare realistic options, and record the rationale, risks, and follow-up conditions.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Decision Memo"
+          "displayName": "Decision Memo",
+          "description": "Frame a decision, compare realistic options, and record the rationale, risks, and follow-up conditions."
         },
         "zh-CN": {
-          "displayName": "决策备忘录"
+          "displayName": "决策备忘录",
+          "description": "明确决策问题、比较可行方案，并记录依据、风险与后续条件。"
         }
       }
     }

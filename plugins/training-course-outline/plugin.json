@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "training-course-outline",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Design an outcome-based course with assessments, practice, sequencing, and accessibility considerations.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Training Course Outline"
+          "displayName": "Training Course Outline",
+          "description": "Design an outcome-based course with assessments, practice, sequencing, and accessibility considerations."
         },
         "zh-CN": {
-          "displayName": "培训课程大纲"
+          "displayName": "培训课程大纲",
+          "description": "设计包含评估、练习、内容顺序与无障碍考虑的成果导向课程。"
         }
       }
     }

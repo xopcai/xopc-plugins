@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "crisis-communications",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Prepare accurate crisis communications with audience mapping, approvals, update cadence, and rumor control.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Crisis Communications"
+          "displayName": "Crisis Communications",
+          "description": "Prepare accurate crisis communications with audience mapping, approvals, update cadence, and rumor control."
         },
         "zh-CN": {
-          "displayName": "危机沟通方案"
+          "displayName": "危机沟通方案",
+          "description": "通过受众梳理、审批机制、更新节奏与谣言控制准备准确的危机沟通。"
         }
       }
     }

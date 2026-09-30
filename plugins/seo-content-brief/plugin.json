@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "seo-content-brief",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a search-focused content brief grounded in user intent, credible sources, and differentiated value.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "SEO Content Brief"
+          "displayName": "SEO Content Brief",
+          "description": "Create a search-focused content brief grounded in user intent, credible sources, and differentiated value."
         },
         "zh-CN": {
-          "displayName": "SEO 内容简报"
+          "displayName": "SEO 内容简报",
+          "description": "基于用户搜索意图、可信来源与差异化价值创建 SEO 内容简报。"
         }
       }
     }

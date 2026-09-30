@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "invoice-review",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Review invoices for completeness, contract alignment, duplicates, anomalies, and approval readiness.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Invoice Review"
+          "displayName": "Invoice Review",
+          "description": "Review invoices for completeness, contract alignment, duplicates, anomalies, and approval readiness."
         },
         "zh-CN": {
-          "displayName": "发票审查"
+          "displayName": "发票审查",
+          "description": "检查发票完整性、合同一致性、重复项、异常与审批准备情况。"
         }
       }
     }

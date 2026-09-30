@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "hiring-scorecard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a structured hiring scorecard tied to job outcomes and observable evidence.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Hiring Scorecard"
+          "displayName": "Hiring Scorecard",
+          "description": "Create a structured hiring scorecard tied to job outcomes and observable evidence."
         },
         "zh-CN": {
-          "displayName": "招聘评估表"
+          "displayName": "招聘评估表",
+          "description": "创建与岗位成果和可观察证据相联系的结构化招聘评估表。"
         }
       }
     }

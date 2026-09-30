@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sql-analyst",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Translate a business question into safe, reviewable SQL and an interpretation plan.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "SQL Analyst"
+          "displayName": "SQL Analyst",
+          "description": "Translate a business question into safe, reviewable SQL and an interpretation plan."
         },
         "zh-CN": {
-          "displayName": "SQL 数据分析师"
+          "displayName": "SQL 数据分析师",
+          "description": "将业务问题转化为安全、可评审的 SQL 与结果解读方案。"
         }
       }
     }

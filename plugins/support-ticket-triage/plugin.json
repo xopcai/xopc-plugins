@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "support-ticket-triage",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Classify support tickets by severity, product area, reproducibility, and next action.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Support Ticket Triage"
+          "displayName": "Support Ticket Triage",
+          "description": "Classify support tickets by severity, product area, reproducibility, and next action."
         },
         "zh-CN": {
-          "displayName": "客服工单分诊"
+          "displayName": "客服工单分诊",
+          "description": "按严重程度、产品领域、可复现性与下一步行动对客服工单分类。"
         }
       }
     }

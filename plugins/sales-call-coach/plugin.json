@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sales-call-coach",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Review a sales call for discovery quality, buyer evidence, objections, commitments, and coaching opportunities.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Sales Call Coach"
+          "displayName": "Sales Call Coach",
+          "description": "Review a sales call for discovery quality, buyer evidence, objections, commitments, and coaching opportunities."
         },
         "zh-CN": {
-          "displayName": "销售通话教练"
+          "displayName": "销售通话教练",
+          "description": "评审销售通话中的需求发现质量、买方证据、异议、承诺与辅导机会。"
         }
       }
     }

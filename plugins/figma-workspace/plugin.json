@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "figma-workspace",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Inspect Figma design context and support design-to-implementation workflows through Figma’s official remote MCP server.",
   "author": {
     "name": "XOPC",
@@ -24,10 +24,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Figma Workspace"
+          "displayName": "Figma Workspace",
+          "description": "Inspect Figma design context and support design-to-implementation workflows through Figma’s official remote MCP server."
         },
         "zh-CN": {
-          "displayName": "Figma 工作台"
+          "displayName": "Figma 工作台",
+          "description": "通过 Figma 官方远程 MCP 服务读取设计上下文并支持设计到实现流程。"
         }
       }
     }

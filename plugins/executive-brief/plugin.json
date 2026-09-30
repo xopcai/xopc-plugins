@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "executive-brief",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Condense complex material into a decision-ready executive brief without losing uncertainty or material risks.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Executive Brief"
+          "displayName": "Executive Brief",
+          "description": "Condense complex material into a decision-ready executive brief without losing uncertainty or material risks."
         },
         "zh-CN": {
-          "displayName": "高管简报"
+          "displayName": "高管简报",
+          "description": "在保留不确定性与重大风险的前提下，将复杂材料压缩为可供决策的高管简报。"
         }
       }
     }

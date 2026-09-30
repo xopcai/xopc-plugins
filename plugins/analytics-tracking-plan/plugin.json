@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "analytics-tracking-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Design an event tracking plan that is minimal, testable, privacy-aware, and tied to decisions.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Analytics Tracking Plan"
+          "displayName": "Analytics Tracking Plan",
+          "description": "Design an event tracking plan that is minimal, testable, privacy-aware, and tied to decisions."
         },
         "zh-CN": {
-          "displayName": "数据埋点方案"
+          "displayName": "数据埋点方案",
+          "description": "设计精简、可测试、注重隐私并服务于决策的数据埋点方案。"
         }
       }
     }

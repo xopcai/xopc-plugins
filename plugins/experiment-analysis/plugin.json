@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "experiment-analysis",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Evaluate an experiment using valid metrics, uncertainty, guardrails, and a defensible ship decision.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Experiment Analysis"
+          "displayName": "Experiment Analysis",
+          "description": "Evaluate an experiment using valid metrics, uncertainty, guardrails, and a defensible ship decision."
         },
         "zh-CN": {
-          "displayName": "实验分析"
+          "displayName": "实验分析",
+          "description": "使用有效指标、不确定性与护栏评估实验，形成可辩护的发布决策。"
         }
       }
     }

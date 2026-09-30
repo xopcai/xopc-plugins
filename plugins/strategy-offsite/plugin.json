@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "strategy-offsite",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Design a strategy offsite that converts evidence and disagreement into choices, owners, and follow-through.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Strategy Offsite"
+          "displayName": "Strategy Offsite",
+          "description": "Design a strategy offsite that converts evidence and disagreement into choices, owners, and follow-through."
         },
         "zh-CN": {
-          "displayName": "战略共创会"
+          "displayName": "战略共创会",
+          "description": "设计将证据和分歧转化为选择、负责人及后续行动的战略共创会。"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "linear-workspace",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Plan and execute issue, project, and team workflows through Linear’s official remote MCP server.",
   "author": {
     "name": "XOPC",
@@ -24,10 +24,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Linear Workspace"
+          "displayName": "Linear Workspace",
+          "description": "Plan and execute issue, project, and team workflows through Linear’s official remote MCP server."
         },
         "zh-CN": {
-          "displayName": "Linear 工作台"
+          "displayName": "Linear 工作台",
+          "description": "通过 Linear 官方远程 MCP 服务规划和执行议题、项目与团队工作流。"
         }
       }
     }

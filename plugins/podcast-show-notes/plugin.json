@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "podcast-show-notes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create accurate, searchable podcast show notes with chapters, references, and promotional excerpts.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Podcast Show Notes"
+          "displayName": "Podcast Show Notes",
+          "description": "Create accurate, searchable podcast show notes with chapters, references, and promotional excerpts."
         },
         "zh-CN": {
-          "displayName": "播客节目笔记"
+          "displayName": "播客节目笔记",
+          "description": "生成准确、可搜索且包含章节、参考资料与推广摘录的播客节目笔记。"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "onboarding-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a role-specific onboarding plan with access, learning, relationships, outcomes, and checkpoints.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Employee Onboarding Plan"
+          "displayName": "Employee Onboarding Plan",
+          "description": "Create a role-specific onboarding plan with access, learning, relationships, outcomes, and checkpoints."
         },
         "zh-CN": {
-          "displayName": "员工入职计划"
+          "displayName": "员工入职计划",
+          "description": "制定包含权限、学习、协作关系、成果与检查点的岗位专属入职计划。"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "okr-review",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Review OKR progress using evidence, confidence, root causes, and concrete corrective actions.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "OKR Review"
+          "displayName": "OKR Review",
+          "description": "Review OKR progress using evidence, confidence, root causes, and concrete corrective actions."
         },
         "zh-CN": {
-          "displayName": "OKR 复盘"
+          "displayName": "OKR 复盘",
+          "description": "依据证据、信心程度与根因评审 OKR 进展，并制定具体纠偏行动。"
         }
       }
     }

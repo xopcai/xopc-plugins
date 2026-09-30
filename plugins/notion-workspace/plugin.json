@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "notion-workspace",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Search and work with Notion content through Notion’s official remote MCP server.",
   "author": {
     "name": "XOPC",
@@ -24,10 +24,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Notion Workspace"
+          "displayName": "Notion Workspace",
+          "description": "Search and work with Notion content through Notion’s official remote MCP server."
         },
         "zh-CN": {
-          "displayName": "Notion 工作台"
+          "displayName": "Notion 工作台",
+          "description": "通过 Notion 官方远程 MCP 服务搜索并处理 Notion 内容。"
         }
       }
     }

@@ -40,7 +40,9 @@ for (const entry of entries) {
   const xopc = manifest.extensions?.['ai.xopc']
   assert(xopc && typeof xopc === 'object', `${entry.name}: extensions.ai.xopc is required`)
   assert(typeof xopc?.localizations?.en?.displayName === 'string' && xopc.localizations.en.displayName.trim(), `${entry.name}: English display name is required`)
+  assert(typeof xopc?.localizations?.en?.description === 'string' && xopc.localizations.en.description.trim(), `${entry.name}: English description is required`)
   assert(typeof xopc?.localizations?.['zh-CN']?.displayName === 'string' && xopc.localizations['zh-CN'].displayName.trim(), `${entry.name}: Chinese display name is required`)
+  assert(typeof xopc?.localizations?.['zh-CN']?.description === 'string' && xopc.localizations['zh-CN'].description.trim(), `${entry.name}: Chinese description is required`)
   assert(xopc?.branding?.icon === 'assets/icon.svg', `${entry.name}: branding icon must be assets/icon.svg`)
   assert(existsSync(join(directory, 'assets', 'icon.svg')), `${entry.name}: missing assets/icon.svg`)
 

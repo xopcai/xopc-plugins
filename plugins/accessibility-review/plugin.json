@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "accessibility-review",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Review a digital experience for accessible structure, interaction, content, and testing coverage.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Accessibility Review"
+          "displayName": "Accessibility Review",
+          "description": "Review a digital experience for accessible structure, interaction, content, and testing coverage."
         },
         "zh-CN": {
-          "displayName": "无障碍体验评审"
+          "displayName": "无障碍体验评审",
+          "description": "评审数字产品的无障碍结构、交互、内容与测试覆盖。"
         }
       }
     }

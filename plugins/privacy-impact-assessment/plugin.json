@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "privacy-impact-assessment",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Assess personal-data processing, necessity, user impact, controls, retention, and open legal questions.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Privacy Impact Assessment"
+          "displayName": "Privacy Impact Assessment",
+          "description": "Assess personal-data processing, necessity, user impact, controls, retention, and open legal questions."
         },
         "zh-CN": {
-          "displayName": "隐私影响评估"
+          "displayName": "隐私影响评估",
+          "description": "评估个人数据处理、必要性、用户影响、控制措施、保留期限与法律待决问题。"
         }
       }
     }

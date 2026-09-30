@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "budget-variance-analysis",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Explain budget variance by driver and recommend accountable forecast or spending actions.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Budget Variance Analysis"
+          "displayName": "Budget Variance Analysis",
+          "description": "Explain budget variance by driver and recommend accountable forecast or spending actions."
         },
         "zh-CN": {
-          "displayName": "预算差异分析"
+          "displayName": "预算差异分析",
+          "description": "按驱动因素解释预算差异，并提出可落实的预测或支出调整建议。"
         }
       }
     }

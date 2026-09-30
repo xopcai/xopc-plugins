@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "survey-design",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Design a survey that connects research questions to unbiased items, sampling, and analysis.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Survey Design"
+          "displayName": "Survey Design",
+          "description": "Design a survey that connects research questions to unbiased items, sampling, and analysis."
         },
         "zh-CN": {
-          "displayName": "问卷设计"
+          "displayName": "问卷设计",
+          "description": "设计将研究问题连接到中立题项、抽样与分析方法的问卷。"
         }
       }
     }

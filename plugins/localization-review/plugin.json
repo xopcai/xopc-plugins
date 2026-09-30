@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "localization-review",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Review localized content for meaning, terminology, cultural fit, formatting, and functional constraints.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Localization Review"
+          "displayName": "Localization Review",
+          "description": "Review localized content for meaning, terminology, cultural fit, formatting, and functional constraints."
         },
         "zh-CN": {
-          "displayName": "本地化评审"
+          "displayName": "本地化评审",
+          "description": "评审本地化内容的语义、术语、文化适配、格式与功能约束。"
         }
       }
     }

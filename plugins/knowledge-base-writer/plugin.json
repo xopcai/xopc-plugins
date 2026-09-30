@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "knowledge-base-writer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Turn resolved support knowledge into a searchable, safe, and maintainable help article.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Knowledge Base Writer"
+          "displayName": "Knowledge Base Writer",
+          "description": "Turn resolved support knowledge into a searchable, safe, and maintainable help article."
         },
         "zh-CN": {
-          "displayName": "知识库撰写"
+          "displayName": "知识库撰写",
+          "description": "将已解决的客服知识转化为可搜索、安全且易维护的帮助文章。"
         }
       }
     }

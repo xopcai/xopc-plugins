@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "go-to-market-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Build a coordinated go-to-market plan covering audience, positioning, channels, enablement, and measurement.",
   "author": {
     "name": "XOPC",
@@ -24,10 +24,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Go-to-Market Plan"
+          "displayName": "Go-to-Market Plan",
+          "description": "Build a coordinated go-to-market plan covering audience, positioning, channels, enablement, and measurement."
         },
         "zh-CN": {
-          "displayName": "市场进入计划"
+          "displayName": "市场进入计划",
+          "description": "制定覆盖受众、定位、渠道、销售赋能与效果衡量的协同市场进入计划。"
         }
       }
     }

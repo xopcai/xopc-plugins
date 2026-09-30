@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "job-description-writer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Write an inclusive, outcome-focused job description with realistic qualifications and transparent expectations.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Job Description Writer"
+          "displayName": "Job Description Writer",
+          "description": "Write an inclusive, outcome-focused job description with realistic qualifications and transparent expectations."
         },
         "zh-CN": {
-          "displayName": "职位描述撰写"
+          "displayName": "职位描述撰写",
+          "description": "撰写包容、成果导向且资格要求现实、预期透明的职位描述。"
         }
       }
     }

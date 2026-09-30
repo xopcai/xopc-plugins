@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "compliance-checklist",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Translate a policy or regulatory requirement into an owned, evidence-based compliance checklist.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Compliance Checklist"
+          "displayName": "Compliance Checklist",
+          "description": "Translate a policy or regulatory requirement into an owned, evidence-based compliance checklist."
         },
         "zh-CN": {
-          "displayName": "合规检查清单"
+          "displayName": "合规检查清单",
+          "description": "将政策或监管要求转化为责任明确、证据可核验的合规检查清单。"
         }
       }
     }

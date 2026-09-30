@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "customer-feedback-insights",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Synthesize customer feedback into themes, severity, evidence, and prioritized product opportunities.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Customer Feedback Insights"
+          "displayName": "Customer Feedback Insights",
+          "description": "Synthesize customer feedback into themes, severity, evidence, and prioritized product opportunities."
         },
         "zh-CN": {
-          "displayName": "客户反馈洞察"
+          "displayName": "客户反馈洞察",
+          "description": "将客户反馈归纳为主题、严重程度、证据与优先产品机会。"
         }
       }
     }

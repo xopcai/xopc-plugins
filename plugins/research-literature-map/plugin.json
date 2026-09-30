@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "research-literature-map",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Map a research field by questions, methods, findings, disagreements, and evidence quality.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Research Literature Map"
+          "displayName": "Research Literature Map",
+          "description": "Map a research field by questions, methods, findings, disagreements, and evidence quality."
         },
         "zh-CN": {
-          "displayName": "研究文献图谱"
+          "displayName": "研究文献图谱",
+          "description": "按问题、方法、发现、争议与证据质量梳理研究领域。"
         }
       }
     }

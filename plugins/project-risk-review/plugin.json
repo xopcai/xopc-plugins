@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "project-risk-review",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Identify project risks, quantify exposure, and turn mitigations into owned actions and triggers.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Project Risk Review"
+          "displayName": "Project Risk Review",
+          "description": "Identify project risks, quantify exposure, and turn mitigations into owned actions and triggers."
         },
         "zh-CN": {
-          "displayName": "项目风险评审"
+          "displayName": "项目风险评审",
+          "description": "识别项目风险、量化暴露程度，并将缓解措施转化为有负责人的行动与触发条件。"
         }
       }
     }

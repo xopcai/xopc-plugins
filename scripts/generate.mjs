@@ -6,7 +6,7 @@ import { localizationFor } from './plugin-localizations.mjs'
 
 const schema = 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json'
 const mcpSchema = 'https://agent-plugins.org/schemas/1.0.0/mcp.schema.json'
-const generatedVersion = '1.1.0'
+const generatedVersion = '1.1.1'
 const pluginsRoot = join(root, 'plugins')
 const existingCatalog = JSON.parse(readFileSync(join(root, 'catalog.json'), 'utf8'))
 const handMaintained = existingCatalog.plugins.filter(entry => !entry.generated)
@@ -102,7 +102,7 @@ for (const entry of catalog.plugins) {
   const directory = join(root, entry.path)
   const manifestPath = join(directory, 'plugin.json')
   const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
-  const localizations = localizationFor(entry.name)
+  const localizations = localizationFor(entry.name, manifest.description)
   const assetsDirectory = join(directory, 'assets')
   mkdirSync(assetsDirectory, { recursive: true })
   manifest.version = generatedVersion

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cloudflare-workspace",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Inspect and operate Cloudflare resources through Cloudflare’s official OAuth-enabled remote MCP server.",
   "author": {
     "name": "XOPC",
@@ -24,10 +24,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Cloudflare Workspace"
+          "displayName": "Cloudflare Workspace",
+          "description": "Inspect and operate Cloudflare resources through Cloudflare’s official OAuth-enabled remote MCP server."
         },
         "zh-CN": {
-          "displayName": "Cloudflare 工作台"
+          "displayName": "Cloudflare 工作台",
+          "description": "通过 Cloudflare 官方 OAuth 远程 MCP 服务查看和管理 Cloudflare 资源。"
         }
       }
     }

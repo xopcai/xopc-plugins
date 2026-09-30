@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "requirements-review",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Review requirements for ambiguity, completeness, testability, dependencies, and hidden scope.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Requirements Review"
+          "displayName": "Requirements Review",
+          "description": "Review requirements for ambiguity, completeness, testability, dependencies, and hidden scope."
         },
         "zh-CN": {
-          "displayName": "需求评审"
+          "displayName": "需求评审",
+          "description": "评审需求的歧义、完整性、可测试性、依赖关系与隐性范围。"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sales-account-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Develop an evidence-based account plan with stakeholder map, value hypothesis, risks, and next actions.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Sales Account Plan"
+          "displayName": "Sales Account Plan",
+          "description": "Develop an evidence-based account plan with stakeholder map, value hypothesis, risks, and next actions."
         },
         "zh-CN": {
-          "displayName": "销售客户计划"
+          "displayName": "销售客户计划",
+          "description": "制定包含干系人地图、价值假设、风险与下一步行动的循证客户计划。"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "review-insights",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Analyze product reviews for customer needs, defects, positioning opportunities, and operational action.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Review Insights"
+          "displayName": "Review Insights",
+          "description": "Analyze product reviews for customer needs, defects, positioning opportunities, and operational action."
         },
         "zh-CN": {
-          "displayName": "商品评价洞察"
+          "displayName": "商品评价洞察",
+          "description": "分析商品评价中的客户需求、缺陷、定位机会与运营行动。"
         }
       }
     }

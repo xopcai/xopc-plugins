@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "dashboard-narrative",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Turn dashboard metrics into a concise narrative that distinguishes signal, noise, and required action.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Dashboard Narrative"
+          "displayName": "Dashboard Narrative",
+          "description": "Turn dashboard metrics into a concise narrative that distinguishes signal, noise, and required action."
         },
         "zh-CN": {
-          "displayName": "数据看板解读"
+          "displayName": "数据看板解读",
+          "description": "将看板指标转化为区分信号、噪声与必要行动的精简解读。"
         }
       }
     }

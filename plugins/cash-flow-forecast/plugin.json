@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cash-flow-forecast",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Build a scenario-based cash-flow forecast with assumptions, timing, and liquidity risks.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Cash Flow Forecast"
+          "displayName": "Cash Flow Forecast",
+          "description": "Build a scenario-based cash-flow forecast with assumptions, timing, and liquidity risks."
         },
         "zh-CN": {
-          "displayName": "现金流预测"
+          "displayName": "现金流预测",
+          "description": "基于假设、时间节点与流动性风险构建多情景现金流预测。"
         }
       }
     }

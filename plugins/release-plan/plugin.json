@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "release-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a release plan covering scope, dependencies, verification, rollout, communication, and rollback.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Release Plan"
+          "displayName": "Release Plan",
+          "description": "Create a release plan covering scope, dependencies, verification, rollout, communication, and rollback."
         },
         "zh-CN": {
-          "displayName": "版本发布计划"
+          "displayName": "版本发布计划",
+          "description": "制定覆盖范围、依赖、验证、灰度、沟通与回滚的版本发布计划。"
         }
       }
     }

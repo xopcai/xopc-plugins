@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "data-quality-audit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Audit data quality across completeness, validity, consistency, uniqueness, timeliness, and lineage.",
   "author": {
     "name": "XOPC",
@@ -23,10 +23,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Data Quality Audit"
+          "displayName": "Data Quality Audit",
+          "description": "Audit data quality across completeness, validity, consistency, uniqueness, timeliness, and lineage."
         },
         "zh-CN": {
-          "displayName": "数据质量审计"
+          "displayName": "数据质量审计",
+          "description": "从完整性、有效性、一致性、唯一性、及时性与血缘关系审计数据质量。"
         }
       }
     }

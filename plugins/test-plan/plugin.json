@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "test-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Build a risk-based test plan spanning functional, integration, failure, security, and rollout validation.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Test Plan"
+          "displayName": "Test Plan",
+          "description": "Build a risk-based test plan spanning functional, integration, failure, security, and rollout validation."
         },
         "zh-CN": {
-          "displayName": "测试计划"
+          "displayName": "测试计划",
+          "description": "构建覆盖功能、集成、故障、安全与发布验证的风险驱动测试计划。"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "service-blueprint",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Map a service across customer actions, frontstage, backstage, systems, evidence, and failure points.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Service Blueprint"
+          "displayName": "Service Blueprint",
+          "description": "Map a service across customer actions, frontstage, backstage, systems, evidence, and failure points."
         },
         "zh-CN": {
-          "displayName": "服务蓝图"
+          "displayName": "服务蓝图",
+          "description": "绘制涵盖客户行为、前台、后台、系统、证据与故障点的服务蓝图。"
         }
       }
     }

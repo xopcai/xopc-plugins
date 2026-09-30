@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "procurement-rfp",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create an RFP that elicits comparable vendor responses across outcomes, requirements, risk, and cost.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Procurement RFP"
+          "displayName": "Procurement RFP",
+          "description": "Create an RFP that elicits comparable vendor responses across outcomes, requirements, risk, and cost."
         },
         "zh-CN": {
-          "displayName": "采购招标书"
+          "displayName": "采购招标书",
+          "description": "创建可比较供应商成果、需求、风险与成本的采购招标书。"
         }
       }
     }

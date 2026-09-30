@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "stakeholder-update",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Write a clear stakeholder update centered on outcomes, changes, risks, and decisions needed.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Stakeholder Update"
+          "displayName": "Stakeholder Update",
+          "description": "Write a clear stakeholder update centered on outcomes, changes, risks, and decisions needed."
         },
         "zh-CN": {
-          "displayName": "干系人进展同步"
+          "displayName": "干系人进展同步",
+          "description": "撰写聚焦成果、变化、风险与待决事项的清晰干系人进展同步。"
         }
       }
     }

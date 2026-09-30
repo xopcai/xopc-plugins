@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "inventory-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create an inventory plan using demand assumptions, lead times, service levels, and exception triggers.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Inventory Plan"
+          "displayName": "Inventory Plan",
+          "description": "Create an inventory plan using demand assumptions, lead times, service levels, and exception triggers."
         },
         "zh-CN": {
-          "displayName": "库存规划"
+          "displayName": "库存规划",
+          "description": "基于需求假设、交付周期、服务水平与异常触发条件制定库存规划。"
         }
       }
     }

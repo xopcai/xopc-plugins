@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ux-research-plan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a focused UX research plan connecting decisions to participants, methods, evidence, and ethics.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "UX Research Plan"
+          "displayName": "UX Research Plan",
+          "description": "Create a focused UX research plan connecting decisions to participants, methods, evidence, and ethics."
         },
         "zh-CN": {
-          "displayName": "用户体验研究计划"
+          "displayName": "用户体验研究计划",
+          "description": "制定将决策问题连接到参与者、方法、证据与伦理的聚焦用户研究计划。"
         }
       }
     }

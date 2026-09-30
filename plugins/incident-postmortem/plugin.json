@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "incident-postmortem",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Produce a blameless incident review with timeline, contributing factors, corrective actions, and learning.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Incident Postmortem"
+          "displayName": "Incident Postmortem",
+          "description": "Produce a blameless incident review with timeline, contributing factors, corrective actions, and learning."
         },
         "zh-CN": {
-          "displayName": "故障复盘"
+          "displayName": "故障复盘",
+          "description": "生成无责故障复盘，涵盖时间线、促成因素、纠正措施与经验沉淀。"
         }
       }
     }

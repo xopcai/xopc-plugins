@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "research-brief",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Research a question, compare sources, and produce a concise evidence-backed brief.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Research Brief"
+          "displayName": "Research Brief",
+          "description": "Research a question, compare sources, and produce a concise evidence-backed brief."
         },
         "zh-CN": {
-          "displayName": "研究简报"
+          "displayName": "研究简报",
+          "description": "研究问题、比较来源并生成简洁、有证据支撑的研究简报。"
         }
       }
     }

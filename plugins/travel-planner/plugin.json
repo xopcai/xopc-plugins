@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "travel-planner",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a practical travel plan balancing schedule, budget, logistics, preferences, and contingencies.",
   "author": {
     "name": "XOPC",
@@ -22,10 +22,12 @@
       },
       "localizations": {
         "en": {
-          "displayName": "Travel Planner"
+          "displayName": "Travel Planner",
+          "description": "Create a practical travel plan balancing schedule, budget, logistics, preferences, and contingencies."
         },
         "zh-CN": {
-          "displayName": "旅行规划助手"
+          "displayName": "旅行规划助手",
+          "description": "制定兼顾行程、预算、交通住宿、个人偏好与应急方案的实用旅行计划。"
         }
       }
     }
