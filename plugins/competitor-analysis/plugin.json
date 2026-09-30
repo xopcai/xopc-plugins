@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "competitor-analysis",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Compare competitors consistently and produce an evidence-backed positioning recommendation.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "research",
     "competitor",
     "analysis"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Competitor Analysis"
+        },
+        "zh-CN": {
+          "displayName": "竞品分析"
+        }
+      }
+    }
+  }
 }

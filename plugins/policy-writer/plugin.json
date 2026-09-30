@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "policy-writer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Draft an operational policy with clear scope, principles, responsibilities, controls, and exceptions.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "legal-compliance",
     "policy",
     "writer"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Policy Writer"
+        },
+        "zh-CN": {
+          "displayName": "制度文档撰写"
+        }
+      }
+    }
+  }
 }

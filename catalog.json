@@ -4,7 +4,7 @@
   "plugins": [
     {
       "name": "accessibility-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "product",
       "phase": "P2",
       "path": "plugins/accessibility-review",
@@ -13,7 +13,7 @@
     },
     {
       "name": "analytics-tracking-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P2",
       "path": "plugins/analytics-tracking-plan",
@@ -22,7 +22,7 @@
     },
     {
       "name": "api-design-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "engineering",
       "phase": "P1",
       "path": "plugins/api-design-review",
@@ -31,7 +31,7 @@
     },
     {
       "name": "application-threat-model",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "security",
       "phase": "P1",
       "path": "plugins/application-threat-model",
@@ -40,7 +40,7 @@
     },
     {
       "name": "architecture-decision-record",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "engineering",
       "phase": "P1",
       "path": "plugins/architecture-decision-record",
@@ -49,7 +49,7 @@
     },
     {
       "name": "board-meeting-pack",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P2",
       "path": "plugins/board-meeting-pack",
@@ -58,7 +58,7 @@
     },
     {
       "name": "brand-voice-guide",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "content-creation",
       "phase": "P2",
       "path": "plugins/brand-voice-guide",
@@ -67,7 +67,7 @@
     },
     {
       "name": "budget-variance-analysis",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "finance",
       "phase": "P1",
       "path": "plugins/budget-variance-analysis",
@@ -76,7 +76,7 @@
     },
     {
       "name": "campaign-retrospective",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "marketing-sales",
       "phase": "P0",
       "path": "plugins/campaign-retrospective",
@@ -85,7 +85,7 @@
     },
     {
       "name": "cash-flow-forecast",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "finance",
       "phase": "P1",
       "path": "plugins/cash-flow-forecast",
@@ -94,7 +94,7 @@
     },
     {
       "name": "cloudflare-workspace",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "engineering",
       "phase": "P1",
       "path": "plugins/cloudflare-workspace",
@@ -103,7 +103,7 @@
     },
     {
       "name": "compensation-benchmark-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "hr",
       "phase": "P2",
       "path": "plugins/compensation-benchmark-plan",
@@ -112,7 +112,7 @@
     },
     {
       "name": "competitor-analysis",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "research",
       "phase": "P0",
       "path": "plugins/competitor-analysis",
@@ -121,7 +121,7 @@
     },
     {
       "name": "compliance-checklist",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "legal-compliance",
       "phase": "P1",
       "path": "plugins/compliance-checklist",
@@ -130,7 +130,7 @@
     },
     {
       "name": "content-calendar",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "content-creation",
       "phase": "P0",
       "path": "plugins/content-calendar",
@@ -139,7 +139,7 @@
     },
     {
       "name": "contract-review-brief",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "legal-compliance",
       "phase": "P2",
       "path": "plugins/contract-review-brief",
@@ -148,7 +148,7 @@
     },
     {
       "name": "crisis-communications",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P2",
       "path": "plugins/crisis-communications",
@@ -157,7 +157,7 @@
     },
     {
       "name": "crm-pipeline-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "marketing-sales",
       "phase": "P1",
       "path": "plugins/crm-pipeline-review",
@@ -166,7 +166,7 @@
     },
     {
       "name": "customer-feedback-insights",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "product",
       "phase": "P0",
       "path": "plugins/customer-feedback-insights",
@@ -175,7 +175,7 @@
     },
     {
       "name": "customer-success-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "customer-support",
       "phase": "P1",
       "path": "plugins/customer-success-plan",
@@ -184,7 +184,7 @@
     },
     {
       "name": "dashboard-narrative",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P0",
       "path": "plugins/dashboard-narrative",
@@ -193,7 +193,7 @@
     },
     {
       "name": "data-cleaning-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P0",
       "path": "plugins/data-cleaning-plan",
@@ -202,7 +202,7 @@
     },
     {
       "name": "data-quality-audit",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P2",
       "path": "plugins/data-quality-audit",
@@ -211,13 +211,13 @@
     },
     {
       "name": "data-toolkit",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "category": "data-analysis",
       "path": "plugins/data-toolkit"
     },
     {
       "name": "decision-memo",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P0",
       "path": "plugins/decision-memo",
@@ -226,7 +226,7 @@
     },
     {
       "name": "ecommerce-listing",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "ecommerce",
       "phase": "P1",
       "path": "plugins/ecommerce-listing",
@@ -235,7 +235,7 @@
     },
     {
       "name": "executive-brief",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "productivity",
       "phase": "P0",
       "path": "plugins/executive-brief",
@@ -244,7 +244,7 @@
     },
     {
       "name": "experiment-analysis",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P0",
       "path": "plugins/experiment-analysis",
@@ -253,7 +253,7 @@
     },
     {
       "name": "figma-workspace",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "content-creation",
       "phase": "P1",
       "path": "plugins/figma-workspace",
@@ -262,7 +262,7 @@
     },
     {
       "name": "financial-model-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "finance",
       "phase": "P1",
       "path": "plugins/financial-model-review",
@@ -271,7 +271,7 @@
     },
     {
       "name": "forecasting-workbench",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P2",
       "path": "plugins/forecasting-workbench",
@@ -280,7 +280,7 @@
     },
     {
       "name": "go-to-market-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "marketing-sales",
       "phase": "P1",
       "path": "plugins/go-to-market-plan",
@@ -289,7 +289,7 @@
     },
     {
       "name": "hiring-scorecard",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "hr",
       "phase": "P0",
       "path": "plugins/hiring-scorecard",
@@ -298,7 +298,7 @@
     },
     {
       "name": "incident-postmortem",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "engineering",
       "phase": "P0",
       "path": "plugins/incident-postmortem",
@@ -307,7 +307,7 @@
     },
     {
       "name": "interview-debrief",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "hr",
       "phase": "P2",
       "path": "plugins/interview-debrief",
@@ -316,7 +316,7 @@
     },
     {
       "name": "inventory-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "ecommerce",
       "phase": "P1",
       "path": "plugins/inventory-plan",
@@ -325,7 +325,7 @@
     },
     {
       "name": "invoice-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "finance",
       "phase": "P1",
       "path": "plugins/invoice-review",
@@ -334,7 +334,7 @@
     },
     {
       "name": "job-description-writer",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "hr",
       "phase": "P2",
       "path": "plugins/job-description-writer",
@@ -343,7 +343,7 @@
     },
     {
       "name": "knowledge-base-writer",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "customer-support",
       "phase": "P1",
       "path": "plugins/knowledge-base-writer",
@@ -352,7 +352,7 @@
     },
     {
       "name": "linear-workspace",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "productivity",
       "phase": "P1",
       "path": "plugins/linear-workspace",
@@ -361,7 +361,7 @@
     },
     {
       "name": "localization-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "content-creation",
       "phase": "P2",
       "path": "plugins/localization-review",
@@ -370,13 +370,13 @@
     },
     {
       "name": "meeting-actions",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "category": "productivity",
       "path": "plugins/meeting-actions"
     },
     {
       "name": "metric-definition",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P2",
       "path": "plugins/metric-definition",
@@ -385,7 +385,7 @@
     },
     {
       "name": "notion-workspace",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "productivity",
       "phase": "P1",
       "path": "plugins/notion-workspace",
@@ -394,7 +394,7 @@
     },
     {
       "name": "okr-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P0",
       "path": "plugins/okr-review",
@@ -403,7 +403,7 @@
     },
     {
       "name": "onboarding-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "hr",
       "phase": "P1",
       "path": "plugins/onboarding-plan",
@@ -412,7 +412,7 @@
     },
     {
       "name": "organization-design",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "hr",
       "phase": "P2",
       "path": "plugins/organization-design",
@@ -421,7 +421,7 @@
     },
     {
       "name": "performance-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "hr",
       "phase": "P2",
       "path": "plugins/performance-review",
@@ -430,7 +430,7 @@
     },
     {
       "name": "personal-learning-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "education",
       "phase": "P2",
       "path": "plugins/personal-learning-plan",
@@ -439,7 +439,7 @@
     },
     {
       "name": "podcast-show-notes",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "content-creation",
       "phase": "P2",
       "path": "plugins/podcast-show-notes",
@@ -448,7 +448,7 @@
     },
     {
       "name": "policy-writer",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "legal-compliance",
       "phase": "P2",
       "path": "plugins/policy-writer",
@@ -457,7 +457,7 @@
     },
     {
       "name": "prd-writer",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "product",
       "phase": "P0",
       "path": "plugins/prd-writer",
@@ -466,7 +466,7 @@
     },
     {
       "name": "press-release",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "content-creation",
       "phase": "P2",
       "path": "plugins/press-release",
@@ -475,7 +475,7 @@
     },
     {
       "name": "privacy-impact-assessment",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "legal-compliance",
       "phase": "P1",
       "path": "plugins/privacy-impact-assessment",
@@ -484,7 +484,7 @@
     },
     {
       "name": "process-sop",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P1",
       "path": "plugins/process-sop",
@@ -493,7 +493,7 @@
     },
     {
       "name": "procurement-rfp",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P2",
       "path": "plugins/procurement-rfp",
@@ -502,7 +502,7 @@
     },
     {
       "name": "project-risk-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P1",
       "path": "plugins/project-risk-review",
@@ -511,7 +511,7 @@
     },
     {
       "name": "promotion-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "ecommerce",
       "phase": "P1",
       "path": "plugins/promotion-plan",
@@ -520,7 +520,7 @@
     },
     {
       "name": "qualitative-coding",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "research",
       "phase": "P2",
       "path": "plugins/qualitative-coding",
@@ -529,7 +529,7 @@
     },
     {
       "name": "release-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "engineering",
       "phase": "P0",
       "path": "plugins/release-plan",
@@ -538,7 +538,7 @@
     },
     {
       "name": "requirements-review",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "product",
       "phase": "P1",
       "path": "plugins/requirements-review",
@@ -547,13 +547,13 @@
     },
     {
       "name": "research-brief",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "category": "research",
       "path": "plugins/research-brief"
     },
     {
       "name": "research-literature-map",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "research",
       "phase": "P2",
       "path": "plugins/research-literature-map",
@@ -562,7 +562,7 @@
     },
     {
       "name": "review-insights",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "ecommerce",
       "phase": "P1",
       "path": "plugins/review-insights",
@@ -571,7 +571,7 @@
     },
     {
       "name": "roadmap-prioritization",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "product",
       "phase": "P1",
       "path": "plugins/roadmap-prioritization",
@@ -580,7 +580,7 @@
     },
     {
       "name": "sales-account-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "marketing-sales",
       "phase": "P1",
       "path": "plugins/sales-account-plan",
@@ -589,7 +589,7 @@
     },
     {
       "name": "sales-call-coach",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "marketing-sales",
       "phase": "P1",
       "path": "plugins/sales-call-coach",
@@ -598,7 +598,7 @@
     },
     {
       "name": "seo-content-brief",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "marketing-sales",
       "phase": "P0",
       "path": "plugins/seo-content-brief",
@@ -607,7 +607,7 @@
     },
     {
       "name": "service-blueprint",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "product",
       "phase": "P2",
       "path": "plugins/service-blueprint",
@@ -616,7 +616,7 @@
     },
     {
       "name": "social-media-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "marketing-sales",
       "phase": "P2",
       "path": "plugins/social-media-plan",
@@ -625,7 +625,7 @@
     },
     {
       "name": "sql-analyst",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "data-analysis",
       "phase": "P0",
       "path": "plugins/sql-analyst",
@@ -634,7 +634,7 @@
     },
     {
       "name": "stakeholder-update",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "productivity",
       "phase": "P1",
       "path": "plugins/stakeholder-update",
@@ -643,7 +643,7 @@
     },
     {
       "name": "strategy-offsite",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P2",
       "path": "plugins/strategy-offsite",
@@ -652,7 +652,7 @@
     },
     {
       "name": "support-ticket-triage",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "customer-support",
       "phase": "P1",
       "path": "plugins/support-ticket-triage",
@@ -661,7 +661,7 @@
     },
     {
       "name": "survey-design",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "research",
       "phase": "P2",
       "path": "plugins/survey-design",
@@ -670,7 +670,7 @@
     },
     {
       "name": "sustainability-report",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P2",
       "path": "plugins/sustainability-report",
@@ -679,7 +679,7 @@
     },
     {
       "name": "test-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "engineering",
       "phase": "P1",
       "path": "plugins/test-plan",
@@ -688,7 +688,7 @@
     },
     {
       "name": "training-course-outline",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "education",
       "phase": "P1",
       "path": "plugins/training-course-outline",
@@ -697,7 +697,7 @@
     },
     {
       "name": "travel-planner",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "productivity",
       "phase": "P2",
       "path": "plugins/travel-planner",
@@ -706,7 +706,7 @@
     },
     {
       "name": "user-interview-synthesis",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "research",
       "phase": "P1",
       "path": "plugins/user-interview-synthesis",
@@ -715,7 +715,7 @@
     },
     {
       "name": "ux-research-plan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "research",
       "phase": "P2",
       "path": "plugins/ux-research-plan",
@@ -724,7 +724,7 @@
     },
     {
       "name": "vendor-comparison",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "business-operations",
       "phase": "P1",
       "path": "plugins/vendor-comparison",
@@ -733,7 +733,7 @@
     },
     {
       "name": "video-production-brief",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "content-creation",
       "phase": "P2",
       "path": "plugins/video-production-brief",
@@ -742,7 +742,7 @@
     },
     {
       "name": "weekly-report",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "productivity",
       "phase": "P0",
       "path": "plugins/weekly-report",

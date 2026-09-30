@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "performance-review",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Draft an evidence-based performance review covering outcomes, behaviors, growth, and forward expectations.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "hr",
     "performance",
     "review"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Performance Review"
+        },
+        "zh-CN": {
+          "displayName": "绩效评估"
+        }
+      }
+    }
+  }
 }

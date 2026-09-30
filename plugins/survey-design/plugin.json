@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "survey-design",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Design a survey that connects research questions to unbiased items, sampling, and analysis.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "research",
     "survey",
     "design"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Survey Design"
+        },
+        "zh-CN": {
+          "displayName": "问卷设计"
+        }
+      }
+    }
+  }
 }

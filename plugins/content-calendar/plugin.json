@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "content-calendar",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Build a sustainable content calendar aligned to audience needs, campaigns, channels, and production capacity.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "content-creation",
     "content",
     "calendar"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Content Calendar"
+        },
+        "zh-CN": {
+          "displayName": "内容日历"
+        }
+      }
+    }
+  }
 }

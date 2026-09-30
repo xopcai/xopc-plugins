@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sustainability-report",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Structure a sustainability report around defined boundaries, traceable data, progress, and material limitations.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "business-operations",
     "sustainability",
     "report"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Sustainability Report"
+        },
+        "zh-CN": {
+          "displayName": "可持续发展报告"
+        }
+      }
+    }
+  }
 }

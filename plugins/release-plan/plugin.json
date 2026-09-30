@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "release-plan",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Create a release plan covering scope, dependencies, verification, rollout, communication, and rollback.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "engineering",
     "release",
     "plan"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Release Plan"
+        },
+        "zh-CN": {
+          "displayName": "版本发布计划"
+        }
+      }
+    }
+  }
 }

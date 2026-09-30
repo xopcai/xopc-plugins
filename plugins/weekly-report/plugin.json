@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "weekly-report",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Convert work updates into a concise outcome-oriented weekly report with risks and next priorities.",
   "author": {
     "name": "XOPC",
@@ -14,5 +14,20 @@
     "productivity",
     "weekly",
     "report"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Weekly Report"
+        },
+        "zh-CN": {
+          "displayName": "周报助手"
+        }
+      }
+    }
+  }
 }

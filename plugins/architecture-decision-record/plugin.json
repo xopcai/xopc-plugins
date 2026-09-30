@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "architecture-decision-record",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Create an ADR that captures context, options, decision, consequences, and review triggers.",
   "author": {
     "name": "XOPC",
@@ -15,5 +15,20 @@
     "architecture",
     "decision",
     "record"
-  ]
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Architecture Decision Record"
+        },
+        "zh-CN": {
+          "displayName": "架构决策记录"
+        }
+      }
+    }
+  }
 }

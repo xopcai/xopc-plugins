@@ -37,6 +37,12 @@ for (const entry of entries) {
   assert(manifest.name === entry.name && NAME.test(manifest.name), `${entry.name}: invalid manifest name`)
   assert(manifest.version === entry.version, `${entry.name}: catalog and manifest versions differ`)
   assert(typeof manifest.description === 'string' && manifest.description.trim(), `${entry.name}: description is required`)
+  const xopc = manifest.extensions?.['ai.xopc']
+  assert(xopc && typeof xopc === 'object', `${entry.name}: extensions.ai.xopc is required`)
+  assert(typeof xopc?.localizations?.en?.displayName === 'string' && xopc.localizations.en.displayName.trim(), `${entry.name}: English display name is required`)
+  assert(typeof xopc?.localizations?.['zh-CN']?.displayName === 'string' && xopc.localizations['zh-CN'].displayName.trim(), `${entry.name}: Chinese display name is required`)
+  assert(xopc?.branding?.icon === 'assets/icon.svg', `${entry.name}: branding icon must be assets/icon.svg`)
+  assert(existsSync(join(directory, 'assets', 'icon.svg')), `${entry.name}: missing assets/icon.svg`)
 
   let skillCount = 0
   for (const file of filesUnder(join(directory, 'skills'))) {
