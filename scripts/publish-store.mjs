@@ -8,7 +8,9 @@ const apiKey = process.env.XOPC_API_KEY
 if (!apiKey) throw new Error('XOPC_API_KEY is required')
 execFileSync(process.execPath, [join(root, 'scripts/build.mjs')], { stdio: 'inherit' })
 const release = JSON.parse(readFileSync(join(root, 'dist/release-manifest.json'), 'utf8'))
-const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
+const commit = process.env.XOPC_SOURCE_COMMIT?.trim()
+  || execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
+if (!/^[a-f0-9]{40}$/.test(commit)) throw new Error('XOPC_SOURCE_COMMIT must be a full Git commit SHA')
 
 for (const plugin of release.plugins) {
   const manifest = JSON.parse(readFileSync(join(root, plugin.path, 'plugin.json'), 'utf8'))
