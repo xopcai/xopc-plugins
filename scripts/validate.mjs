@@ -11,9 +11,7 @@ const entries = catalog().plugins
 const names = new Set()
 
 assert(catalog().schemaVersion === 2, 'catalog: schemaVersion must be 2')
-assert(entries.length >= 80, 'catalog: P2 requires at least 80 plugins')
-assert(entries.filter(entry => entry.phase === 'P0' || !entry.phase).length >= 20, 'catalog: P0 requires at least 20 plugins')
-assert(entries.filter(entry => ['P0', 'P1'].includes(entry.phase) || !entry.phase).length >= 50, 'catalog: P1 requires at least 50 plugins')
+assert(entries.length > 0, 'catalog: at least one plugin is required')
 
 const catalogPaths = new Set(entries.map(entry => entry.path))
 for (const directory of readdirSync(join(root, 'plugins'), { withFileTypes: true }).filter(entry => entry.isDirectory())) {
@@ -31,6 +29,16 @@ for (const entry of entries) {
   assert(existsSync(manifestPath), `${entry.name}: missing plugin.json`)
   assert(existsSync(join(directory, 'README.md')), `${entry.name}: missing README.md`)
   assert(existsSync(join(directory, 'skills')), `${entry.name}: missing skills directory`)
+  const capabilitySurfaces = [
+    existsSync(join(directory, 'skills')),
+    existsSync(join(directory, 'mcp.json')),
+    existsSync(join(directory, 'app.json')),
+    existsSync(join(directory, 'agents')),
+    existsSync(join(directory, 'commands')),
+    existsSync(join(directory, 'hooks.json')),
+    existsSync(join(directory, 'scripts')),
+  ].filter(Boolean).length
+  assert(capabilitySurfaces >= 2, `${entry.name}: plugin must combine at least two capability surfaces`)
   if (!existsSync(manifestPath)) continue
   const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
   assert(manifest.$schema === PLUGIN_SCHEMA, `${entry.name}: unsupported plugin schema`)
@@ -47,16 +55,20 @@ for (const entry of entries) {
   assert(existsSync(join(directory, 'assets', 'icon.svg')), `${entry.name}: missing assets/icon.svg`)
 
   let skillCount = 0
+  const skillNames = new Set()
   for (const file of filesUnder(join(directory, 'skills'))) {
     if (!file.name.endsWith('/SKILL.md')) continue
     skillCount += 1
-    const skillName = file.name.split('/')[0]
+    const skillPath = file.name.slice(0, -'/SKILL.md'.length)
     const source = readFileSync(file.path, 'utf8')
     const header = source.match(/^---\r?\n([\s\S]*?)\r?\n---/)
-    assert(Boolean(header), `${entry.name}/${skillName}: missing Skill frontmatter`)
-    assert(new RegExp(`^name:\\s*${skillName}\\s*$`, 'm').test(header?.[1] ?? ''), `${entry.name}/${skillName}: Skill name must match directory`)
-    assert(/^description:\s*\S.+$/m.test(header?.[1] ?? ''), `${entry.name}/${skillName}: Skill description is required`)
-    assert(source.includes('## Guardrails') || !entry.generated, `${entry.name}/${skillName}: generated Skill must include guardrails`)
+    const skillName = header?.[1].match(/^name:\s*(\S+)\s*$/m)?.[1]
+    assert(Boolean(header), `${entry.name}/${skillPath}: missing Skill frontmatter`)
+    assert(Boolean(skillName && NAME.test(skillName)), `${entry.name}/${skillPath}: invalid Skill name`)
+    assert(!skillName || !skillNames.has(skillName), `${entry.name}/${skillPath}: duplicate Skill name ${skillName}`)
+    if (skillName) skillNames.add(skillName)
+    assert(/^description:\s*(?:\|[+-]?|\S.*)$/m.test(header?.[1] ?? ''), `${entry.name}/${skillPath}: Skill description is required`)
+    assert(source.includes('## Guardrails') || !entry.generated, `${entry.name}/${skillPath}: generated Skill must include guardrails`)
   }
   assert(skillCount > 0, `${entry.name}: at least one Skill is required`)
 

@@ -27,6 +27,7 @@ export const pluginLocalizations = {
   'ecommerce-listing': ['E-commerce Listing', '电商商品文案'],
   'executive-brief': ['Executive Brief', '高管简报'],
   'experiment-analysis': ['Experiment Analysis', '实验分析'],
+  expo: ['Expo', 'Expo 移动开发'],
   'figma-workspace': ['Figma Workspace', 'Figma 工作台'],
   'financial-model-review': ['Financial Model Review', '财务模型评审'],
   'forecasting-workbench': ['Forecasting Workbench', '预测分析工作台'],
@@ -75,6 +76,7 @@ export const pluginLocalizations = {
   'support-ticket-triage': ['Support Ticket Triage', '客服工单分诊'],
   'survey-design': ['Survey Design', '问卷设计'],
   'sustainability-report': ['Sustainability Report', '可持续发展报告'],
+  supabase: ['Supabase', 'Supabase 开发平台'],
   'test-plan': ['Test Plan', '测试计划'],
   'training-course-outline': ['Training Course Outline', '培训课程大纲'],
   'travel-planner': ['Travel Planner', '旅行规划助手'],
@@ -83,6 +85,7 @@ export const pluginLocalizations = {
   'vendor-comparison': ['Vendor Comparison', '供应商对比'],
   'video-production-brief': ['Video Production Brief', '视频制作简报'],
   'weekly-report': ['Weekly Report', '周报助手'],
+  zoom: ['Zoom', 'Zoom 协作与开发'],
 }
 
 const chineseDescriptions = {
@@ -114,6 +117,7 @@ const chineseDescriptions = {
   'ecommerce-listing': '基于已核实的商品事实和受众需求生成可直接投放到各渠道的商品信息。',
   'executive-brief': '在保留不确定性与重大风险的前提下，将复杂材料压缩为可供决策的高管简报。',
   'experiment-analysis': '使用有效指标、不确定性与护栏评估实验，形成可辩护的发布决策。',
+  expo: '提供 Expo 与 React Native 应用构建、调试、升级及发布的完整工作流。',
   'figma-workspace': '通过 Figma 官方远程 MCP 服务读取设计上下文并支持设计到实现流程。',
   'financial-model-review': '评审财务模型的结构完整性、假设、敏感性与决策相关性。',
   'forecasting-workbench': '结合基线、驱动因素、不确定性、回测与决策阈值构建预测。',
@@ -162,6 +166,7 @@ const chineseDescriptions = {
   'support-ticket-triage': '按严重程度、产品领域、可复现性与下一步行动对客服工单分类。',
   'survey-design': '设计将研究问题连接到中立题项、抽样与分析方法的问卷。',
   'sustainability-report': '围绕明确边界、可追溯数据、进展与重大局限组织可持续发展报告。',
+  supabase: '通过领域技能、官方 MCP 与应用连接器设计并管理 Supabase 项目。',
   'test-plan': '构建覆盖功能、集成、故障、安全与发布验证的风险驱动测试计划。',
   'training-course-outline': '设计包含评估、练习、内容顺序与无障碍考虑的成果导向课程。',
   'travel-planner': '制定兼顾行程、预算、交通住宿、个人偏好与应急方案的实用旅行计划。',
@@ -170,6 +175,7 @@ const chineseDescriptions = {
   'vendor-comparison': '从需求、风险、总成本与实施匹配度开展可辩护的供应商评估。',
   'video-production-brief': '将沟通目标转化为包含故事、镜头、素材与审批要求的可执行视频制作简报。',
   'weekly-report': '将工作进展转化为聚焦成果、风险与下一步重点的精简周报。',
+  zoom: '通过会议连接器和完整开发工作流检索 Zoom 内容并构建 Zoom 集成。',
 }
 
 export function localizationFor(name, englishDescription) {

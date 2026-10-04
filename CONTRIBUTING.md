@@ -18,8 +18,9 @@ pnpm build
 
 ## Acceptance criteria
 
-- The plugin solves a distinct task; it is not a renamed prompt.
+- The plugin solves a distinct task; it is not a renamed prompt or a thin workflow checklist.
 - `plugin.json`, `README.md`, and at least one `skills/<name>/SKILL.md` are present.
+- The plugin combines at least two capability surfaces: Skill, MCP, App, Agent, Command, Hook, or executable scripts.
 - Skills declare inputs, method, deliverables, and safety guardrails.
 - Credentials are never committed or declared in `mcp.json`.
 - Remote MCP endpoints use public HTTPS and standard OAuth on first use.

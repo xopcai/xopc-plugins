@@ -7,13 +7,19 @@ import test from 'node:test'
 const root = new URL('..', import.meta.url).pathname.replace(/\/$/, '')
 const readJson = path => JSON.parse(readFileSync(join(root, path), 'utf8'))
 
-test('catalog meets P0, P1, and P2 supply targets', () => {
+test('catalog contains a focused set of compound plugins', () => {
   const entries = readJson('catalog.json').plugins
-  assert.ok(entries.length >= 80)
-  assert.ok(entries.filter(entry => !entry.phase || entry.phase === 'P0').length >= 20)
-  assert.ok(entries.filter(entry => !entry.phase || ['P0', 'P1'].includes(entry.phase)).length >= 50)
-  assert.ok(new Set(entries.map(entry => entry.category)).size >= 12)
-  assert.ok(entries.filter(entry => entry.authentication === 'oauth-on-first-use').length >= 4)
+  assert.deepEqual(entries.map(entry => entry.name), [
+    'cloudflare-workspace',
+    'data-toolkit',
+    'expo',
+    'figma-workspace',
+    'linear-workspace',
+    'notion-workspace',
+    'supabase',
+    'zoom',
+  ])
+  assert.ok(entries.filter(entry => entry.authentication === 'oauth-on-first-use').length >= 6)
 })
 
 test('generated marketplace mirrors the catalog', () => {

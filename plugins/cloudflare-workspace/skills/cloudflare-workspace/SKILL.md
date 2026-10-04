@@ -33,5 +33,5 @@ If essential context is unavailable, identify the smallest missing input and con
 
 ## Guardrails
 
-- Require confirmation before production mutations.
+- Require user confirmation before production mutations.
 - Never expose tokens or sensitive configuration.

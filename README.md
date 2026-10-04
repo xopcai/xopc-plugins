@@ -1,20 +1,20 @@
 # XOPC Plugins
 
-Official portable [Agent Plugins](https://agent-plugins.org/) maintained by XOPC. The catalog contains 80+ independently installable workflow and connector-backed plugins across product, engineering, office, research, data, finance, marketing, commerce, support, HR, security, education, and compliance.
+Official portable [Agent Plugins](https://agent-plugins.org/) maintained by XOPC. The catalog intentionally contains a small set of compound plugins that combine workflow guidance with executable tools, connectors, apps, agents, commands, or scripts.
 
 ## Install in xopc
 
 Use the capability marketplace, or the CLI:
 
 ```bash
-xopc extensions install store:research-brief
-xopc extensions install store:meeting-actions
 xopc extensions install store:data-toolkit
-xopc extensions install store:prd-writer
 xopc extensions install store:linear-workspace
+xopc extensions install store:supabase
+xopc extensions install store:zoom
+xopc extensions install store:expo
 ```
 
-Plugins install disabled. Review the declared Skills and MCP capabilities, then enable the plugin. Most catalog plugins are content-only and require no account. Connector-backed plugins start the provider OAuth flow on first use; credentials remain in XOPC's local authorization store. `data-toolkit` runs a dependency-free local Node.js MCP process and never sends input data over the network.
+Plugins install disabled. Review their declared capabilities before enabling them. Connector-backed plugins start the provider OAuth flow on first use; credentials remain in XOPC's local authorization store. `data-toolkit` runs a dependency-free local Node.js MCP process and never sends input data over the network.
 
 ## Development and release
 

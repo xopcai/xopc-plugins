@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SEO Content Brief">
-  <defs><linearGradient id="g-seocontentbrief" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse"><stop stop-color="#E11D48"/><stop offset="1" stop-color="#FB7185"/></linearGradient></defs>
-  <rect width="64" height="64" rx="16" fill="url(#g-seocontentbrief)"/>
-  <path d="M17 18h30M17 46h30" stroke="white" stroke-opacity=".28" stroke-width="2" stroke-linecap="round"/>
-  <text x="32" y="39" fill="white" font-family="ui-sans-serif,system-ui,sans-serif" font-size="19" font-weight="700" text-anchor="middle">SC</text>
-</svg>

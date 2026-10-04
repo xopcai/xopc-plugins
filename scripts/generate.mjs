@@ -105,7 +105,8 @@ for (const entry of catalog.plugins) {
   const localizations = localizationFor(entry.name, manifest.description)
   const assetsDirectory = join(directory, 'assets')
   mkdirSync(assetsDirectory, { recursive: true })
-  manifest.version = generatedVersion
+  manifest.$schema = schema
+  if (entry.generated) manifest.version = generatedVersion
   manifest.extensions = {
     ...(manifest.extensions ?? {}),
     'ai.xopc': {
@@ -113,7 +114,7 @@ for (const entry of catalog.plugins) {
       localizations,
     },
   }
-  entry.version = generatedVersion
+  entry.version = manifest.version
   writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`)
   writeFileSync(join(assetsDirectory, 'icon.svg'), iconSvg(entry.name, localizations.en.displayName, entry.category))
 }

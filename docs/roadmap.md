@@ -1,26 +1,15 @@
-# Plugin supply roadmap
+# Plugin quality roadmap
 
-## P0 — repeatable first-party supply
+## Admission principle
 
-- At least 20 installable plugins.
-- At least 15 plugins requiring no account authorization.
-- Generated catalog and marketplace metadata.
-- Deterministic build, isolated validation, and smoke tests.
+Every marketplace plugin must add a capability that the base agent does not already have and combine at least two capability surfaces. A short prompt or a bare MCP endpoint is not sufficient on its own.
 
-## P1 — connector-backed workflows
+## Current priorities
 
-- At least 50 plugins.
-- OAuth-on-first-use examples against official remote MCP endpoints.
-- Capability and endpoint declarations visible before enablement.
-- Incremental Store publishing with partial-failure reporting.
+- Validate one representative end-to-end task for every plugin.
+- Track installation, authorization, first successful invocation, seven-day retained use, and runtime error rate.
+- Prefer richer workflows around maintained first-party or official connectors.
+- Record upstream commit and license for copied or adapted content.
+- Remove plugins whose outcomes can be reproduced by a generic prompt without packaged knowledge, tools, or assets.
 
-## P2 — ecosystem supply
-
-- At least 80 plugins across twelve or more categories.
-- Contributor scaffold and acceptance policy.
-- OpenAI upstream compatibility and license classification.
-- Official, verified-partner, and community publisher levels.
-
-## Product metrics
-
-Track discovery-to-install conversion, install completion, authorization completion, first successful invocation, seven-day retained use, and runtime error rate. Plugin count is a supply metric, not the success metric.
+Plugin count is not a success metric.
