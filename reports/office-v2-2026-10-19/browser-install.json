@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-19T06:57:04.990Z",
+  "method": "CUA Chrome market install and detail dialog; final state independently checked via authenticated Gateway",
+  "accountAuthorization": "not-required",
+  "startUsingNavigation": true,
+  "plugins": [
+    {
+      "pluginId": "file-organizer-fa4fed6d718c",
+      "state": "completed",
+      "resources": "ready",
+      "connections": [
+        {
+          "name": "file-organizer",
+          "state": "connected"
+        }
+      ]
+    },
+    {
+      "pluginId": "pdf-reader-4a7a359640dd",
+      "state": "completed",
+      "resources": "ready",
+      "connections": [
+        {
+          "name": "pdf-reader",
+          "state": "connected"
+        }
+      ]
+    }
+  ]
+}

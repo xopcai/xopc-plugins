@@ -1,0 +1,41 @@
+{
+  "modelPackages": {
+    "@tesseract.js-data/eng": "1.0.0",
+    "@tesseract.js-data/chi_sim": "1.0.0"
+  },
+  "modelEdition": "4.0.0_best_int",
+  "pdfiumVersion": "3.0.0",
+  "tesseractVersion": "7.0.0",
+  "resources": [
+    {
+      "id": "pdfium.wasm",
+      "sha256": "beeaf5bbff216d555fecec7cd486072838c4632a2272d31b52ef1fd05008fe7c",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/beeaf5bbff216d555fecec7cd486072838c4632a2272d31b52ef1fd05008fe7c.bin",
+      "maxBytes": 5298237
+    },
+    {
+      "id": "tesseract-core-lstm.js",
+      "sha256": "6510efc4e8b45c5465df30679b9911ffe0071cd2ee982fa064e6f5136ef2de85",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/6510efc4e8b45c5465df30679b9911ffe0071cd2ee982fa064e6f5136ef2de85.bin",
+      "maxBytes": 89261
+    },
+    {
+      "id": "tesseract-core-lstm.wasm",
+      "sha256": "66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3.bin",
+      "maxBytes": 2855361
+    },
+    {
+      "id": "eng-traineddata",
+      "sha256": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747.bin",
+      "maxBytes": 5199098
+    },
+    {
+      "id": "chi-sim-traineddata",
+      "sha256": "9784f7c917c546424b690fcde708ce1f604a4393d08bb51ddab146d7d7c794e6",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/9784f7c917c546424b690fcde708ce1f604a4393d08bb51ddab146d7d7c794e6.bin",
+      "maxBytes": 2471033
+    }
+  ]
+}

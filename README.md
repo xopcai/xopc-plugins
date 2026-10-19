@@ -1,10 +1,10 @@
 # XOPC Plugins
 
-Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 32 packages: 20 capabilities migrated from an Accio installation, four retained specialist packages, and eight focused office and information-collection plugins. Test-only Codex, Claude, OAuth and Extension packages remain on the Store for regression testing.
+Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 33 packages: 20 capabilities migrated from an Accio installation, four retained specialist packages, and nine focused office and information-collection plugins. Test-only Codex, Claude, OAuth and Extension packages remain on the Store for regression testing.
 
 ## Install
 
-Open XOPC → Extensions → Store. Select a plugin, review the declared capabilities, and install. Resources are prepared automatically. Connect an account or choose **Skip for now**; the installed card shows **Authorization required** until connected. Return to plugin details at any time to connect or retry. Plugins are available to all Agents.
+Open XOPC → 插件 → 插件市场. Select a plugin, review the declared capabilities, and install. Resources are prepared automatically. Connect an account or choose **Skip for now**; the installed card shows **Authorization required** until connected. Return to plugin details at any time to connect or retry. Plugins are available to all Agents.
 
 ```sh
 xopc extensions install store:yuque
@@ -41,7 +41,8 @@ See [migration inventory](reports/accio-migration-2026-10-19/inventory.json), [C
 | --- | --- | --- |
 | RSS Reader | RSS/Atom briefs, OPML imports, deduplication with dates and links | None |
 | Web Clipper | Read public articles, save/search a private Markdown clip library | None |
-| PDF Reader | Page-cited PDF text; identifies scans needing OCR | None; local PDF |
+| PDF Reader + OCR | Page-cited PDF text and offline Chinese/English scan OCR | None; engines/models prepared from Store |
+| File Organizer | Selected-folder preview, approved no-clobber moves and journaled undo | None; folder supplied in chat |
 | Calendar ICS | Recurring events, exceptions and overlap checks from ICS exports | None; local/text/public calendar |
 | Obsidian | Search/read a selected Markdown vault; explicitly requested new notes | User supplies vault folder in chat |
 | Notion | Workspace research, meeting preparation and knowledge capture | Official Notion OAuth |
@@ -49,3 +50,5 @@ See [migration inventory](reports/accio-migration-2026-10-19/inventory.json), [C
 | Readwise Reader | Read library/tags; save explicitly requested article URLs | Access Token |
 
 The local runtimes are bundled into the Store archive; installation does not run npm/pip or download code from third-party registries. Do not run `generate` merely to add catalog entries: it also synchronizes existing provider runtimes, which requires versioning affected releases. `build-office.mjs` only rebuilds the new office runtimes. SaaS account access is verified with the provider at connection time; release tests use synthetic accounts and do not claim production OAuth consent. See `docs/office-expansion-2026-10-19.md`.
+
+This batch: [OCR, file organization and domestic integration report](docs/office-v2-2026-10-19.md). Microsoft 365 is deferred until an XOPC application Client ID is available; no placeholder is published.

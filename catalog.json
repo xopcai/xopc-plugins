@@ -96,6 +96,14 @@
       "migrationSource": "feishu-assistant"
     },
     {
+      "name": "file-organizer",
+      "version": "1.0.1",
+      "path": "plugins/file-organizer",
+      "category": "productivity",
+      "authentication": "none",
+      "officeRuntime": "files"
+    },
+    {
       "name": "geo-research",
       "version": "1.0.1",
       "path": "plugins/geo-research",
@@ -160,7 +168,7 @@
     },
     {
       "name": "pdf-reader",
-      "version": "1.0.0",
+      "version": "1.1.1",
       "path": "plugins/pdf-reader",
       "category": "productivity",
       "authentication": "none",

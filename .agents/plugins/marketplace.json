@@ -137,6 +137,18 @@
       "category": "productivity"
     },
     {
+      "name": "file-organizer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/file-organizer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_DEMAND"
+      },
+      "category": "productivity"
+    },
+    {
       "name": "geo-research",
       "source": {
         "source": "local",

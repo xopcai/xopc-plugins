@@ -20,6 +20,7 @@ for(const entry of entries){
  }
  check(count>0,`${entry.name}: no Skills`);
  for(const [name,server] of Object.entries(mcp)){
+  for(const key of Object.keys(server.env||{}))check(!['PLUGIN_ROOT','PLUGIN_DATA'].includes(key.toUpperCase()),`${entry.name}/${name}: reserved host environment variable ${key}`);
   check(['stdio','streamable-http'].includes(server.type),`${entry.name}/${name}: unsupported MCP transport`);
   if(server.url){const url=new URL(server.url);check(url.protocol==='https:'&&!url.username&&!url.password,`${entry.name}: unsafe URL`);}
   for(const [key,value] of Object.entries(server.env||{}))if(/token|secret|password/i.test(key))check(/^\$\{user_config\.[A-Za-z0-9_]+\}$/.test(value),`${entry.name}: embedded credential`);

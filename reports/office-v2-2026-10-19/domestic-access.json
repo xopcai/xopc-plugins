@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-19T06:50:02.733Z",
+  "credentialsUsed": false,
+  "mailRead": false,
+  "results": [
+    {
+      "host": "imap.qq.com",
+      "port": 993,
+      "tlsVerified": true,
+      "greeting": "* OK [CAPABILITY IMAP4 IMAP4rev1 ID AUTH=PLAIN AUTH=LOGIN AUTH=XOAUTH2 NAMESPACE] QQMail XMIMAP4Server ready",
+      "capability": "IMAP4 IMAP4rev1 XLIST MOVE IDLE XAPPLEPUSHSERVICE SASL-IR AUTH=PLAIN AUTH=LOGIN AUTH=XOAUTH2 NAMESPACE CHILDREN ID UIDPLUS",
+      "outcome": "responded"
+    },
+    {
+      "host": "imap.163.com",
+      "port": 993,
+      "tlsVerified": true,
+      "greeting": "* OK Coremail System IMap Server Ready(163com[10774b260cc7a37d26d71b52404dcf5c])",
+      "capability": "IMAP4rev1 XLIST SPECIAL-USE ID LITERAL+ STARTTLS APPENDLIMIT=71680000 XAPPLEPUSHSERVICE UIDPLUS X-CM-EXT-1 SASL-IR AUTH=XOAUTH2",
+      "outcome": "responded"
+    },
+    {
+      "host": "imap.126.com",
+      "port": 993,
+      "tlsVerified": true,
+      "greeting": "* OK Coremail System IMap Server Ready(126com[6c62234a7721d45811debf430915950d])",
+      "capability": "IMAP4rev1 XLIST SPECIAL-USE ID LITERAL+ STARTTLS APPENDLIMIT=71680000 XAPPLEPUSHSERVICE UIDPLUS X-CM-EXT-1 SASL-IR AUTH=XOAUTH2",
+      "outcome": "responded"
+    },
+    {
+      "host": "imap.exmail.qq.com",
+      "port": 993,
+      "tlsVerified": true,
+      "greeting": "* OK [CAPABILITY IMAP4 IMAP4rev1 ID AUTH=PLAIN AUTH=LOGIN NAMESPACE] QQMail IMAP4Server ready",
+      "capability": "IMAP4 IMAP4rev1 XLIST MOVE IDLE XAPPLEPUSHSERVICE AUTH=LOGIN AUTH=PLAIN NAMESPACE CHILDREN ID UIDPLUS",
+      "outcome": "responded"
+    }
+  ]
+}

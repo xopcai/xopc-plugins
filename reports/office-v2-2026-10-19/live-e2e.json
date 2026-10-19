@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "completedAt": "2026-10-19T06:57:39.316Z",
+  "reports": [
+    {
+      "kind": "ocr",
+      "fixture": "/tmp/xopc-office-v2-live-fixture-S8whTD",
+      "conversationId": "bedab5c5-26b4-4eac-8bff-051fb5400ad2",
+      "runId": "0f480a2f-7333-4697-ae1e-4c13216c5f0b",
+      "model": "qwen-token-plan-cn/qwen3.8-flash",
+      "actualTools": [
+        "mcp__plugin_pdf_reader_4a7a359640dd_7d5530d7f0051206__pdf_ocr"
+      ],
+      "passed": true
+    },
+    {
+      "kind": "files",
+      "fixture": "/tmp/xopc-office-v2-live-fixture-S8whTD",
+      "conversationId": "e77d3486-811b-4cd4-b7e0-ed8a78080eb0",
+      "runId": "1be248f2-0958-466c-a628-f8d1be559d9f",
+      "model": "qwen-token-plan-cn/qwen3.8-flash",
+      "actualTools": [
+        "mcp__plugin_file_organizer_fa4fed6d718c_04c80629064ab6f_f845c7c5",
+        "mcp__plugin_file_organizer_fa4fed6d718c_04c80629064ab6f_8a6d6e18",
+        "mcp__plugin_file_organizer_fa4fed6d718c_04c80629064ab6f_3895a925",
+        "mcp__plugin_file_organizer_fa4fed6d718c_04c80629064ab6f_20704ffb"
+      ],
+      "passed": true
+    }
+  ]
+}

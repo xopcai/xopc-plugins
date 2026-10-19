@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "file-organizer",
+  "version": "1.0.1",
+  "description": "在选定文件夹内预览文件分类，确认后整理并支持撤销；不覆盖已有文件。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "file-organizer",
+    "office",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "zh-CN": {
+          "displayName": "文件整理助手",
+          "description": "在选定文件夹内预览文件分类，确认后整理并支持撤销；不覆盖已有文件。"
+        },
+        "en": {
+          "displayName": "File Organizer",
+          "description": "在选定文件夹内预览文件分类，确认后整理并支持撤销；不覆盖已有文件。"
+        }
+      }
+    }
+  }
+}

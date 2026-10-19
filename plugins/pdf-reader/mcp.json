@@ -6,7 +6,10 @@
       "command": "node",
       "args": [
         "${PLUGIN_ROOT}/mcp/server.mjs"
-      ]
+      ],
+      "env": {
+        "OCR_RESOURCES": "${PLUGIN_RESOURCES}"
+      }
     }
   }
 }

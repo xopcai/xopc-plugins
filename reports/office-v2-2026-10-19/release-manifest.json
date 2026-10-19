@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "plugins": [
+    {
+      "name": "file-organizer",
+      "version": "1.0.1",
+      "path": "plugins/file-organizer",
+      "category": "productivity",
+      "authentication": "none",
+      "officeRuntime": "files",
+      "description": "在选定文件夹内预览文件分类，确认后整理并支持撤销；不覆盖已有文件。",
+      "artifact": "file-organizer-1.0.1.zip",
+      "sha256": "deaf934d4d6709ea8b8ac073e63ff7b16f6d24fea4c14a345eb173fe20c0061b"
+    },
+    {
+      "name": "pdf-reader",
+      "version": "1.1.1",
+      "path": "plugins/pdf-reader",
+      "category": "productivity",
+      "authentication": "none",
+      "officeRuntime": "pdf",
+      "description": "本地读取 PDF，并对扫描页执行中英文 OCR，保留页码和识别置信度，无需上传文件。",
+      "artifact": "pdf-reader-1.1.1.zip",
+      "sha256": "953d061c30ab82a16c584e37ab9b6f5c7f3b39a733bdbb98a8fc3d556a64e7bd"
+    }
+  ],
+  "resources": [
+    {
+      "sha256": "beeaf5bbff216d555fecec7cd486072838c4632a2272d31b52ef1fd05008fe7c",
+      "file": "beeaf5bbff216d555fecec7cd486072838c4632a2272d31b52ef1fd05008fe7c.bin",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/beeaf5bbff216d555fecec7cd486072838c4632a2272d31b52ef1fd05008fe7c.bin"
+    },
+    {
+      "sha256": "6510efc4e8b45c5465df30679b9911ffe0071cd2ee982fa064e6f5136ef2de85",
+      "file": "6510efc4e8b45c5465df30679b9911ffe0071cd2ee982fa064e6f5136ef2de85.bin",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/6510efc4e8b45c5465df30679b9911ffe0071cd2ee982fa064e6f5136ef2de85.bin"
+    },
+    {
+      "sha256": "66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3",
+      "file": "66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3.bin",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3.bin"
+    },
+    {
+      "sha256": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+      "file": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747.bin",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747.bin"
+    },
+    {
+      "sha256": "9784f7c917c546424b690fcde708ce1f604a4393d08bb51ddab146d7d7c794e6",
+      "file": "9784f7c917c546424b690fcde708ce1f604a4393d08bb51ddab146d7d7c794e6.bin",
+      "url": "https://store.xopc.ai/files/assets/plugin-resources/9784f7c917c546424b690fcde708ce1f604a4393d08bb51ddab146d7d7c794e6.bin"
+    }
+  ]
+}

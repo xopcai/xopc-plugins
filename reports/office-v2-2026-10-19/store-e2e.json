@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "completedAt": "2026-10-19T06:52:05.937Z",
+  "mode": "Public Store install + authenticated Gateway + native pi MCP (deterministic dispatch)",
+  "results": [
+    {
+      "name": "file-organizer",
+      "version": "1.0.1",
+      "inventory": true,
+      "preview": true,
+      "apply": true,
+      "undo": true,
+      "independentReadback": true,
+      "globalAgents": 2,
+      "durable": true
+    },
+    {
+      "name": "pdf-reader",
+      "version": "1.1.1",
+      "ocr": true,
+      "resources": 5,
+      "amount": "1234.56",
+      "pages": 1,
+      "globalAgents": 2,
+      "durable": true
+    }
+  ]
+}
