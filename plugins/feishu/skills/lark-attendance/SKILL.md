@@ -5,8 +5,6 @@ displayDescription: "查询当前用户的飞书考勤打卡记录。"
 version: 1.0.0
 description: "飞书考勤打卡：查询自己的考勤打卡记录"
 metadata:
-  requires:
-    bins: ["lark-cli"]
   cliHelp: "lark-cli attendance --help"
 ---
 

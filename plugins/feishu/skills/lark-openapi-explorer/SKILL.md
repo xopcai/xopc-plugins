@@ -4,9 +4,6 @@ displayName: "飞书 OpenAPI 探索"
 displayDescription: "查找并调用尚未被 lark-cli 封装的飞书原生 OpenAPI。"
 version: 1.0.0
 description: "飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。"
-metadata:
-  requires:
-    bins: ["lark-cli"]
 ---
 
 ## XOPC 执行入口

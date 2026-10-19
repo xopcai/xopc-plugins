@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "feishu",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "使用官方飞书 CLI 操作文档、云盘、多维表格、日历及企业协作资源。",
   "author": {
     "name": "XOPC",

@@ -4,9 +4,6 @@ displayName: "日程待办摘要"
 displayDescription: "编排日历和任务能力，生成指定日期的日程与未完成任务摘要。"
 version: 1.0.0
 description: "日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。"
-metadata:
-  requires:
-    bins: ["lark-cli"]
 ---
 
 ## XOPC 执行入口

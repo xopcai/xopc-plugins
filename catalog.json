@@ -109,7 +109,7 @@
     },
     {
       "name": "feishu",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "path": "plugins/feishu",
       "category": "productivity",
       "authentication": "on-install",

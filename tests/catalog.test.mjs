@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
-import { readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import test from 'node:test'
 import { publishedPlugins } from '../scripts/lib.mjs'
@@ -41,3 +41,27 @@ test('managed DingTalk skills use plugin MCP instead of requiring a system dws e
   assert(text.includes('cli_run'),name+' lacks managed execution instructions');
  }
 });
+
+test('Feishu portable skills pass the XOPC installer without a global CLI dependency', { skip: !existsSync(join(root, '../xopc/node_modules/.bin/tsx')) && 'Requires the sibling XOPC integration checkout' }, () => {
+ const core = join(root, '../xopc')
+ const result = execFileSync(join(core, 'node_modules/.bin/tsx'), ['-e', `
+  import assert from 'node:assert/strict';
+  import { readFileSync } from 'node:fs';
+  import { inspectAgentPlugin } from './src/extensions/agent-plugins/validation.ts';
+  import { parseFrontmatter } from './src/markdown/frontmatter.ts';
+  import { parseSkillMetadata } from './src/agent/skills/parse-skill-metadata.ts';
+  const plugin = inspectAgentPlugin(${JSON.stringify(join(root, 'plugins/feishu'))});
+  assert.deepEqual(plugin.diagnostics, []);
+  assert.equal(plugin.skills.length, 27);
+  for (const skill of plugin.skills) {
+   const raw = readFileSync(skill.filePath, 'utf8');
+   const { frontmatter } = parseFrontmatter(raw);
+   assert.equal(parseSkillMetadata(frontmatter).requires, undefined, skill.name);
+   assert(raw.includes('cli_run'), skill.name);
+  }
+  const maker = readFileSync(plugin.skills.find(s => s.name === 'lark-skill-maker').filePath, 'utf8');
+  assert(!maker.includes('bins:'), 'Skill template must not restore a global CLI dependency');
+  console.log('27 portable skills accepted with managed MCP execution');
+ `], { cwd: core, encoding: 'utf8' })
+ assert.match(result, /27 portable skills accepted/)
+})
