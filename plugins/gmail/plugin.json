@@ -1,0 +1,109 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gmail",
+  "version": "1.0.3",
+  "description": "通过本地 Google OAuth 授权搜索、读取与管理 Gmail 邮件。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "gmail",
+    "communication"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Gmail",
+          "description": "通过本地 Google OAuth 授权搜索、读取与管理 Gmail 邮件。"
+        },
+        "zh-CN": {
+          "displayName": "Gmail",
+          "description": "通过本地 Google OAuth 授权搜索、读取与管理 Gmail 邮件。"
+        }
+      },
+      "migration": {
+        "source": "gmail",
+        "sourceVersion": "0.0.3",
+        "edition": "direct-provider"
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "gmail",
+            "title": "Gmail",
+            "servers": [
+              "gmail"
+            ],
+            "methods": [
+              {
+                "id": "google",
+                "title": "连接 Google",
+                "type": "cli",
+                "fields": [
+                  "clientKey",
+                  "clientSecret"
+                ],
+                "login": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "gmail",
+                    "login"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "check": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "gmail",
+                    "check"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "timeoutSeconds": 600,
+                "instructions": [
+                  "使用 Google Cloud 中已启用 Gmail API 的「桌面应用」OAuth Client ID 和 Secret。",
+                  "点击继续后在 Google 页面选择账号和权限；测试应用需将账号加入测试用户。",
+                  "Google 要求应用凭据，XOPC 不使用 Accio 的 Google 客户端，也不会将邮件上传 Store。"
+                ],
+                "helpUrl": "https://console.cloud.google.com/apis/credentials"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "com.openai": {
+      "userConfig": {
+        "clientKey": {
+          "type": "string",
+          "title": "Google Desktop Client ID",
+          "required": true,
+          "default": ""
+        },
+        "clientSecret": {
+          "type": "string",
+          "title": "Google Desktop Client Secret",
+          "required": true,
+          "sensitive": true,
+          "default": ""
+        }
+      }
+    }
+  }
+}

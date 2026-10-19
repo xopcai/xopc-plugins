@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "knowledge-base",
+  "version": "1.0.1",
+  "description": "检索用户提供的本地知识资料，带文件与段落依据回答并维护知识索引。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "knowledge-base",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Knowledge Base",
+          "description": "检索用户提供的本地知识资料，带文件与段落依据回答并维护知识索引。"
+        },
+        "zh-CN": {
+          "displayName": "知识库",
+          "description": "检索用户提供的本地知识资料，带文件与段落依据回答并维护知识索引。"
+        }
+      },
+      "migration": {
+        "source": "knowledge-base-plugin",
+        "sourceVersion": "1.0.5",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "shopline-admin",
+    "purpose": "Operate and diagnose a connected SHOPLINE store with focused local MCP tools for shop information, products, orders, customers, inventory, discounts, analytics, blogs, SEO, and validated Admin REST fallback. Use for store-specific reads, confirmed writes, operational summaries, API errors, or unsupported narrow operations that require a schema-validated REST request. Tool-first: call the relevant SHOPLINE tool before asking for storeHandle or token.",
+    "sha256": "3d5298154cb32c66f58425d81b3c6f428d385db87139810e245f984d7783b38e"
+  },
+  {
+    "name": "shopline-builder",
+    "purpose": "Guide a SHOPLINE merchant from 0 to 1: registration, first-store planning, Admin AI Builder, storefront refinement, launch-readiness checks, blog and SEO maintenance, discounts, analytics, and light daily operations. Use when users say they want to open an independent store, start without a store, build or decorate a SHOPLINE site, prepare for launch, review daily store performance, or ask what to do next. Use local MCP tools for supported live-store reads and confirmed writes; do not claim automatic payment, shipping, domain, campaign, or conversion-rate changes when no dedicated tool covers them.",
+    "sha256": "c2e8a0f067ef16074b64365930020776ee33c89590893b247b040b50d0f20336"
+  },
+  {
+    "name": "shopline-dev",
+    "purpose": "Answer SHOPLINE developer questions with documentation search, API schema lookup, request validation, REST diagnostics, webhook and app-integration guidance. Use when users mention SHOPLINE API, endpoint schemas, curl, 401/403/422/429 errors, webhooks, app development, or integration code. Prefer dedicated admin or theme skills when they already cover the task; documentation searches do not require store authorization.",
+    "sha256": "79df565b1cc5fe03dcfa6ac9c41a2412e3b5990c28a78a2b16a211c856b24a50"
+  },
+  {
+    "name": "shopline-product-ops",
+    "purpose": "Manage the SHOPLINE product lifecycle with local MCP tools: evidence-based sourcing support, product and variant listing, images, pricing, collections, publication status, inventory setup, catalog checks, and post-write verification. Use when users ask what to list from supplied evidence, want to upload or update products, organize collections, fix zero stock, change prices or status, or audit product readiness. Tool-first; ask for credentials only after a tool reports missing config, and never invent market demand, suppliers, prices, SKUs, images, or IDs.",
+    "sha256": "f9d81ce86981485839b350be2d81389c3b33a51b9ceac0e95b385670683ad12e"
+  },
+  {
+    "name": "shopline-theme-development",
+    "purpose": "Build, debug, refactor, and validate SHOPLINE themes and SLine templates. Use this skill for sections, blocks, templates, components, layouts, localization, static assets, theme.schema.json, theme.config.json, and SHOPLINE CLI workflows. Supports SLine syntax analysis, theme architecture updates, editor and settings configuration, localization updates, schema presets, and theme editor integration.",
+    "sha256": "9ef44e272d5fd8ad39192a342e297c3cbaba4ffdc4d7d59066bf464335472f1f"
+  }
+]

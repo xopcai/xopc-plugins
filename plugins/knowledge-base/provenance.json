@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "knowledge-base-plugin",
+    "version": "1.0.5",
+    "manifestSha256": "25e59cefd1e88c083142229ca097ffa79a4b76d0216a8ef6a5f580579e5711d9",
+    "author": {
+      "name": "Accio"
+    },
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

@@ -1,3 +1,6 @@
 node_modules/
 dist/
 .DS_Store
+
+# Local acceptance evidence may contain account context or authorization challenges.
+/reports/

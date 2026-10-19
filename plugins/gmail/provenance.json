@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "gmail",
+    "version": "0.0.3",
+    "manifestSha256": "fb7d8fce1104c76009c872f584613d3acfe7f165f3e9c88f58696b642467ddce",
+    "author": "Accio",
+    "declaredLicense": "Apache-2.0"
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

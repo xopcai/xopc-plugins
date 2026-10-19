@@ -1,0 +1,172 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dingtalk",
+  "version": "1.0.5",
+  "description": "使用官方钉钉 CLI 处理文档、日历、待办、通讯录、消息等工作。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dingtalk",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "DingTalk",
+          "description": "使用官方钉钉 CLI 处理文档、日历、待办、通讯录、消息等工作。"
+        },
+        "zh-CN": {
+          "displayName": "钉钉",
+          "description": "使用官方钉钉 CLI 处理文档、日历、待办、通讯录、消息等工作。"
+        }
+      },
+      "migration": {
+        "source": "dingtalk-assistant",
+        "sourceVersion": "0.2.0",
+        "edition": "direct-provider"
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "dingtalk",
+            "title": "钉钉",
+            "servers": [
+              "dingtalk"
+            ],
+            "methods": [
+              {
+                "id": "login",
+                "title": "钉钉登录",
+                "type": "cli",
+                "fields": [],
+                "login": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "dingtalk",
+                    "login"
+                  ],
+                  "env": {}
+                },
+                "check": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "dingtalk",
+                    "check"
+                  ],
+                  "env": {}
+                },
+                "timeoutSeconds": 600,
+                "instructions": [
+                  "使用官方钉钉 CLI 的本机浏览器授权流程。",
+                  "打开登录页面，选择组织并确认所需权限；完成后自动继续。"
+                ]
+              },
+              {
+                "id": "existing",
+                "title": "使用本机已登录账号",
+                "type": "cli",
+                "fields": [
+                  "profile"
+                ],
+                "login": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "dingtalk",
+                    "login-existing"
+                  ],
+                  "env": {
+                    "DWS_PROFILE": "${user_config.profile}"
+                  }
+                },
+                "check": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "dingtalk",
+                    "check"
+                  ],
+                  "env": {}
+                },
+                "timeoutSeconds": 60,
+                "instructions": [
+                  "填写本机钉钉 CLI 已登录的企业名称或账号，例如 qmdemo。",
+                  "复用现有系统钥匙串登录态，不复制 Token；此插件固定使用所选账号。"
+                ]
+              }
+            ]
+          }
+        ],
+        "resources": [
+          {
+            "id": "provider-cli",
+            "variants": [
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/df379f0da47e68726f2fa91a17ff421e5d5915a2d3f738fd960f001a951e2554.bin",
+                "sha256": "df379f0da47e68726f2fa91a17ff421e5d5915a2d3f738fd960f001a951e2554",
+                "platform": "darwin",
+                "arch": "x64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/c3a84e7a1f30b5205ded240a2a4f20949c32fd8b085edf685f93abd96643d4c8.bin",
+                "sha256": "c3a84e7a1f30b5205ded240a2a4f20949c32fd8b085edf685f93abd96643d4c8",
+                "platform": "darwin",
+                "arch": "arm64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/61dfc2d29cc11357fb9eff772dad68c0bc80611c5f4106c86973c05423fbda38.bin",
+                "sha256": "61dfc2d29cc11357fb9eff772dad68c0bc80611c5f4106c86973c05423fbda38",
+                "platform": "linux",
+                "arch": "x64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/de6f8a51de83a18cbd2691c1bc03ddc8809d4e33b51fab407c5313fa9d8140ea.bin",
+                "sha256": "de6f8a51de83a18cbd2691c1bc03ddc8809d4e33b51fab407c5313fa9d8140ea",
+                "platform": "linux",
+                "arch": "arm64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/fc9ef0000ab48be1b30849e272e32bfdc724fefcb5d1628a76dbc5ade1e790f3.bin",
+                "sha256": "fc9ef0000ab48be1b30849e272e32bfdc724fefcb5d1628a76dbc5ade1e790f3",
+                "platform": "win32",
+                "arch": "x64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/c035a81953e8a143ac30d6a2feb0fa3ea682be97435665bd90fbc548f41df609.bin",
+                "sha256": "c035a81953e8a143ac30d6a2feb0fa3ea682be97435665bd90fbc548f41df609",
+                "platform": "win32",
+                "arch": "arm64",
+                "executable": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "com.openai": {
+      "userConfig": {
+        "profile": {
+          "type": "string",
+          "title": "已登录的企业或账号",
+          "default": ""
+        }
+      }
+    }
+  }
+}

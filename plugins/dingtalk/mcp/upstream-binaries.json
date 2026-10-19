@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "dws",
+    "platform": "darwin",
+    "arch": "x64",
+    "sha256": "df379f0da47e68726f2fa91a17ff421e5d5915a2d3f738fd960f001a951e2554",
+    "file": "df379f0da47e68726f2fa91a17ff421e5d5915a2d3f738fd960f001a951e2554.bin",
+    "bytes": 29723632,
+    "upstreamArchive": "dws-darwin-amd64.tar.gz",
+    "upstreamSha256": "4c12e35e5bf7e0905812cd42dc94a5345068a2c16e306bb50b13c5c78b5cb95d"
+  },
+  {
+    "kind": "dws",
+    "platform": "darwin",
+    "arch": "arm64",
+    "sha256": "c3a84e7a1f30b5205ded240a2a4f20949c32fd8b085edf685f93abd96643d4c8",
+    "file": "c3a84e7a1f30b5205ded240a2a4f20949c32fd8b085edf685f93abd96643d4c8.bin",
+    "bytes": 27845360,
+    "upstreamArchive": "dws-darwin-arm64.tar.gz",
+    "upstreamSha256": "7d98599f90cae9d42b51ff2863efc87dbfb4a3176ff3c84fc2216110c0157a70"
+  },
+  {
+    "kind": "dws",
+    "platform": "linux",
+    "arch": "x64",
+    "sha256": "61dfc2d29cc11357fb9eff772dad68c0bc80611c5f4106c86973c05423fbda38",
+    "file": "61dfc2d29cc11357fb9eff772dad68c0bc80611c5f4106c86973c05423fbda38.bin",
+    "bytes": 31211873,
+    "upstreamArchive": "dws-linux-amd64.tar.gz",
+    "upstreamSha256": "3ccadcc6f070a39d2b2ba20429a4fcdc2f21639bf79f34361dc7d16f501bfda6"
+  },
+  {
+    "kind": "dws",
+    "platform": "linux",
+    "arch": "arm64",
+    "sha256": "de6f8a51de83a18cbd2691c1bc03ddc8809d4e33b51fab407c5313fa9d8140ea",
+    "file": "de6f8a51de83a18cbd2691c1bc03ddc8809d4e33b51fab407c5313fa9d8140ea.bin",
+    "bytes": 29426017,
+    "upstreamArchive": "dws-linux-arm64.tar.gz",
+    "upstreamSha256": "5ef6bde24bc3db6a11a0f1d0b3343a048956b2cbcf6cd3409a037fb6ba425489"
+  },
+  {
+    "kind": "dws",
+    "platform": "win32",
+    "arch": "x64",
+    "sha256": "fc9ef0000ab48be1b30849e272e32bfdc724fefcb5d1628a76dbc5ade1e790f3",
+    "file": "fc9ef0000ab48be1b30849e272e32bfdc724fefcb5d1628a76dbc5ade1e790f3.bin",
+    "bytes": 29731328,
+    "upstreamArchive": "dws-windows-amd64.zip",
+    "upstreamSha256": "b8c50d9111115eafdb466978f1dd8f9421bcc2d5fac848023108353dc5a236cb"
+  },
+  {
+    "kind": "dws",
+    "platform": "win32",
+    "arch": "arm64",
+    "sha256": "c035a81953e8a143ac30d6a2feb0fa3ea682be97435665bd90fbc548f41df609",
+    "file": "c035a81953e8a143ac30d6a2feb0fa3ea682be97435665bd90fbc548f41df609.bin",
+    "bytes": 27640320,
+    "upstreamArchive": "dws-windows-arm64.zip",
+    "upstreamSha256": "e1303ded8a863be9affc41c89ac1a889a14374888702b749c8d0507ad6abd202"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "xlsx",
+    "purpose": "Comprehensive spreadsheet creation, editing, and analysis. Use when working with spreadsheets (.xlsx, .xlsm, .xls, .csv, .tsv, etc) for: (1) Creating new spreadsheets, (2) Modify existing spreadsheets while preserving formulas, (3) Data analysis and visualization in spreadsheets, or any other spreadsheet tasks",
+    "sha256": "e6ee10a145d50580e1de526abfd3993eca5b2676b7c608a4c9888b007a083071"
+  }
+]

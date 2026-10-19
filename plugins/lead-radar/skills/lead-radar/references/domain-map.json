@@ -1,0 +1,12 @@
+[
+  {
+    "name": "government_tender_search",
+    "purpose": "检索并核验 EU TED、UNGM 及经用户确认的其他官方政府采购平台招标公告。用于政府采购商机、公共招标、tender、RFP、bid、solicitation，或指定官方采购平台查找招标；不用于普通买家开发、自动联系买家、报名、报价或投标。",
+    "sha256": "2b017ef4c1b3e2d5c79c148bcb11b53752ffb43827247b262a76409bbfc763c0"
+  },
+  {
+    "name": "social-opportunity-search",
+    "purpose": "检索并核验 Facebook、LinkedIn 的公开采购需求。用于社媒采购商机、社媒 RFQ、寻找供应商或指定这两个渠道寻找买家；不用于买家背调、社媒经营、自动联系或其他渠道的临时网页检索。",
+    "sha256": "281af160deeba8882e5a6f165abbc7eb55fa6447d120af29d567ed3eb975f6ec"
+  }
+]

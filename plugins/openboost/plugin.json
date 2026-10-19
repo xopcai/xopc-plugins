@@ -1,0 +1,61 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openboost",
+  "version": "1.0.1",
+  "description": "通过 OpenBoost 公开 MCP 服务研究跨境商品、关键词、专利和社媒数据。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "openboost",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "OpenBoost",
+          "description": "通过 OpenBoost 公开 MCP 服务研究跨境商品、关键词、专利和社媒数据。"
+        },
+        "zh-CN": {
+          "displayName": "OpenBoost 跨境数据",
+          "description": "通过 OpenBoost 公开 MCP 服务研究跨境商品、关键词、专利和社媒数据。"
+        }
+      },
+      "migration": {
+        "source": "openboost",
+        "sourceVersion": "1.0.3",
+        "edition": "direct-provider"
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "openboost",
+            "title": "OpenBoost",
+            "servers": [
+              "openboost"
+            ],
+            "methods": [
+              {
+                "id": "oauth",
+                "title": "登录 OpenBoost",
+                "type": "oauth",
+                "server": "openboost",
+                "instructions": [
+                  "在 OpenBoost 页面授权，使用你自己的账号和套餐。"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

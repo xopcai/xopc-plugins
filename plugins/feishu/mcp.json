@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "feishu": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/mcp/provider.mjs",
+        "feishu",
+        "serve"
+      ],
+      "env": {
+        "XOPC_ACCOUNT_HOME": "${PLUGIN_ACCOUNTS}/feishu",
+        "CLIENT_KEY": "${user_config.clientKey}",
+        "CLIENT_SECRET": "${user_config.clientSecret}"
+      }
+    }
+  }
+}

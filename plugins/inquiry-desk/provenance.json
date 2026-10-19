@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "multi-channel-inquiry-plugin",
+    "version": "1.0.0",
+    "manifestSha256": "9c90993b9124676936099e386d665edbdbb4f90e93b7a706dc39e25592f42c8d",
+    "author": "Unknown",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

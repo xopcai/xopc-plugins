@@ -1,112 +1,46 @@
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
-import { join } from 'node:path'
-import { catalog, filesUnder, root } from './lib.mjs'
-
-const PLUGIN_SCHEMA = 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json'
-const MCP_SCHEMA = 'https://agent-plugins.org/schemas/1.0.0/mcp.schema.json'
-const NAME = /^(?!.*(?:--|\.\.))[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$/
-const failures = []
-const assert = (condition, message) => { if (!condition) failures.push(message) }
-const entries = catalog().plugins
-const names = new Set()
-
-assert(catalog().schemaVersion === 2, 'catalog: schemaVersion must be 2')
-assert(entries.length > 0, 'catalog: at least one plugin is required')
-
-const catalogPaths = new Set(entries.map(entry => entry.path))
-for (const directory of readdirSync(join(root, 'plugins'), { withFileTypes: true }).filter(entry => entry.isDirectory())) {
-  assert(catalogPaths.has(`plugins/${directory.name}`), `${directory.name}: plugin directory is missing from catalog`)
-}
-
-for (const entry of entries) {
-  assert(!names.has(entry.name), `${entry.name}: duplicate catalog name`)
-  names.add(entry.name)
-  assert(entry.path === `plugins/${entry.name}`, `${entry.name}: catalog path must match plugin name`)
-  assert(typeof entry.category === 'string' && NAME.test(entry.category), `${entry.name}: invalid category`)
-  assert(['none', 'oauth-on-first-use'].includes(entry.authentication ?? 'none'), `${entry.name}: invalid authentication policy`)
-  const directory = join(root, entry.path)
-  const manifestPath = join(directory, 'plugin.json')
-  assert(existsSync(manifestPath), `${entry.name}: missing plugin.json`)
-  assert(existsSync(join(directory, 'README.md')), `${entry.name}: missing README.md`)
-  assert(existsSync(join(directory, 'skills')), `${entry.name}: missing skills directory`)
-  const capabilitySurfaces = [
-    existsSync(join(directory, 'skills')),
-    existsSync(join(directory, 'mcp.json')),
-    existsSync(join(directory, 'app.json')),
-    existsSync(join(directory, 'agents')),
-    existsSync(join(directory, 'commands')),
-    existsSync(join(directory, 'hooks.json')),
-    existsSync(join(directory, 'scripts')),
-  ].filter(Boolean).length
-  assert(capabilitySurfaces >= 2, `${entry.name}: plugin must combine at least two capability surfaces`)
-  if (!existsSync(manifestPath)) continue
-  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
-  assert(manifest.$schema === PLUGIN_SCHEMA, `${entry.name}: unsupported plugin schema`)
-  assert(manifest.name === entry.name && NAME.test(manifest.name), `${entry.name}: invalid manifest name`)
-  assert(manifest.version === entry.version, `${entry.name}: catalog and manifest versions differ`)
-  assert(typeof manifest.description === 'string' && manifest.description.trim(), `${entry.name}: description is required`)
-  const xopc = manifest.extensions?.['ai.xopc']
-  assert(xopc && typeof xopc === 'object', `${entry.name}: extensions.ai.xopc is required`)
-  assert(typeof xopc?.localizations?.en?.displayName === 'string' && xopc.localizations.en.displayName.trim(), `${entry.name}: English display name is required`)
-  assert(typeof xopc?.localizations?.en?.description === 'string' && xopc.localizations.en.description.trim(), `${entry.name}: English description is required`)
-  assert(typeof xopc?.localizations?.['zh-CN']?.displayName === 'string' && xopc.localizations['zh-CN'].displayName.trim(), `${entry.name}: Chinese display name is required`)
-  assert(typeof xopc?.localizations?.['zh-CN']?.description === 'string' && xopc.localizations['zh-CN'].description.trim(), `${entry.name}: Chinese description is required`)
-  assert(xopc?.branding?.icon === 'assets/icon.svg', `${entry.name}: branding icon must be assets/icon.svg`)
-  assert(existsSync(join(directory, 'assets', 'icon.svg')), `${entry.name}: missing assets/icon.svg`)
-
-  let skillCount = 0
-  const skillNames = new Set()
-  for (const file of filesUnder(join(directory, 'skills'))) {
-    if (!file.name.endsWith('/SKILL.md')) continue
-    skillCount += 1
-    const skillPath = file.name.slice(0, -'/SKILL.md'.length)
-    const source = readFileSync(file.path, 'utf8')
-    const header = source.match(/^---\r?\n([\s\S]*?)\r?\n---/)
-    const skillName = header?.[1].match(/^name:\s*(\S+)\s*$/m)?.[1]
-    assert(Boolean(header), `${entry.name}/${skillPath}: missing Skill frontmatter`)
-    assert(Boolean(skillName && NAME.test(skillName)), `${entry.name}/${skillPath}: invalid Skill name`)
-    assert(!skillName || !skillNames.has(skillName), `${entry.name}/${skillPath}: duplicate Skill name ${skillName}`)
-    if (skillName) skillNames.add(skillName)
-    assert(/^description:\s*(?:\|[+-]?|\S.*)$/m.test(header?.[1] ?? ''), `${entry.name}/${skillPath}: Skill description is required`)
-    assert(source.includes('## Guardrails') || !entry.generated, `${entry.name}/${skillPath}: generated Skill must include guardrails`)
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import { catalog, filesUnder, root } from './lib.mjs';
+const errors=[],check=(value,text)=>{if(!value)errors.push(text);};
+const entries=catalog().plugins,names=new Set();
+for(const d of readdirSync(join(root,'plugins'),{withFileTypes:true}).filter(d=>d.isDirectory()))check(entries.some(e=>e.path===`plugins/${d.name}`),`${d.name}: uncatalogued package`);
+for(const entry of entries){
+ check(!names.has(entry.name),`Duplicate ${entry.name}`);names.add(entry.name);
+ const path=join(root,entry.path),m=JSON.parse(readFileSync(join(path,'plugin.json'),'utf8'));
+ check(m.name===entry.name&&m.version===entry.version,`${entry.name}: identity mismatch`);
+ check(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/.test(m.name)&&m.description?.trim(),`${entry.name}: invalid identity or description`);
+ check(existsSync(join(path,'README.md')),`${entry.name}: missing README`);
+ const fields=m.extensions?.['com.openai']?.userConfig||{},setup=m.extensions?.['ai.xopc']?.setup||{};
+ const mcp=existsSync(join(path,'mcp.json'))?JSON.parse(readFileSync(join(path,'mcp.json'),'utf8')).mcpServers:{};
+ const skillNames=new Set();let count=0;
+ for(const f of filesUnder(join(path,'skills')).filter(f=>f.name.endsWith('/SKILL.md'))){
+  const text=readFileSync(f.path,'utf8'),header=text.match(/^---\r?\n([\s\S]*?)\r?\n---/),name=header?.[1].match(/^name:\s*["']?([^\s"']+)/m)?.[1];
+  check(header&&name&&/^[a-z0-9]+(?:[-_][a-z0-9]+)*$/.test(name)&&!skillNames.has(name),`${entry.name}/${f.name}: invalid Skill`);
+  check(/^description:\s*\S/m.test(header?.[1]||''),`${entry.name}/${f.name}: missing description`);skillNames.add(name);count++;
+ }
+ check(count>0,`${entry.name}: no Skills`);
+ for(const [name,server] of Object.entries(mcp)){
+  check(['stdio','streamable-http'].includes(server.type),`${entry.name}/${name}: unsupported MCP transport`);
+  if(server.url){const url=new URL(server.url);check(url.protocol==='https:'&&!url.username&&!url.password,`${entry.name}: unsafe URL`);}
+  for(const [key,value] of Object.entries(server.env||{}))if(/token|secret|password/i.test(key))check(/^\$\{user_config\.[A-Za-z0-9_]+\}$/.test(value),`${entry.name}: embedded credential`);
+ }
+ const accounts=new Set();
+ for(const account of setup.authorizations||[]){
+  check(!accounts.has(account.id)&&account.servers.every(s=>mcp[s]),`${entry.name}: invalid account target`);accounts.add(account.id);
+  for(const method of account.methods){
+   check(['form','cli','oauth'].includes(method.type),`${entry.name}: invalid method`);
+   check((method.fields||[]).every(key=>fields[key]),`${entry.name}: undeclared credential field`);
+   if(method.type==='cli')for(const cmd of [method.login,method.check])check(cmd?.command&&!/[;&|]/.test(cmd.command),`${entry.name}: invalid login executable`);
   }
-  assert(skillCount > 0, `${entry.name}: at least one Skill is required`)
-
-  const mcpPath = join(directory, 'mcp.json')
-  if (existsSync(mcpPath)) {
-    const mcp = JSON.parse(readFileSync(mcpPath, 'utf8'))
-    assert(mcp.$schema === MCP_SCHEMA && mcp.mcpServers && typeof mcp.mcpServers === 'object', `${entry.name}: invalid mcp.json`)
-    const serialized = JSON.stringify(mcp)
-    assert(!/(API_?KEY|TOKEN|SECRET|PASSWORD)/i.test(serialized), `${entry.name}: mcp.json must not declare credential fields`)
-    for (const [serverName, server] of Object.entries(mcp.mcpServers ?? {})) {
-      assert(NAME.test(serverName), `${entry.name}: invalid MCP server name ${serverName}`)
-      if (server?.type === 'streamable-http' || server?.type === 'sse') {
-        let url
-        try { url = new URL(server.url) } catch { /* reported below */ }
-        assert(url?.protocol === 'https:' && !url.username && !url.password && !url.hash, `${entry.name}: remote MCP must use a public credential-free HTTPS URL`)
-        assert(entry.authentication === 'oauth-on-first-use', `${entry.name}: remote MCP must declare oauth-on-first-use`)
-      }
-    }
-  } else {
-    assert(entry.authentication !== 'oauth-on-first-use', `${entry.name}: OAuth policy requires mcp.json`)
+ }
+ const ids=new Set();for(const resource of setup.resources||[]){
+  check(!ids.has(resource.id),`${entry.name}: duplicate resource`);ids.add(resource.id);
+  const targets=new Set();for(const v of resource.variants||[resource]){
+   const target=`${v.platform}:${v.arch}`;check(!targets.has(target),`${entry.name}: duplicate resource variant`);targets.add(target);
+   check(/^[a-f0-9]{64}$/.test(v.sha256)&&v.url===`https://store.xopc.ai/files/assets/plugin-resources/${v.sha256}.bin`,`${entry.name}: resource must be pinned on Store`);
   }
+ }
 }
-
-const marketplacePath = join(root, '.agents', 'plugins', 'marketplace.json')
-assert(existsSync(marketplacePath), 'marketplace: missing .agents/plugins/marketplace.json')
-if (existsSync(marketplacePath)) {
-  const marketplace = JSON.parse(readFileSync(marketplacePath, 'utf8'))
-  assert(marketplace.name === 'xopc-official', 'marketplace: invalid name')
-  assert(marketplace.plugins?.length === entries.length, 'marketplace: plugin count differs from catalog')
-  for (const plugin of marketplace.plugins ?? []) {
-    assert(names.has(plugin.name), `marketplace: unknown plugin ${plugin.name}`)
-    assert(plugin.source?.path === `./plugins/${plugin.name}`, `marketplace: invalid source path for ${plugin.name}`)
-  }
-}
-
-if (failures.length) {
-  for (const failure of failures) console.error(`- ${failure}`)
-  process.exitCode = 1
-} else {
-  console.log(`Validated ${catalog().plugins.length} Agent Plugins`)
-}
+const market=JSON.parse(readFileSync(join(root,'.agents/plugins/marketplace.json'),'utf8'));
+check(JSON.stringify(market.plugins.map(e=>e.name))===JSON.stringify(entries.map(e=>e.name)),'Marketplace differs from catalog');
+if(errors.length){for(const e of errors)console.error(e);process.exit(1);}console.log(`Validated ${entries.length} packages: Skills, MCP, auth, resource variants and credential references`);

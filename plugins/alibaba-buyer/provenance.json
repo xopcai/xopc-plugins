@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "accio-com-buyer-assistant",
+    "version": "0.19.0",
+    "manifestSha256": "f363e420f8e2ae28f5028bb2d9ced2b48b73f00d12b89312b1546c8f721dc3d5",
+    "author": "Accio.com",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

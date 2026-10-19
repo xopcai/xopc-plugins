@@ -1,0 +1,92 @@
+[
+  {
+    "name": "1688-common-report-to-visualization",
+    "purpose": "将文本数据报告快速转换为交互式可视化网页。AI 产出声明式配置(plan JSON)驱动预置模板，自动生成专业数据看板。适用于市场分析报告、运营数据复盘、行业调研报告、销售数据汇总等场景。触发词：数据可视化、生成可视化网页、做成数据看板。",
+    "sha256": "f8ffb816309bac1ba587ce89170fd09f88eeadf87f0d64c55c57bf431380d7f6"
+  },
+  {
+    "name": "1688-cowboy",
+    "purpose": "1688 AI 接待助手的招聘、模拟面试、工作日报、转人工询盘、知识完善和接待配置管理。用户提到招接待助手、智能接待员、AI 接待、工作日报、转人工询盘、待完善知识、暂停或恢复接待、调整买家等级时使用。",
+    "sha256": "6009f0ee8ddeb24f2437db3716e442931d6fbd06303bebec96a544dffd1fc50f"
+  },
+  {
+    "name": "1688-inquiry-evaluate",
+    "purpose": "|",
+    "sha256": "7dbf1eba0b6cf3c20dca5d914a05b7fceacfdb0b31474d8fc2184a4215cc1a92"
+  },
+  {
+    "name": "1688-item-one-click",
+    "purpose": "|",
+    "sha256": "900bd602c8ae84c4d6aae60e7ca3dabc887aa595c6cc8a859694f2f5d1b9a123"
+  },
+  {
+    "name": "1688-item-title-optimizer",
+    "purpose": "|",
+    "sha256": "7e22fe2fdc3799bbad43b4da558643b43999bc3006e7d649ae61b2f35ca3ffa6"
+  },
+  {
+    "name": "1688-product-analysis",
+    "purpose": "1688商品诊断、体检、流量分析、本店异常、重点品圈选或店内关键词搜索；1688 product diagnosis。提供只读建议与行动交接，不执行商品修改或一键优化，不支持多店分析、同款对比或定时巡检。也适用于“分析店铺商品”“哪些商品有问题”“最该优化哪些商品”“先列出来让我挑”等商品级分析诉求；与整店经营体检区分。",
+    "sha256": "261f9b71cced4ff4e28b17ab091eb83a06802f7a6f50636e0a2bd0329565e7fa"
+  },
+  {
+    "name": "1688-product-keyword-research",
+    "purpose": ">-",
+    "sha256": "8394b221e9ded1db16374e25962dd24ea3bffe673025f3cc55e039e3ae5c623e"
+  },
+  {
+    "name": "1688-product-manage",
+    "purpose": "|",
+    "sha256": "f6d6a20a5a6bf8995f8a9fbbb1008099260fe81665729dad8e36629196f433b0"
+  },
+  {
+    "name": "1688-shop-aicrm-segment-reach-strategy",
+    "purpose": "|",
+    "sha256": "bdab3e37a2b4cccc88b66aae22ad541307f09215c166ed722c81b4a63cdb1fa4"
+  },
+  {
+    "name": "1688-shop-business-analysis",
+    "purpose": "面向1688店铺，核算销售收入、退款、平台费用与净销售额，分析商品、客户及区域表现，并生成完整的成本利润核算 HTML 报告。",
+    "sha256": "478353624102f1087fb09dd4cb71953e8b47afedd0e87bd1e54582f0945eb95a"
+  },
+  {
+    "name": "1688-shop-compete-analysis",
+    "purpose": "1688 竞店竞品分析 Skill。基于生意参谋「竞争」数据与买家采购流失信息，对当前登录店铺做竞争分析：竞店发现（行业排行/客户流失去向/监控清单）、竞店结构下钻（核心指标对比/热销商品/成交价格带/引流搜索词/买家结构六维）、竞品（商品级）三维下钻（引流词/流量来源/买家结构七维）、买家流失商品识别与竞对对比归因。触发词：竞争分析、竞店分析、竞品分析、竞对、同行对比、对标、对手、行业排行、我的竞店是谁、客户流失到哪、买家流失、被同行抢走、同款竞品、引流词对比、价格带对比、买家画像对比。所有数据来自真实接口返回，禁止捏造；需在 Accio Desktop 环境内运行且当前商家已授权，商家身份由本地网关登录态自动注入，无需 AK / userId。",
+    "sha256": "c8ab1bf6e2af92e39b78829f4e519f03cbb5b57fec6b74b918ff6b892d140d81"
+  },
+  {
+    "name": "1688-shop-crm-customer-filter",
+    "purpose": "|",
+    "sha256": "2229caa2a1cefa54c16daa46cd9b3fa1351476ec3c417f02ecaf93e160553a74"
+  },
+  {
+    "name": "1688-shop-daily-report",
+    "purpose": "|",
+    "sha256": "fcef509407a6191247525d7a189567ef639c85e99bc2092edb9905cf34d69283"
+  },
+  {
+    "name": "1688-shop-freedom-query-data",
+    "purpose": "1688 商家数据自由查询 Skill。当用户询问 1688 店铺经营数据时使用，覆盖场景：流量分析（访客数、浏览量、流量来源渠道、入店/搜索关键词、访客行为与分时分布、端构成）；交易分析（支付金额、支付买家数、客单价、成交/交易趋势、核心数据概览、店铺排名、订单列表）；商品分析（商品排行榜、热销商品、商品评价、商品360诊断、商品明细、标题优化、新品表现）；广告推广（数字营销、推广花费/消耗、广告关键词展现点击消耗、ROI、询盘成本、计划效果）；市场（市场行情、行业热销品、搜索词指数）；实时数据（今日实时访客与成交）；新灯塔（服务分、服务体验、退款售后、物流发货时效、物流监控）；商家档案与店铺画像（商家基础信息、主营类目、经营模式、客户结构、地域分布等静态身份全貌，区别于动态经营诊断）。数据覆盖生意参谋、数字营销广告、新灯塔、商品评价等多源。基于 ReAct 模式，通过两次 RAG 语义匹配 + 数据网关调用，将自然语言问题转化为精确的 API 调用，返回真实店铺经营数据并给出解读。",
+    "sha256": "f9898c26a5fc96ebb3d8679f03dbd1a5fa9e45ca3c8aee03e11ac6aa7fa55d8d"
+  },
+  {
+    "name": "1688-shop-health-check",
+    "purpose": "|",
+    "sha256": "352b8ebc6694f3f011adfd7413cbbfeb42cfb88cde897397d3fa425ad4956d4b"
+  },
+  {
+    "name": "1688-shop-jushuitan-erp",
+    "purpose": "|",
+    "sha256": "5a5e703b549a5d98073d86f6e2c6d040ab980dd465881afa33e416f585df99cd"
+  },
+  {
+    "name": "1688-shop-study-knowledge",
+    "purpose": "用于搜索1688上的平台知识、学习中心、规则中心等内容。通过 RAG 语义检索 1688 站内知识库，帮助商家快速获取平台规则、运营方法论、优化策略等业务知识。",
+    "sha256": "76757741f39ed42969ffcfdde26ceee94e6a46fd1ffa63a47f613ad0759643f6"
+  },
+  {
+    "name": "cha88-company-report-skill",
+    "purpose": "1688-88查AI企业背调，基于企业工商基本信息、法律风险、知识产权、经营信息、企业发展等信息全面给出企业报告。分析企业优势和亮点、潜在风险和争议点、给出合作建议。",
+    "sha256": "d87086484e7c7d1a27867198867cd519b788576abb0d5c7f7c176c842fe9d535"
+  }
+]

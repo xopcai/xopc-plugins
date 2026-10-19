@@ -1,0 +1,76 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "yuque",
+  "version": "1.0.3",
+  "description": "使用语雀 Access Token 检索知识库、读取和编辑文档。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "yuque",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Yuque",
+          "description": "使用语雀 Access Token 检索知识库、读取和编辑文档。"
+        },
+        "zh-CN": {
+          "displayName": "语雀",
+          "description": "使用语雀 Access Token 检索知识库、读取和编辑文档。"
+        }
+      },
+      "migration": {
+        "source": "yuque-plugin",
+        "sourceVersion": "0.0.4",
+        "edition": "direct-provider"
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "yuque",
+            "title": "语雀",
+            "servers": [
+              "yuque"
+            ],
+            "methods": [
+              {
+                "id": "token",
+                "title": "Access Token",
+                "type": "form",
+                "fields": [
+                  "accessToken"
+                ],
+                "instructions": [
+                  "在语雀个人设置 → 开发者 → Token 创建 API Token，再粘贴到下方。",
+                  "部分账号需要语雀会员或组织权限；插件将实际验证账号，不保存到 Store。"
+                ],
+                "helpUrl": "https://www.yuque.com/settings/tokens"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "com.openai": {
+      "userConfig": {
+        "accessToken": {
+          "type": "string",
+          "title": "Access Token",
+          "required": true,
+          "sensitive": true,
+          "default": ""
+        }
+      }
+    }
+  }
+}

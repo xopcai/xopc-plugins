@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "yuque-plugin",
+    "version": "0.0.4",
+    "manifestSha256": "066e89812d966c7ccf6a2127bbdba169af75d87bac428dc55a343408c9c0b04f",
+    "author": {
+      "name": "Accio"
+    },
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

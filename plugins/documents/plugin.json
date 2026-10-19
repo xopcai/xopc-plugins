@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "documents",
+  "version": "1.0.1",
+  "description": "读取和创建真正的 DOCX 文档，整理结构、证据与审阅问题。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "documents",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Documents",
+          "description": "读取和创建真正的 DOCX 文档，整理结构、证据与审阅问题。"
+        },
+        "zh-CN": {
+          "displayName": "文档",
+          "description": "读取和创建真正的 DOCX 文档，整理结构、证据与审阅问题。"
+        }
+      },
+      "migration": {
+        "source": "documents",
+        "sourceVersion": "0.0.8",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

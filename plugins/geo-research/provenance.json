@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "geo-agent",
+    "version": "1.80.0",
+    "manifestSha256": "a3575343c25e4f503b89ef705eba3371b5e2fba4c4eae05d9a291e7bc039cf50",
+    "author": {
+      "name": "Alibaba.com"
+    },
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

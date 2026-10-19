@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "alibaba-seller",
+  "version": "1.0.1",
+  "description": "基于国际站商家提供的数据与公开页面，诊断商品、询盘和转化，产出可执行运营方案。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "alibaba-seller",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Alibaba Seller",
+          "description": "基于国际站商家提供的数据与公开页面，诊断商品、询盘和转化，产出可执行运营方案。"
+        },
+        "zh-CN": {
+          "displayName": "国际站经营助手",
+          "description": "基于国际站商家提供的数据与公开页面，诊断商品、询盘和转化，产出可执行运营方案。"
+        }
+      },
+      "migration": {
+        "source": "alibaba-com-seller-assistant",
+        "sourceVersion": "0.3.65",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

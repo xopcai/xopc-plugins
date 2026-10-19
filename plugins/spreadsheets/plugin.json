@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "spreadsheets",
+  "version": "1.0.1",
+  "description": "读取与创建真实 XLSX 表格，执行可复核的数据清理、汇总和比较。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "spreadsheets",
+    "data-analysis"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Spreadsheets",
+          "description": "读取与创建真实 XLSX 表格，执行可复核的数据清理、汇总和比较。"
+        },
+        "zh-CN": {
+          "displayName": "电子表格",
+          "description": "读取与创建真实 XLSX 表格，执行可复核的数据清理、汇总和比较。"
+        }
+      },
+      "migration": {
+        "source": "spreadsheets",
+        "sourceVersion": "0.0.9",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

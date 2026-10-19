@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "openboost",
+    "version": "1.0.3",
+    "manifestSha256": "33e0d5eeea1cddcd7d9f0297ef3d5063063d300a440492d4c65399faa5003ed2",
+    "author": {
+      "name": "OpenBoost（小数汇智）",
+      "url": "https://open.microdata-inc.com/"
+    },
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

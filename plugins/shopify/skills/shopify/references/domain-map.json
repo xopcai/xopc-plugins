@@ -1,0 +1,102 @@
+[
+  {
+    "name": "aw-shopify-oauth",
+    "purpose": "Accio Work Shopify Connector OAuth and authorization. Use when the user needs to connect, reconnect, confirm, or switch the active Shopify store in Accio Work, or when you need to verify the bound store and granted Shopify scopes before acting on that store. This skill covers only Accio Work authorization and permission checks; it does not create products, edit themes, write GraphQL, or execute business mutations.",
+    "sha256": "39555ea3b526a8a8664901465f3958252a99a0445814d51b3c8704085f18d730"
+  },
+  {
+    "name": "dtc-builder",
+    "purpose": "Shopify zero-to-launch build orchestrator with no GraphQL execution. Owns the ordered connection, optional sourcing, product-listing, Collection organization, theme-decoration, audit, resume, and advisory launch-checklist flow, plus registration, plan/theme choice, navigation, and Markets guidance. Payment, shipping, tax, legal policy, and domain setup remain merchant-owned. Delegates confirmed Product and Collection outcomes—not mutations, API payloads, or field placement—to the shared `shopify-product-editor` Product/Collection executor, and theme outcomes to `shopify-theme-decorator`; auditors verify results. Uses `aw-shopify-oauth` for Connector OAuth. Trigger for whole-store builds such as \"build my store from scratch\", \"zero to launch\", \"一键开店\", \"帮我开店\", \"从 0 到 1 开店\", two or more seque",
+    "sha256": "d41b3723d34152b34cc96da1a67b73e0139e4d94de47ea89090f44d1847125dd"
+  },
+  {
+    "name": "dtc-monitoring-and-daily-report",
+    "purpose": "Set up Shopify store monitoring from zero — Microsoft Clarity, optional Judge.me, and an optional memory-gated social Campaign patrol — then schedule a daily Markdown digest with KPIs, UX health, new-product Campaign recommendations, and confirmed social action states. Use when the user wants store monitoring, a daily report, or scheduled new-product social recommendations. Not for one-off page CRO, paid ads, or SEO edits.",
+    "sha256": "75ecec7419946ba953327efabe3db6596fa243878f631075ba7086786b44c589"
+  },
+  {
+    "name": "dtc-product-selection",
+    "purpose": "|-",
+    "sha256": "d4276ee55fdaa68a07df3bad7ef3d4ef8609e3733c41ab26f6445445d325575d"
+  },
+  {
+    "name": "optimize-ecommerce-page-conversion",
+    "purpose": "Diagnose and fix Shopify page conversion problems — Home, Collection, Product Detail Page (PDP), and Promo Landing Pages. Use when traffic is healthy but conversion rate (CR), add-to-cart rate, or cart-to-checkout rate is below industry benchmark, or before launching a paid campaign so the landing page is ready. Triggers — \"conversion rate\", \"CR\", \"ATC\", \"cart-to-checkout\", \"high bounce\", \"abandoned cart\", \"fix product page\", \"campaign landing page\", \"CRO\".",
+    "sha256": "370317f1affe7f74bbe609903803199b68720abb924c48e9184a9807a4a9e9e2"
+  },
+  {
+    "name": "shopify-admin",
+    "purpose": "Write or explain **Admin GraphQL** queries and mutations for apps and integrations that extend the Shopify admin. Use when the user wants to **understand, design, or generate** the operation itself—even before deciding how to run it. Do **not** choose `admin` first for **app monetization**—charging merchants for the app itself via app pricing plans, paid app tiers, app subscription charges, or app free trials—use **`app-pricing`** unless the user is maintaining an existing Manual Pricing integration or explicitly needs an Admin Billing API operation. Merchant **product** subscriptions stay with `admin` (selling plans, subscription contracts, try-before-you-buy). Do **not** choose `admin` first for **app or extension config validation** —use **`use-shopify-cli`**. Do **not** choose `admin` ",
+    "sha256": "29626d369e4b81736c4a1933e7901b95772c808c5224ae3fc855a55b888f713d"
+  },
+  {
+    "name": "shopify-collection-management",
+    "purpose": "Manage Shopify Collections as first-class catalog resources. MUST be used for collection search/detail reads and for any collection write: create, update, delete, publish/unpublish, core SEO, manual or smart rules, title/description/image/sort changes, and adding or removing product membership—even when membership follows product creation. Product, variant, inventory, and product-media fields remain owned by shopify-product-management.",
+    "sha256": "5c0f49935a29fc63b0f8fedae06651fdf4c0977abcdae5d731f3cddbc891e8d8"
+  },
+  {
+    "name": "shopify-custom-data",
+    "purpose": "MUST be used first when prompts mention Metafields or Metaobjects. Use Metafields and Metaobjects to model and store custom data for your app. Metafields extend built-in Shopify data types like products or customers, Metaobjects are custom data types that can be used to store bespoke data structures. Metafield and Metaobject definitions provide a schema and configuration for values to follow.",
+    "sha256": "5f38afb6340e67cf4092814c0bd62663793d816dd1f7e42ea776464579db281c"
+  },
+  {
+    "name": "shopify-dev",
+    "purpose": "Search Shopify developer documentation across all APIs. Use only when no API-specific skill applies.",
+    "sha256": "ffbb12664bec58cf9664e9f692ca62c0d1a3925607594b22bd9cf69626fd0d27"
+  },
+  {
+    "name": "shopify-execution",
+    "purpose": "Accio Work execution adapter for bundled Shopify platform Skills. Load before using official Shopify documentation, schema, Liquid or Functions helpers, or executing Shopify store operations, including organization dev-store management. Defines host compatibility, validated execution, and the Main Agent Route C write contract. Product/Collection and theme authoring retain their dedicated owners; Main manages Theme Craft's bounded preview synchronization. Connected-store auth repair remains with aw-shopify-oauth; organization account authentication follows the managed CLI.",
+    "sha256": "6eede5779913d2d7cd1ab7daabfc379bdb36c99c819bb7c3b56538672c461436"
+  },
+  {
+    "name": "shopify-functions",
+    "purpose": "Shopify Functions allow developers to customize the backend logic that powers parts of Shopify. Available APIs: Discount, Cart and Checkout Validation, Cart Transform, Pickup Point Delivery Option Generator, Delivery Customization, Fulfillment Constraints, Local Pickup Delivery Option Generator, Order Routing Location Rule, Payment Customization",
+    "sha256": "d8e5137da2c0affadf7ee54c22b0f7f8b257e49ff0d08c1799628dc0bfcda8a1"
+  },
+  {
+    "name": "shopify-liquid",
+    "purpose": "Liquid is an open-source templating language created by Shopify. It is the backbone of Shopify themes and is used to load dynamic content on storefronts. Keywords: liquid, theme, shopify-theme, liquid-component, liquid-block, liquid-section, liquid-snippet, liquid-schemas, shopify-theme-schemas",
+    "sha256": "d43e7c0dc9d46b895ef76a237f9170d7cae1f680e2078cc879f64ee33d5c56ad"
+  },
+  {
+    "name": "shopify-marketing",
+    "purpose": "|",
+    "sha256": "321c92e13a0133cfdb6b2a78a866d14386a58c95e4b94743db30a521e110c2d8"
+  },
+  {
+    "name": "shopify-new-product-monitor",
+    "purpose": "Detect Shopify products that become publicly eligible for social promotion for the first time, with baseline initialization, permanent Product GID deduplication, and deterministic reason codes. Use during a scheduled Shopify social patrol or when the user asks which products are newly published, newly launched, or ready for a social campaign. This skill is read-only and never creates content or publishes anything.",
+    "sha256": "f477381bbb8a3a458e676f97778d7ab2e9c7a165ba2dd3fd91639a7a2173cd53"
+  },
+  {
+    "name": "shopify-product-collection-write-brief",
+    "purpose": "Canonical producer/consumer contract for every Product or Collection write delegated to shopify-product-editor. The Main Agent MUST load this Skill completely before preparing the first merchant-facing Product/Collection write preview, requesting confirmation, or spawning the editor. Defines the nested brief shape, homogeneous operation grouping, verbatim confirmation evidence, immediate ACTIVE plus Publication previews, and dependency-aware cross-domain sequencing.",
+    "sha256": "12f3b410d9a0df11b60d64492e5ee611c208a446fdad0301902fd3cc5c378276"
+  },
+  {
+    "name": "shopify-product-management",
+    "purpose": "Manage products on a connected Shopify store with bundled scripts for create, get, search, update, SEO, publication, bulk status changes, reusable image upload, and inventory reads and compare-and-set writes, plus safe routing for deletion, variants, and media. Use for Shopify product catalog reads or confirmed product writes that need stable business-data mapping, duplicate protection, dry-runs, structured results, or multilingual reports. Collection writes, including product membership, belong to shopify-collection-management.",
+    "sha256": "e34bede132b3fd2f665660432ae90484b4fbcb3f58d61fd0f052484acbddd8d1"
+  },
+  {
+    "name": "shopify-social-campaign",
+    "purpose": "Recommend and coordinate safe Shopify social campaigns for newly public products, including an optional seven-day Instagram launch plan, deterministic eligibility, draft-only activation, and handoff to the Shopify marketing social track for IG/X content and publishing. Use when the user asks for a Shopify social campaign, a seven-day product launch, new-product social promotion, or when the daily patrol emits `campaign_recommendation.matched == true`. Do not use for SEO, Blog, email, paid ads, or general cross-channel growth strategy.",
+    "sha256": "9e08c39fbdc3e58e6277ef28401cdedd73eb726703520b646a56ef9bb2ab43c1"
+  },
+  {
+    "name": "shopify-storefront-validate",
+    "purpose": ">-",
+    "sha256": "14e6180df2a3513757f5256b9bf39cb27e8eaf42a2191183717ad2f49f2ac837"
+  },
+  {
+    "name": "shopify-theme-craft",
+    "purpose": "|",
+    "sha256": "e5187a9409598dbfbddcb8dbdff13d5ae3fda1b462bf2aa71fa4163836244e5f"
+  },
+  {
+    "name": "shopify-use-shopify-cli",
+    "purpose": "Choose when the user needs **Shopify CLI** to run or fix something now: list organization stores or create/delete development stores with the current CLI account; validate app or extension config on disk (`shopify.app.toml`, `shopify.app.<name>.toml`, `shopify.extension.toml`); run or troubleshoot Connector-managed store workflows (`shopify store execute`); reliably create or resume one Blog Article through the bundled publisher; inventory or product changes by handle, SKU, or location name; or CLI setup, command availability, upgrade issues. Emphasize **commands and operational steps**, not only authoring GraphQL. Skip for API-only understanding or codegen with no CLI execution. In Accio Work, connected-store Admin auth, stored-auth repair, scope ownership, and scope expansion remain with",
+    "sha256": "45fe0da85f8151c82441a741a604d215d5cc79f794e77a5ad9dd987a063d5dc2"
+  }
+]

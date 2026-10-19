@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "spreadsheets",
+    "version": "0.0.9",
+    "manifestSha256": "ddd3db054fe6cec0fefe62de485748ac2e801da3e6a35d93f6c353400bc0eed0",
+    "author": "Accio",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

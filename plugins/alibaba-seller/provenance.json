@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "alibaba-com-seller-assistant",
+    "version": "0.3.65",
+    "manifestSha256": "c8ccc1f5fa3c09804c1e8ef22420a35601cef0f614f237de5ef95885e7a7194a",
+    "author": "Alibaba.com",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

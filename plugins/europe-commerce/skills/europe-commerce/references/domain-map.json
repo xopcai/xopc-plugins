@@ -1,0 +1,87 @@
+[
+  {
+    "name": "alibaba-global-product-optimize",
+    "purpose": "|",
+    "sha256": "44e31ae8c1c2009c6b05ba9b1c4545fe6a5f89f7db24caeb82649e53d4811851"
+  },
+  {
+    "name": "allegro-api-publish",
+    "purpose": ">-",
+    "sha256": "ea93d348261382f59528e564a336844da18787762409d481e36b0c4a1caab02a"
+  },
+  {
+    "name": "allegro-messaging",
+    "purpose": ">-",
+    "sha256": "2adbd2f2318a3c5556e1596f4f0fe3a0cef164087c9a7f89fec6fb9d8e98c14c"
+  },
+  {
+    "name": "europe-market-reseller-strategy",
+    "purpose": "|",
+    "sha256": "b6f9a4d49155593dfa21d8e537d2fa3c67f41df7f6843cfd0d71d187a9db4614"
+  },
+  {
+    "name": "icbu-merge-products",
+    "purpose": ">-",
+    "sha256": "e2350f6626adf37130f3fd44b27b6dde67be13b9ab24cc0d1bb2d9a07659703a"
+  },
+  {
+    "name": "icbu-selective-optimize",
+    "purpose": ">",
+    "sha256": "8c9b6d0517fbe47238f1a008bc52d2027a723ba86423a0bb5234e4d457db72d5"
+  },
+  {
+    "name": "icbu-sku-enrichment",
+    "purpose": ">-",
+    "sha256": "408f9f42fa52330a65cc9862afe66ad0950b76e3a25dd81cc2b64ab2a3e70d49"
+  },
+  {
+    "name": "icbu-smart-cs",
+    "purpose": "|",
+    "sha256": "dca6aecb74d8e7653b3447c91747506123deb97a88a34ef09ca3542a7144bed9"
+  },
+  {
+    "name": "icbu-to-allegro-publish",
+    "purpose": ">-",
+    "sha256": "4764af30e1e39cfeb02d9dbf09d84280f6b93f73bba3d9f5b6cb98616887aa67"
+  },
+  {
+    "name": "icbu-to-miravia-publish",
+    "purpose": ">-",
+    "sha256": "db145bd8eb255f953e93d33a4ca943761f27322386089941cfb5b6f8dbae012d"
+  },
+  {
+    "name": "icbu-to-temu-publish",
+    "purpose": ">-",
+    "sha256": "2e87ef7d157cd9becc96e51a7e534bfd87173d9ae42880a9ae4f9ea5fa056373"
+  },
+  {
+    "name": "miravia-smart-cs",
+    "purpose": "|",
+    "sha256": "e7cf80a3133ceb73523c43559242c7d51de5e380c7494c5f3e02cd20c987b964"
+  },
+  {
+    "name": "multi-platform-image-studio",
+    "purpose": ">-",
+    "sha256": "e796efa04e29bcb6011c1d4cbdf4281a861128a1bd87ed003e58b591253c55d5"
+  },
+  {
+    "name": "ptu2-scraper",
+    "purpose": ">-",
+    "sha256": "572a94ef7d52f37608520654063e2fa0d7be22522f0a3d62da2061f4388e2dea"
+  },
+  {
+    "name": "yollgo-scraper",
+    "purpose": ">-",
+    "sha256": "443a924c5bfbb707af9c1387780125d7b579694af8865511893db3cb47781a28"
+  },
+  {
+    "name": "yollgo-scraper-browser-agent",
+    "purpose": ">-",
+    "sha256": "cabcaf4c205fb1b4e183b58d78f9cb844e8764453a8b7b13cc0435eae92c8ab8"
+  },
+  {
+    "name": "yollgo-to-icbu-publish",
+    "purpose": ">-",
+    "sha256": "a753b2edc9e45f4dc79741f058daf8fd2cedcccc9a595b51282f5bb454d48dc6"
+  }
+]

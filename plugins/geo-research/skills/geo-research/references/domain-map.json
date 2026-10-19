@@ -1,0 +1,72 @@
+[
+  {
+    "name": "geo-analyzer",
+    "purpose": ">-",
+    "sha256": "52ba1e95df7c71a7e62bc280577d039831037dd54add55a360c96525d4aa6aca"
+  },
+  {
+    "name": "geo-collector",
+    "purpose": ">-",
+    "sha256": "a89103dcdd5eecb43fcb5981b69ba992fc28227bfadec8d7de5f8cfb6147a34f"
+  },
+  {
+    "name": "geo-content-writer",
+    "purpose": ">-",
+    "sha256": "d8f9f02b461dc2a5951742dff15c6590950dd4ff29f2505317968807d10d80a0"
+  },
+  {
+    "name": "geo-dashboard-builder",
+    "purpose": ">-",
+    "sha256": "f66f0b9094d81697af9fde6c3988706df195cbc42443e4d0cda0edbeb9b01855"
+  },
+  {
+    "name": "geo-domain-ranker",
+    "purpose": ">-",
+    "sha256": "d7588b0fc6ef48ff6dddb7121d8f60f1b454c9b69fac32dff5529da2ad917ae9"
+  },
+  {
+    "name": "geo-multi-engine-comparison",
+    "purpose": ">-",
+    "sha256": "887734b6a1cbf348fcb28c9f6f749b095f23d29f234660bd03cbbadcf5ed3fd8"
+  },
+  {
+    "name": "geo-query-builder",
+    "purpose": ">-",
+    "sha256": "ef896b5975dbcd7bad7160a685d4e4ce098933b612cd1d62a2d05e61b9352956"
+  },
+  {
+    "name": "geo-report-builder",
+    "purpose": ">-",
+    "sha256": "94678c5f8993474668f336417237edf1bec53052840cca958f2ba78a6e6850b2"
+  },
+  {
+    "name": "geo-site-auditor",
+    "purpose": ">-",
+    "sha256": "44965b84f67deb6948e2680f0f4fea77bf8cb789af7bd2851517f9f2439ddb21"
+  },
+  {
+    "name": "geo-strategy-advisor",
+    "purpose": ">-",
+    "sha256": "a6c14f56f6edf69946e2d684a027d75ea3a8879a860c8f6c22573116cbd7f67d"
+  },
+  {
+    "name": "seo-content-writer",
+    "purpose": ">-",
+    "sha256": "0ccfdb9226dc6cdf0e0d1839d5cac03f54688f813de8953c6c28d534926f7470"
+  },
+  {
+    "name": "seo-full-audit",
+    "purpose": ">-",
+    "sha256": "75c0c2c08fb98f1a8db619cbd16b0e5b971e089b27e70e60a576126d9a72bf58"
+  },
+  {
+    "name": "seo-keyword-optimization",
+    "purpose": ">-",
+    "sha256": "969a25b12d4f8df3b0a48414a28337f0f5519eb3d39d177d1eb38cabc8465f0c"
+  },
+  {
+    "name": "seo-keywords",
+    "purpose": ">-",
+    "sha256": "789f803f237a469439737e58ec6d844b40cae0efaead9d5b0bcff9af15d24e53"
+  }
+]

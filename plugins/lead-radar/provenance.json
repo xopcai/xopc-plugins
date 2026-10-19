@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "global-lead-radar",
+    "version": "0.1.2",
+    "manifestSha256": "a19ed1ae2c295ad7f14d60bf5c5d67362f672db479a66956bbdb39d206c1fff8",
+    "author": "Alibaba.com",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

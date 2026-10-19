@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "shopify",
+  "version": "1.0.1",
+  "description": "基于 Shopify 后台、公开页面和用户导出数据，规划商品、集合、主题及经营优化。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "shopify",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Shopify Operations",
+          "description": "基于 Shopify 后台、公开页面和用户导出数据，规划商品、集合、主题及经营优化。"
+        },
+        "zh-CN": {
+          "displayName": "Shopify 运营",
+          "description": "基于 Shopify 后台、公开页面和用户导出数据，规划商品、集合、主题及经营优化。"
+        }
+      },
+      "migration": {
+        "source": "shopify-plugin",
+        "sourceVersion": "0.3.0",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

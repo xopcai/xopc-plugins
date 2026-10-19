@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "lark",
+    "platform": "darwin",
+    "arch": "x64",
+    "sha256": "57cf728b896254b8790e8973ce29627adc567e674938256b53ec5f356c406de5",
+    "file": "57cf728b896254b8790e8973ce29627adc567e674938256b53ec5f356c406de5.bin",
+    "bytes": 48291480,
+    "upstreamArchive": "lark-cli-1.0.87-darwin-amd64.tar.gz",
+    "upstreamSha256": "40f005dc39e955ad3fa51a05b1a91619f0ccec1e781038fa247058e4c85b02a7"
+  },
+  {
+    "kind": "lark",
+    "platform": "darwin",
+    "arch": "arm64",
+    "sha256": "2455021d03ab3055b3c956a59067fd38ba4a9aa20accca8a8136ce4d0fae73de",
+    "file": "2455021d03ab3055b3c956a59067fd38ba4a9aa20accca8a8136ce4d0fae73de.bin",
+    "bytes": 45435561,
+    "upstreamArchive": "lark-cli-1.0.87-darwin-arm64.tar.gz",
+    "upstreamSha256": "b4cf7b1b7ff9c3d8c9ac3dd577fd178f3c8a84ec82184a82de809335840d5b20"
+  },
+  {
+    "kind": "lark",
+    "platform": "linux",
+    "arch": "x64",
+    "sha256": "1e8930cff821b0e5774c9f2cb38b8627099e13ea36965c79677980e8d07088a2",
+    "file": "1e8930cff821b0e5774c9f2cb38b8627099e13ea36965c79677980e8d07088a2.bin",
+    "bytes": 46624930,
+    "upstreamArchive": "lark-cli-1.0.87-linux-amd64.tar.gz",
+    "upstreamSha256": "6027b1ddc12440400581bbdf9554850d8e119c7dd400439b1220e7a87b9673c5"
+  },
+  {
+    "kind": "lark",
+    "platform": "linux",
+    "arch": "arm64",
+    "sha256": "01924a67b0884fef952d67716feaabd3747c982b5159a64b681d3f24e0d8ca90",
+    "file": "01924a67b0884fef952d67716feaabd3747c982b5159a64b681d3f24e0d8ca90.bin",
+    "bytes": 43516066,
+    "upstreamArchive": "lark-cli-1.0.87-linux-arm64.tar.gz",
+    "upstreamSha256": "fade9a22d363172a9c18a8287c99c80d6d106a2900f3fce4015e4e156c5fc776"
+  },
+  {
+    "kind": "lark",
+    "platform": "win32",
+    "arch": "x64",
+    "sha256": "527a2ed0b3ff161bc56e0b79ae829198389ccfa5db82be84258c8d60b852fed8",
+    "file": "527a2ed0b3ff161bc56e0b79ae829198389ccfa5db82be84258c8d60b852fed8.bin",
+    "bytes": 47896576,
+    "upstreamArchive": "lark-cli-1.0.87-windows-amd64.zip",
+    "upstreamSha256": "5cb039b20502d02d93f2829f82dd5a30eae8ed7674c1c5a229a7f93563526518"
+  },
+  {
+    "kind": "lark",
+    "platform": "win32",
+    "arch": "arm64",
+    "sha256": "a65c05263b7294279b78b0f13c76f1e470dc086367056fd36ead75ca8f806854",
+    "file": "a65c05263b7294279b78b0f13c76f1e470dc086367056fd36ead75ca8f806854.bin",
+    "bytes": 44165632,
+    "upstreamArchive": "lark-cli-1.0.87-windows-arm64.zip",
+    "upstreamSha256": "01730490c52fbf69843cc9a57c69fe641578e99cb86bc7f04c02f9c37cef01a2"
+  }
+]

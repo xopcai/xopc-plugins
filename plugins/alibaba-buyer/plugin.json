@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "alibaba-buyer",
+  "version": "1.0.1",
+  "description": "开展采购需求梳理、供应商比较、报价与到岸成本分析，生成有来源的采购建议。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "alibaba-buyer",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Global Sourcing",
+          "description": "开展采购需求梳理、供应商比较、报价与到岸成本分析，生成有来源的采购建议。"
+        },
+        "zh-CN": {
+          "displayName": "跨境采购助手",
+          "description": "开展采购需求梳理、供应商比较、报价与到岸成本分析，生成有来源的采购建议。"
+        }
+      },
+      "migration": {
+        "source": "accio-com-buyer-assistant",
+        "sourceVersion": "0.19.0",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

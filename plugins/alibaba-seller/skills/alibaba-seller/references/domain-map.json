@@ -1,0 +1,217 @@
+[
+  {
+    "name": "alibaba-1688-product-research",
+    "purpose": "|",
+    "sha256": "b3382902886eb6bb23c5a5c45236dfad3cefb1207925f42fa5ccf6c73081a362"
+  },
+  {
+    "name": "alibaba-ads-marketing-analysis",
+    "purpose": "|",
+    "sha256": "b8979e06f821074e37cabb3bdec04ed526b78b5f1141aa0956db826a2a36ffaf"
+  },
+  {
+    "name": "alibaba-analysis-brief",
+    "purpose": "|",
+    "sha256": "4c9557386309d70377c72a9822c5c7be49135ddd71a74287ec57fd8ac13a25de"
+  },
+  {
+    "name": "alibaba-atomic-insight",
+    "purpose": "|",
+    "sha256": "fbaa19d0536eceed9ab03b022e101985cc2f908cc9dd72a09b196d57b63d9079"
+  },
+  {
+    "name": "alibaba-blue-ocean-finder",
+    "purpose": "|",
+    "sha256": "2205b72b005ed52d98dbcc25cca44b8a53858144f3570fcb48db5b10ebec5f99"
+  },
+  {
+    "name": "alibaba-brand-ads-keyword-recommendation",
+    "purpose": "|",
+    "sha256": "28d33a3dd3a2714b00c4b8ae0ab4fbc0f13b1991a8e412866ecd15006ebbb7df"
+  },
+  {
+    "name": "alibaba-buyer-bgcheck",
+    "purpose": "|",
+    "sha256": "8e72fa96d35eca3a96b7774ca393b7dc90579e8faa0674fad9bfc0ffbd6f2de6"
+  },
+  {
+    "name": "alibaba-cco-rag",
+    "purpose": "|",
+    "sha256": "59a62275368e0ae922a736a7e898316fcef42e1d5dc56842c060bbea379db730"
+  },
+  {
+    "name": "alibaba-chargeback-appeal-assistant",
+    "purpose": "|",
+    "sha256": "a5a15bd7095551e28ae70e61e3d2aea485b527d5ad2820a5c6392b5506df8b4a"
+  },
+  {
+    "name": "alibaba-competitor-analysis",
+    "purpose": "|",
+    "sha256": "a5e53ab41c4fd758557a01dee4f25a179cda853f6e5e7d9a2467bbca62c67539"
+  },
+  {
+    "name": "alibaba-create-website",
+    "purpose": "|",
+    "sha256": "0f8e7d22d31cdf0e6b9a2890ee95d1eb996aa2e6dc56351b0e9d7312bac3325b"
+  },
+  {
+    "name": "alibaba-data-advisor",
+    "purpose": "|",
+    "sha256": "dd1f4b592b04769afd8cad00744db78728c26290006e9e4234367d6953c5a0d0"
+  },
+  {
+    "name": "alibaba-global-ai-image-studio",
+    "purpose": "|",
+    "sha256": "3dcc1e6d18f821b67a7e2dcd12ccba79fe385425f9f93f2ef6483aa314fb0af7"
+  },
+  {
+    "name": "alibaba-global-amazon-market-intel",
+    "purpose": "|",
+    "sha256": "ea2514f3dfe60a0cf5ec6030e1262abf84adbe2751015bd551287829f622fbb3"
+  },
+  {
+    "name": "alibaba-global-blue-ocean-finder",
+    "purpose": "|",
+    "sha256": "c6fc3f0ab6f2651e7332d46e80ba402954df3413a207ca900d082d8051a30810"
+  },
+  {
+    "name": "alibaba-global-chat-analysis-pro",
+    "purpose": "|",
+    "sha256": "594e1e19594aa21b57d4e901b8ddff863de3a46e420477b1809602e9e52872c7"
+  },
+  {
+    "name": "alibaba-global-create-website",
+    "purpose": "|",
+    "sha256": "222421fa633451b19ccb30168275d481f35a6e63640de029c3510f6569f61083"
+  },
+  {
+    "name": "alibaba-global-hot-product-insight",
+    "purpose": "|",
+    "sha256": "0d73728d64384c184dcf0d49830b25727d9356e361ed5543be50ea853ec2e90f"
+  },
+  {
+    "name": "alibaba-global-knowledge-base",
+    "purpose": ">-",
+    "sha256": "ff2883e7e871e4cdb2a428ad83ff880ac6363b9c05011b3d9056ef2047f9b317"
+  },
+  {
+    "name": "alibaba-global-logistics-assistant",
+    "purpose": ">-",
+    "sha256": "f1a45f7aa79becda88cfd6204755af433509a13cd2476191efbebb7d94faebfd"
+  },
+  {
+    "name": "alibaba-global-product-deep-dive",
+    "purpose": ">-",
+    "sha256": "50a24ad06058d98aeec11b87af439e8780f48ada152d6d87cbe767a4ec62993f"
+  },
+  {
+    "name": "alibaba-global-smart-assistant-settings",
+    "purpose": "|",
+    "sha256": "3a807450f9296981ffd2b7dcd841ae9245370633a1d39febac7ef46f01cce696"
+  },
+  {
+    "name": "alibaba-global-smart-optimize",
+    "purpose": "|",
+    "sha256": "202f3351174e3393fa76888855b2b2f3a59a4e4ebade2a8284fb6b1fd35e0e70"
+  },
+  {
+    "name": "alibaba-global-smart-publish",
+    "purpose": "|",
+    "sha256": "bb4f21aeca4a7c474ca01889cffcc4361c7285ad59f923484e45324d0bd78817"
+  },
+  {
+    "name": "alibaba-global-store-diagnosis",
+    "purpose": ">-",
+    "sha256": "8194ba7378ba7fe340126717fe5d45c36ef0e5c07c8fcb3da1cbe2827f137fa3"
+  },
+  {
+    "name": "alibaba-global-tariff-assistant",
+    "purpose": ">",
+    "sha256": "55b3a8b63b212214f0f9d5822dff69bbaa082c41c5163949dc21aa67639f8c15"
+  },
+  {
+    "name": "alibaba-hot-product-insight",
+    "purpose": "|",
+    "sha256": "dd294155a2cc4c66a50e0c884310b1399a1ebf51d422e234d1ac38fa8f110d96"
+  },
+  {
+    "name": "alibaba-icbu-brand-data-report",
+    "purpose": "|",
+    "sha256": "b9bd074c7e4f91a15688fd9b23bb7df39243b9197c02c1ccc2a27e10bc0b40a9"
+  },
+  {
+    "name": "alibaba-image-generation",
+    "purpose": "|",
+    "sha256": "9f8849b0941cf26852f0b57cfd20539d5dfe7c005c97626776886617878709ad"
+  },
+  {
+    "name": "alibaba-ip-violation-query",
+    "purpose": "|",
+    "sha256": "42410c68a021259aec9268828285472cd06d9b2ee9f957999115151501779e67"
+  },
+  {
+    "name": "alibaba-jungle-scout-deep-dive-analyzer",
+    "purpose": "|",
+    "sha256": "fd8ae3838bb0f0dd2611568c62688b14a43f2629061f802be3e46c5b22c72f2e"
+  },
+  {
+    "name": "alibaba-local-data-analysis",
+    "purpose": "|",
+    "sha256": "19f3bb9dc3032f50c28d6da6dfd49282aa1b87eabdc5814bcb8401c825f86a32"
+  },
+  {
+    "name": "alibaba-logistics-assistant",
+    "purpose": "国际站物流助手，处理承运咨询、线路查价、运费试算、下单发货、物流轨迹、HS 编码和关税税费等跨境物流任务。",
+    "sha256": "7a2090c4f50aed88f55f7e4f2472c138c181ddf45b74aa63d820d16496c275a7"
+  },
+  {
+    "name": "alibaba-market-analysis",
+    "purpose": "|",
+    "sha256": "ebba31726b84b7664bac8d06258e9af359abd0bff4ce2feb602468a7c823d321"
+  },
+  {
+    "name": "alibaba-pdf-to-catalog-table",
+    "purpose": "|",
+    "sha256": "da0027b2efd7bf91f3812e0376cdb2555f371e58433fe7b35155c6afa2936882"
+  },
+  {
+    "name": "alibaba-product-optimization",
+    "purpose": "|",
+    "sha256": "ceffba6b516f9b14e180acffa548899ab973c88ea87e50ee3c32e14c791a6b6c"
+  },
+  {
+    "name": "alibaba-product-publish",
+    "purpose": "|",
+    "sha256": "85c853732dd6a3049de23551b2c3cae6406216e495f737343ddcfcd2beb05102"
+  },
+  {
+    "name": "alibaba-product-recruitment",
+    "purpose": "|-",
+    "sha256": "e9bfe440dacab856a0909e501817351f5ef1bda255df7f7d7d53d61831a7a7d3"
+  },
+  {
+    "name": "alibaba-product-risk-diagnosis",
+    "purpose": "|",
+    "sha256": "49de514b6977ea378f6c222ce8fee1ebc77cafe1434a7845b67a243f945f934e"
+  },
+  {
+    "name": "alibaba-product-title-generation",
+    "purpose": "|",
+    "sha256": "5876d74729168d2d8ac5360a9fdf63dd528e0025fa56461ecdeb26dd72d4bf63"
+  },
+  {
+    "name": "alibaba-product-video-generation",
+    "purpose": "|",
+    "sha256": "cbd0461c2bfc8b499010393d9fa8450d1381a7055c7be5d63354100099ccd412"
+  },
+  {
+    "name": "alibaba-prohibited-rule-interpretation",
+    "purpose": "|",
+    "sha256": "44804c6ce0169d5525cfbe71220d7b3cc503e1aa41d26085d7150b792a5a2655"
+  },
+  {
+    "name": "alibaba-rfq-discovery",
+    "purpose": "搜索国际站及站外公开 RFQ，查询 RFQ/报价详情、报价历史和报价权益，并支持 RFQ 定时巡检。只处理 RFQ 数据域；报价草稿由主 Agent 承接，不处理询盘、聊天或公网买家背调。",
+    "sha256": "453eaee0468cd211ae346f45441c9afb3c773c97b97763a93b3828d37ed4bf11"
+  }
+]

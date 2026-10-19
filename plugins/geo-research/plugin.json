@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "geo-research",
+  "version": "1.0.1",
+  "description": "分析品牌在生成式搜索中的可见性、引用来源和内容改进机会。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "geo-research",
+    "marketing-sales"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.png"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "GEO Research",
+          "description": "分析品牌在生成式搜索中的可见性、引用来源和内容改进机会。"
+        },
+        "zh-CN": {
+          "displayName": "GEO 与搜索研究",
+          "description": "分析品牌在生成式搜索中的可见性、引用来源和内容改进机会。"
+        }
+      },
+      "migration": {
+        "source": "geo-agent",
+        "sourceVersion": "1.80.0",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

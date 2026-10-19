@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "1688-seller-assistant",
+    "version": "0.0.19",
+    "manifestSha256": "8f30f4c7eb5a1679d772f787aa2aaf9c9e676453536c457a6188ee0ebfb3f634",
+    "author": {
+      "name": "Accio"
+    },
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

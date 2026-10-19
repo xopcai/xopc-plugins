@@ -1,0 +1,12 @@
+[
+  {
+    "name": "docx",
+    "purpose": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. Use when working with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
+    "sha256": "2553b02ac78b7e96391f6bc4dcbf1712cc137c139d156032fc7eb97bba8926fc"
+  },
+  {
+    "name": "pdf",
+    "purpose": "PDF creation, editing, and analysis with support for text extraction, tables, images, forms, merging/splitting, and rendering. Use when working with PDF documents (.pdf files) for: (1) Creating new PDF documents, (2) Extracting content from PDFs, (3) Editing or modifying existing PDFs, (4) Filling in PDF forms, (5) Merging, splitting, or transforming PDFs, (6) Analyzing PDF content, or any other PDF tasks",
+    "sha256": "21e27d154bbd4ad4134fec08f0cb38e5236a966464620ae2a8116290e9fdc6dc"
+  }
+]

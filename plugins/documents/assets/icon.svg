@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="documents-title">
+  <title id="documents-title">Documents</title>
+  <defs>
+    <linearGradient id="documents-bg" x1="36" y1="28" x2="220" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.52" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="documents-page" x1="79" y1="48" x2="174" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF3FF"/>
+    </linearGradient>
+    <linearGradient id="documents-fold" x1="162" y1="55" x2="196" y2="89" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DBEAFE"/>
+      <stop offset="1" stop-color="#93C5FD"/>
+    </linearGradient>
+    <filter id="documents-shadow" x="36" y="36" width="184" height="184" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#documents-bg)"/>
+  <path d="M48 53C77 26 131 21 169 34c45 16 66 60 48 104-19 45-68 78-116 70-42-7-70-39-75-78-4-31 1-57 22-77Z" fill="#FFFFFF" opacity="0.13"/>
+  <g filter="url(#documents-shadow)">
+    <path d="M71 67c0-11 9-20 20-20h72l42 42v100c0 11-9 20-20 20H91c-11 0-20-9-20-20V67Z" fill="url(#documents-page)"/>
+    <path d="M162 48v31c0 7 6 13 13 13h31l-44-44Z" fill="url(#documents-fold)"/>
+    <path d="M162 48v30c0 8 6 14 14 14h30" fill="none" stroke="#60A5FA" stroke-opacity="0.5" stroke-width="3"/>
+  </g>
+  <rect x="94" y="98" width="25" height="25" rx="8" fill="#DBEAFE"/>
+  <path d="M101 111h11" stroke="#2563EB" stroke-width="7" stroke-linecap="round"/>
+  <path d="M132 103h45" stroke="#1D4ED8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M94 134h88" stroke="#60A5FA" stroke-width="10" stroke-linecap="round"/>
+  <path d="M94 159h72" stroke="#93C5FD" stroke-width="10" stroke-linecap="round"/>
+  <path d="M94 184h88" stroke="#BFDBFE" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="63" cy="49" r="7" fill="#BFDBFE" opacity="0.76"/>
+  <circle cx="207" cy="58" r="4" fill="#DBEAFE" opacity="0.86"/>
+</svg>

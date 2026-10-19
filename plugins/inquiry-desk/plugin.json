@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "inquiry-desk",
+  "version": "1.0.1",
+  "description": "分析用户导出的多渠道询盘，识别采购意图、生成回复和跟进计划。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "inquiry-desk",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.png"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Inquiry Desk",
+          "description": "分析用户导出的多渠道询盘，识别采购意图、生成回复和跟进计划。"
+        },
+        "zh-CN": {
+          "displayName": "多渠道询盘工作台",
+          "description": "分析用户导出的多渠道询盘，识别采购意图、生成回复和跟进计划。"
+        }
+      },
+      "migration": {
+        "source": "multi-channel-inquiry-plugin",
+        "sourceVersion": "1.0.0",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

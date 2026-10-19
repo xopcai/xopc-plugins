@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "commerce-automation",
+  "version": "1.0.1",
+  "description": "把电商运营任务整理为有输入输出、执行记录和失败恢复的自动化流程。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "commerce-automation",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Commerce Automation",
+          "description": "把电商运营任务整理为有输入输出、执行记录和失败恢复的自动化流程。"
+        },
+        "zh-CN": {
+          "displayName": "电商运营自动化",
+          "description": "把电商运营任务整理为有输入输出、执行记录和失败恢复的自动化流程。"
+        }
+      },
+      "migration": {
+        "source": "ecommerce-automation-toolkit",
+        "sourceVersion": "0.3.11",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

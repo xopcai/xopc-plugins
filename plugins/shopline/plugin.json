@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "shopline",
+  "version": "1.0.1",
+  "description": "结合 SHOPLINE 后台和用户提供的数据，完成开店筹备、商品整理和运营检查。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "shopline",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.png"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "SHOPLINE Operations",
+          "description": "结合 SHOPLINE 后台和用户提供的数据，完成开店筹备、商品整理和运营检查。"
+        },
+        "zh-CN": {
+          "displayName": "SHOPLINE 运营",
+          "description": "结合 SHOPLINE 后台和用户提供的数据，完成开店筹备、商品整理和运营检查。"
+        }
+      },
+      "migration": {
+        "source": "shopline-plugin",
+        "sourceVersion": "1.7.0",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

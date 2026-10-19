@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "documents",
+    "version": "0.0.8",
+    "manifestSha256": "02b188aa39cd2de3e41cec4fcf90eeccbc6bb2ba45a8aa80ff06a7f1e126c8ff",
+    "author": "Accio",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

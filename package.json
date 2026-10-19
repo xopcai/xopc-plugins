@@ -14,6 +14,7 @@
     "publish:store": "node scripts/publish-store.mjs"
   },
   "devDependencies": {
+    "esbuild": "0.28.1",
     "fflate": "^0.8.2"
   }
 }

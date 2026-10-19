@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="presentations-title">
+  <title id="presentations-title">Presentations</title>
+  <defs>
+    <linearGradient id="presentations-bg" x1="32" y1="28" x2="222" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDE047"/>
+      <stop offset="0.45" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#BE123C"/>
+    </linearGradient>
+    <linearGradient id="presentations-slide" x1="60" y1="54" x2="196" y2="199" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF7ED"/>
+    </linearGradient>
+    <filter id="presentations-shadow" x="33" y="38" width="190" height="178" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#7F1D1D" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#presentations-bg)"/>
+  <path d="M44 81c24-40 72-60 118-45 45 14 78 56 68 105-10 52-56 83-107 78-54-6-91-45-91-94 0-17 3-31 12-44Z" fill="#FFFFFF" opacity="0.14"/>
+  <g filter="url(#presentations-shadow)">
+    <rect x="51" y="60" width="154" height="119" rx="24" fill="url(#presentations-slide)"/>
+    <rect x="69" y="78" width="118" height="83" rx="13" fill="#FFF7ED" stroke="#FED7AA" stroke-width="4"/>
+  </g>
+  <path d="M98 197h60M128 179v18" stroke="#7C2D12" stroke-width="12" stroke-linecap="round"/>
+  <path d="M92 100h42" stroke="#9A3412" stroke-width="9" stroke-linecap="round"/>
+  <path d="M92 122h26" stroke="#FDBA74" stroke-width="9" stroke-linecap="round"/>
+  <path d="M151 101l27 16-27 16v-32Z" fill="#F97316"/>
+  <rect x="91" y="143" width="23" height="18" rx="5" fill="#FED7AA"/>
+  <rect x="121" y="133" width="23" height="28" rx="5" fill="#FB923C"/>
+  <rect x="151" y="122" width="23" height="39" rx="5" fill="#EA580C"/>
+  <circle cx="65" cy="54" r="6" fill="#FFEDD5" opacity="0.78"/>
+  <circle cx="210" cy="73" r="4" fill="#FFF7ED" opacity="0.88"/>
+</svg>

@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Data Toolkit">
-  <defs><linearGradient id="g-datatoolkit" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse"><stop stop-color="#2563EB"/><stop offset="1" stop-color="#60A5FA"/></linearGradient></defs>
-  <rect width="64" height="64" rx="16" fill="url(#g-datatoolkit)"/>
-  <path d="M17 18h30M17 46h30" stroke="white" stroke-opacity=".28" stroke-width="2" stroke-linecap="round"/>
-  <text x="32" y="39" fill="white" font-family="ui-sans-serif,system-ui,sans-serif" font-size="19" font-weight="700" text-anchor="middle">DT</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0f766e"/><ellipse cx="32" cy="18" rx="17" ry="7" fill="#99f6e4"/><path d="M15 18v26c0 9 34 9 34 0V18M15 31c0 9 34 9 34 0M15 43c0 9 34 9 34 0" fill="none" stroke="#ccfbf1" stroke-width="4"/></svg>

@@ -3,23 +3,71 @@
   "repository": "https://github.com/xopcai/xopc-plugins",
   "plugins": [
     {
-      "name": "cloudflare-workspace",
-      "version": "1.1.1",
-      "category": "engineering",
-      "phase": "P1",
-      "path": "plugins/cloudflare-workspace",
-      "generated": true,
-      "authentication": "oauth-on-first-use"
+      "name": "1688-seller",
+      "version": "1.0.1",
+      "path": "plugins/1688-seller",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "1688-seller-assistant"
+    },
+    {
+      "name": "alibaba-buyer",
+      "version": "1.0.1",
+      "path": "plugins/alibaba-buyer",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "accio-com-buyer-assistant"
+    },
+    {
+      "name": "alibaba-seller",
+      "version": "1.0.1",
+      "path": "plugins/alibaba-seller",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "alibaba-com-seller-assistant"
+    },
+    {
+      "name": "commerce-automation",
+      "version": "1.0.1",
+      "path": "plugins/commerce-automation",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "ecommerce-automation-toolkit"
     },
     {
       "name": "data-toolkit",
-      "version": "1.1.1",
+      "version": "1.2.1",
       "category": "data-analysis",
-      "path": "plugins/data-toolkit"
+      "path": "plugins/data-toolkit",
+      "generated": false
+    },
+    {
+      "name": "dingtalk",
+      "version": "1.0.5",
+      "path": "plugins/dingtalk",
+      "category": "productivity",
+      "authentication": "on-install",
+      "migrationSource": "dingtalk-assistant"
+    },
+    {
+      "name": "documents",
+      "version": "1.0.1",
+      "path": "plugins/documents",
+      "category": "productivity",
+      "authentication": "none",
+      "migrationSource": "documents"
+    },
+    {
+      "name": "europe-commerce",
+      "version": "1.0.1",
+      "path": "plugins/europe-commerce",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "europe-accio"
     },
     {
       "name": "expo",
-      "version": "1.0.2",
+      "version": "1.2.1",
       "category": "engineering",
       "path": "plugins/expo",
       "authentication": "none",
@@ -28,38 +76,108 @@
         "plugin": "expo",
         "commit": "1e285826e604f66f7208f7ac4dba0fe8341d1f57",
         "license": "MIT"
-      }
+      },
+      "generated": false
     },
     {
-      "name": "figma-workspace",
-      "version": "1.1.1",
-      "category": "content-creation",
-      "phase": "P1",
-      "path": "plugins/figma-workspace",
-      "generated": true,
-      "authentication": "oauth-on-first-use"
-    },
-    {
-      "name": "linear-workspace",
-      "version": "1.1.1",
+      "name": "feishu",
+      "version": "1.0.3",
+      "path": "plugins/feishu",
       "category": "productivity",
-      "phase": "P1",
-      "path": "plugins/linear-workspace",
-      "generated": true,
-      "authentication": "oauth-on-first-use"
+      "authentication": "on-install",
+      "migrationSource": "feishu-assistant"
     },
     {
-      "name": "notion-workspace",
-      "version": "1.1.1",
+      "name": "geo-research",
+      "version": "1.0.1",
+      "path": "plugins/geo-research",
+      "category": "marketing-sales",
+      "authentication": "none",
+      "migrationSource": "geo-agent"
+    },
+    {
+      "name": "gmail",
+      "version": "1.0.3",
+      "path": "plugins/gmail",
+      "category": "communication",
+      "authentication": "on-install",
+      "migrationSource": "gmail"
+    },
+    {
+      "name": "inquiry-desk",
+      "version": "1.0.1",
+      "path": "plugins/inquiry-desk",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "multi-channel-inquiry-plugin"
+    },
+    {
+      "name": "knowledge-base",
+      "version": "1.0.1",
+      "path": "plugins/knowledge-base",
       "category": "productivity",
-      "phase": "P1",
-      "path": "plugins/notion-workspace",
-      "generated": true,
-      "authentication": "oauth-on-first-use"
+      "authentication": "none",
+      "migrationSource": "knowledge-base-plugin"
+    },
+    {
+      "name": "lead-radar",
+      "version": "1.0.1",
+      "path": "plugins/lead-radar",
+      "category": "marketing-sales",
+      "authentication": "none",
+      "migrationSource": "global-lead-radar"
+    },
+    {
+      "name": "openboost",
+      "version": "1.0.1",
+      "path": "plugins/openboost",
+      "category": "ecommerce",
+      "authentication": "on-install",
+      "migrationSource": "openboost"
+    },
+    {
+      "name": "presentations",
+      "version": "1.0.1",
+      "path": "plugins/presentations",
+      "category": "productivity",
+      "authentication": "none",
+      "migrationSource": "presentations"
+    },
+    {
+      "name": "shopify",
+      "version": "1.0.1",
+      "path": "plugins/shopify",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "shopify-plugin"
+    },
+    {
+      "name": "shopline",
+      "version": "1.0.1",
+      "path": "plugins/shopline",
+      "category": "ecommerce",
+      "authentication": "none",
+      "migrationSource": "shopline-plugin"
+    },
+    {
+      "name": "site-builder",
+      "version": "1.0.1",
+      "path": "plugins/site-builder",
+      "category": "engineering",
+      "authentication": "none",
+      "migrationSource": "accio-site-builder"
+    },
+    {
+      "name": "spreadsheets",
+      "version": "1.0.1",
+      "path": "plugins/spreadsheets",
+      "category": "data-analysis",
+      "authentication": "none",
+      "migrationSource": "spreadsheets"
     },
     {
       "name": "supabase",
-      "version": "1.0.0",
+      "version": "1.2.1",
       "category": "engineering",
       "path": "plugins/supabase",
       "authentication": "oauth-on-first-use",
@@ -68,11 +186,20 @@
         "plugin": "supabase",
         "commit": "1e285826e604f66f7208f7ac4dba0fe8341d1f57",
         "license": "MIT"
-      }
+      },
+      "generated": false
+    },
+    {
+      "name": "yuque",
+      "version": "1.0.3",
+      "path": "plugins/yuque",
+      "category": "productivity",
+      "authentication": "on-install",
+      "migrationSource": "yuque-plugin"
     },
     {
       "name": "zoom",
-      "version": "1.0.0",
+      "version": "1.2.1",
       "category": "communication",
       "path": "plugins/zoom",
       "authentication": "oauth-on-first-use",
@@ -81,7 +208,8 @@
         "plugin": "zoom",
         "commit": "1e285826e604f66f7208f7ac4dba0fe8341d1f57",
         "license": "MIT"
-      }
+      },
+      "generated": false
     }
   ]
 }

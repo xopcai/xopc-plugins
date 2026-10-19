@@ -1,0 +1,92 @@
+[
+  {
+    "name": "canvas-design",
+    "purpose": "Coordinate the non-replication Canvas branch. Provide the required information directly in the canvas-designer task, have it write the final DESIGN.md, then source images and implement the site in the current execution.",
+    "sha256": "b2405402ce9da8363f093b5b825f5fcce19c216e058779bfd4a1a815c56bb08a"
+  },
+  {
+    "name": "canvas-design-library",
+    "purpose": "Provide the bundled DESIGN.md protocol to both design SubAgents and bounded template grounding only to the canvas-designer SubAgent.",
+    "sha256": "7c4eba6b86f035359ce9d088a097f8fd6b8fbf540f09fd04b0b100c6e2ea7bf3"
+  },
+  {
+    "name": "code-generator",
+    "purpose": "|",
+    "sha256": "444c0d6e0410be3140241bca7e4e399eac97f274b11943a1699cb9dcf0a94c2a"
+  },
+  {
+    "name": "dashboard-admin",
+    "purpose": "Design and build data reports, dashboards, admin panels, back-office tools, CRUD consoles, and hybrid operations workspaces. Use when the interface centers on metrics, charts, tables, filters, records, workflows, approvals, or role-scoped operations; do not use for ordinary marketing sites that only contain a small statistics section.",
+    "sha256": "40bb08983797de97e453c4a94a869d4b13859fb2cef12cc25d4d6d7314b6d39a"
+  },
+  {
+    "name": "follow-up",
+    "purpose": "Offer relevant natural-language next steps after Accio Site Builder responses, prioritizing Supabase, scheduled refresh for external dynamic data, and SEO when applicable.",
+    "sha256": "92ed60b09dfa3af5c91d0bdb734abf2ee4fb3e57e97764c15113dba28cc3c377"
+  },
+  {
+    "name": "frontend-implementation-policy",
+    "purpose": "Apply shared React/Vite implementation rules for every site-builder branch before editing UI, CSS, fonts, or project assets. Use for Canvas implementations, reference-site replications, redesigns, and visual edits so font loading, assets, Tailwind, dependencies, and scaffold boundaries remain consistent.",
+    "sha256": "c5db7da4cec884bab762b9426a81d3d63024bb66a7df0e8465d8bd0c9423587b"
+  },
+  {
+    "name": "link-in-bio",
+    "purpose": "Build personalized link-in-bio / link aggregation pages (Linktree-style) for creators and personal brands from a real avatar, a handful of links, and the creator's own visual identity. Use when the site-builder classifier sets site type to `link-in-bio`, or when the user asks for a link aggregation page / personal links page / Linktree / Beacons / bio link / \"put all my links on one page\" / \"link in bio\". Owns intake, avatar fetch, link modeling, the social-link display rule, and personalized style cues. Do NOT use for data-rich Media Kit / sponsorship page / rate card requests — route those to `media-kit`.",
+    "sha256": "d969e8767c6d7e3b72d08f25aa1f74c832ec9ab6af317b4e3ac2553f254bdc16"
+  },
+  {
+    "name": "media-kit",
+    "purpose": "Build personal creator/influencer Media Kit sites from verified public social data and user-supplied materials. Use when the Media Kit Router in site-builder returns route_media_kit=true, or when building KOL rate cards, sponsor decks, creator sponsorship pages, or brand collaboration pages.",
+    "sha256": "cb684907a3683806c7d79032570a6f5059259a0edb0d8440c5872c762a035fbd"
+  },
+  {
+    "name": "provider-operations",
+    "purpose": "Plan, execute, verify, and recover cloud provider mutations through Supabase MCP using a stable operation contract.",
+    "sha256": "99d6c43c29b88debdf35f74710065a9109840c1fe1ec36cf0f82081bbac1d83d"
+  },
+  {
+    "name": "react-local-runtime",
+    "purpose": "Create, extend, build, run, and inspect local React/Vite projects using scripts/site.js without MCP. Local preview is Vite-only; api/ route verification happens in the target backend/runtime environment after site publish or provider deployment.",
+    "sha256": "f77e14f6dea5fe254e5d4e933e0e991de990bb8b32e7fd758a0d4b7120d699c4"
+  },
+  {
+    "name": "reference-replication",
+    "purpose": "Coordinate reference-site visual replication after site-builder sets referenceReplication=true. Prepare the target project, have reference-site-replicator inspect the supplied site in a browser and write the final DESIGN.md, then continue through the shared asset and implementation workflow.",
+    "sha256": "f1cd348ad70fa0a7581d69976bea7d70f8ff507789677ce37a0719d7709b4d6a"
+  },
+  {
+    "name": "safety",
+    "purpose": "Safety gates for local preview, Supabase MCP use, site publish, database migrations, provider mutations, and secret handling.",
+    "sha256": "5dccbac800f228283ac01126d611695d85d5df228ab530407b064a8b1288cc18"
+  },
+  {
+    "name": "schema",
+    "purpose": "Add, repair, or validate Schema.org structured data in JSON-LD. Use for schema markup, structured data, rich-result eligibility, JSON-LD, or when the SEO skill identifies verifiable entities that should be described to search engines.",
+    "sha256": "323f4cab9b31a6441f7bb60b75c13d836f9f428da886b4c55fac415d7c64f3a2"
+  },
+  {
+    "name": "seo",
+    "purpose": "Audit, implement, and verify SEO for public websites. Use when the user asks for SEO, search visibility, metadata, indexing, crawlability, sitemaps, robots rules, canonical URLs, or accepts an SEO follow-up. Use schema separately when structured data is needed.",
+    "sha256": "eb9cb7f18525fe0711c3240f21e29ecea24db850e871b3c7133c4d7586582764"
+  },
+  {
+    "name": "site-builder",
+    "purpose": "Orchestrate Accio website and app creation, redesign, extension, local preview, site publish, and Supabase-backed features. Route reference replication and Canvas design into mutually exclusive branches, then coordinate specialized skills, React/Vite implementation, runtime verification, provider safety, and user-visible delivery.",
+    "sha256": "a10e62daa5cc9b6338a0cbcac845bc5ada1a451ccff815bd62bf938a370f583e"
+  },
+  {
+    "name": "social-avatar-fetch",
+    "purpose": "Fetch the real avatar/profile image URL for a social media creator from YouTube, Instagram, Twitter/X, or TikTok, preferring curl/profile JSON fields and falling back to browser DOM only when curl fails. Use when a creator's actual profile photo is needed for media kits, creator profile pages, design assets, or any task where a placeholder silhouette is not acceptable.",
+    "sha256": "561402225c5a1d863902908400ca33d0d95a4e700dc9f124a17884eb4c4dfc31"
+  },
+  {
+    "name": "social-latest-fetch",
+    "purpose": "Curl-first collection of public social profile data and recent posts/videos/tweets for Media Kits and creator pages. Use for YouTube, Instagram, TikTok, X/Twitter, or Facebook when you need creator profile fields, followers/subscribers, post/video counts, recent content, thumbnails/covers, visible interactions, contact links, or engagement-rate inputs. Falls back to browser only after curl/proxy attempts fail or a platform requires rendered/login state.",
+    "sha256": "6b201282adb1d3679dc9d7ba87081474e3ad10145641e8e12dee0d1cbd49b1fb"
+  },
+  {
+    "name": "supabase-mcp-backend",
+    "purpose": "Supabase provider playbook for MCP-first project access, migrations, RLS, generated types, Edge Functions, logs, advisors, and Postgres design.",
+    "sha256": "d3d824ad2edda1bb4fd84c9db0aae16ec9dc26b2d46771029d8e9e37efb4de13"
+  }
+]

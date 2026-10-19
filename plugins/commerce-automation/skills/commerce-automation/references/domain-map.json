@@ -1,0 +1,87 @@
+[
+  {
+    "name": "browser-rpa-launch",
+    "purpose": "当已有一个或多个页面地址及对应的本地脚本文件，需要打开页面并执行脚本时使用。不用于生成、修改或解释脚本，也不用于在已有页面上回放脚本。",
+    "sha256": "cf712535fb2c3740fd4bfb72153ef59b61c5c26e9de901808aa994f16a5e6c80"
+  },
+  {
+    "name": "browser-rpa-run",
+    "purpose": "当需要根据已准备的业务数据生成并执行浏览器 RPA 时使用；已有可执行 DSL 时使用 browser-rpa-launch。",
+    "sha256": "cce729f17d4a4128cb0277d27b74b23e37130ae44e7b4950465f50e72f16091f"
+  },
+  {
+    "name": "discover-store-accounts",
+    "purpose": "当需要查询用户在账号管理中维护的平台账号、登录状态和 Profile 选择信息，并用于各平台业务时使用。",
+    "sha256": "6ac77fe33070f70937f75c48fd42577828554b4cba396d8ef934ddb88fc60f22"
+  },
+  {
+    "name": "ecommerce-data-collect",
+    "purpose": ">-",
+    "sha256": "5350ae21e9ea88a5cc0a52d6bc5c2346b3a5c3cb25cd9b8393e8d197d25cf875"
+  },
+  {
+    "name": "ecommerce-data-query",
+    "purpose": "统一承接业务 Skill 的国内店铺或商品目录指标取数：通过 ecommerce-cli 按当前平台、数据归属和业务域发现真实 metric_id 并查询本地数据；已选指标无可用数据或 CLI 明确报告缺口时，调用 ecommerce-data-collect 精确补采一轮并重查一次。适用于按业务域、来源指标或 metric_id 取数及跨域组合；不用于解释返回字段、派生计算、直接采集请求、手动修改数据或生成业务分析报告。",
+    "sha256": "d7db5c4ec5aba9b6c475904b9fd3cf8f2be8a60f460376dac13f5624b95ae797"
+  },
+  {
+    "name": "ecommerce-search",
+    "purpose": "面向竞品调研与外部商品（宝贝）分析的电商公开页面采集体系（非店铺后台数据）。当用户需要对京东/淘宝/天猫/1688/拼多多/抖音的外部竞品/宝贝进行调研、找同款、比价、详情采集、评论分析或价格监控时使用本Skill。典型触发表达包括但不限于：\"帮我看下这个竞品\"\"找下同款\"\"比一下价格\"\"采集这个商品详情\"\"搜一下XX关键词\"\"用这张图找同款\"\"看下这个商品的评价\"\"监控这个竞品价格变化\"\"分析这几个竞品的卖点和差异\"\"搜前20个商品\"\"三个平台都搜一下\"\"多搜几页\"。本Skill同时覆盖竞品店铺级监控（淘宝/天猫、1688、京东整店上新榜与销量榜跟踪），触发表达如\"监控这个店铺\"\"盯一下这个店\"\"看下竞品店铺上新了什么\"\"这个店的销量榜\"\"监控京东店铺\"，输入为店铺页URL（如 xxx.tmall.com/category.htm、xxx.1688.com/page/offerlist.htm、mall.jd.com/index-1000001228.html、shop.m.jd.com/shop/home?shopId=1000001228），业务实现见 store-monitor/SKILL.md。本Skill只采集公开可见的商品页面信息（标题/价格/SKU/属性/评论/图片等），不登录任何店铺后台、不读取经营数据。与店铺经营类 Skill 的边界：用户分析自己店铺的经营数据（GMV/订单/流量/库存/客服聊天）走multi-platform系列Skill；用户调研外部竞品、公开商品、找同款、比价、竞品监控走本Skill。所有采集通过browser_rpa_launch执行原子DSL flow，严禁使用browser-use/WebFetch/WebSearch等非RPA工具访问页面。命中 detail.1688.com/offer/、detail.m.1688.co",
+    "sha256": "02e18ee71a310c3fecd0fa0f5d94d8203081e2c331815538f0b58f0817f51a7c"
+  },
+  {
+    "name": "excel-product-data",
+    "purpose": "当用户需要从已填写的商品发布素材包或商品信息表中提取商品信息、关联图片和视频素材，并为后续商品录入流程准备结构化业务数据时使用。不生成或执行 DSL，也不操作浏览器。",
+    "sha256": "2ef8a505bd7cd7743d6d95db20cf33427f77afe4f8a7c2cbf1dc3a76a058d364"
+  },
+  {
+    "name": "excel-product-publish",
+    "purpose": "根据已填写的商品上架素材包或商品信息 Excel，编排多平台、多店铺的商品发品任务。用于商品上架、批量商品上架、批量录入商品或创建商品发品任务；仅生成模板时使用 product-package-template，仅准备或校验数据时使用 excel-product-data。最终结果以商品发品成功或商品发品未成功为准。",
+    "sha256": "cda3fb29894b4a77d7290ed5bdd517d934f12e358c457752d7fbb01ad6fe79bc"
+  },
+  {
+    "name": "html-report-visuals",
+    "purpose": "当业务分析需要构建 HTML 报告，或调整报告的布局、配色、组件与图表样式时使用。提供可复用的视觉规范、HTML/CSS 组件及绘图工具，供业务流程构建报告时引用。",
+    "sha256": "644a2a49a03b09613f8b17a5498f56704ad5c88a1ab3fd1bdcd79f00826d306a"
+  },
+  {
+    "name": "multi-platform-ads-analysis",
+    "purpose": "分析淘宝/天猫阿里妈妈、京东、拼多多及抖店千川的广告投放效果，支持官方分析方法和用户提供的可执行分析方法论，生成离线 HTML 报告。适用于广告回报、ROI、费比、线索成本、渠道配置、计划与商品投放复盘，涵盖直通车、引力魔方、万相台、淘宝客、千川全域投放等场景。数据统一通过 ecommerce-data-query 按业务域或用户描述的指标查询。",
+    "sha256": "913c7c7d193864c329eb1b467d0ef5f1d1ae2cd0b625866f21a34f3745cf440d"
+  },
+  {
+    "name": "multi-platform-chat-analysis",
+    "purpose": "分析淘宝、天猫/千牛、拼多多、京东/京麦、抖店/飞鸽店铺的客户聊天与历史会话记录，支持官方沟通诊断方法和用户自定义分析口径，生成脱敏、证据化的沟通卡点离线 HTML 报告。适用于聊天记录、客服会话、旺旺/千牛消息、抖店历史会话、询单转化、未成交原因、客服响应时效、话术复盘、接待负荷与成交证据。数据由本 Skill 内部只读采集完成，不依赖其它取数 Skill；仅执行只读采集、规范化与分析，不发送消息、优惠券，不修改退款、订单或商品。",
+    "sha256": "cf337371d3127e1e2b0c68e7fca1723eb28017cf1ac015ef6389248430ec8003"
+  },
+  {
+    "name": "multi-platform-product-analysis",
+    "purpose": "分析淘宝、天猫、京东、拼多多和抖店的商品经营表现，支持官方分析方法和用户提供的可执行分析方法论，生成离线 HTML 报告。适用于全店商品盘点、销量与 GMV 结构、流量转化诊断、零成交与滞销识别、潜力商品挖掘、退款风险和商品排行。数据统一通过 ecommerce-data-query 按业务域或用户描述的指标查询。用户指定具体商品 ID、商品链接或上下文已核实商品的下钻转交 multi-platform-single-product-analysis。全流程只读，不修改店铺数据。",
+    "sha256": "bb5d3ec373fec11fb1e52bc32dfbdded9fcfe07103f70d36b833bcb889bc802d"
+  },
+  {
+    "name": "multi-platform-review-reply",
+    "purpose": "处理 PDD/拼多多、JD/京东/京麦、Taobao/淘宝/千牛、Tmall/天猫、Doudian/抖店的商品评价采集（默认全部评价，可筛选时间、商家回复状态全部/已回复/未回复、正面/负面）、分析、回复草稿和已确认回复提交。自动回复候选仅限未回复评价；已回复/全部采集只用于查看与分析。适用于评价管理、评价投诉点与质量问题汇总、回复建议和基于确认的回复；天猫（platformId=tmall）是独立平台并只使用 tmall DSL；任何平台均不得未经确认提交。",
+    "sha256": "b7096181c4639e53f5d9c1237bc59dd2cf4e8b39c0e08a2965c98ea285d3549e"
+  },
+  {
+    "name": "multi-platform-single-product-analysis",
+    "purpose": "围绕自家商品，按官方或用户提供的可执行方法论分析销售、来源与转化、SKU、推广及售后，生成离线 HTML 报告。适用于淘宝、天猫、京东、拼多多和抖店的单品经营复盘、异常排查和规格表现分析。数据统一通过 ecommerce-data-query 按业务域或用户描述的指标查询；不用于竞品调研或全店商品盘点。",
+    "sha256": "a2ee5c3de1a3077d6e06831398992f6fd8dd28f55515b41c1d44d2006b7e75d9"
+  },
+  {
+    "name": "multi-platform-store-analysis",
+    "purpose": "分析淘宝、天猫、京东、拼多多和抖店的店铺经营表现，支持官方分析方法与用户提供的可执行分析方法论，提供经营建议和离线 HTML 报告。适用于店铺复盘、日报周报月报解读、销售、流量、转化、商品结构与退款变化分析，以及跨平台、多店铺对比。统一通过 ecommerce-data-query 按业务域或用户描述的指标取数，再按所选方法计算和呈现。",
+    "sha256": "fec8027c0ba15b350608552e7e6eada2a35453b2074ae9320b9fe22dff7d420d"
+  },
+  {
+    "name": "product-package-autofill",
+    "purpose": "当用户需要从商品 URL、商家 Excel、ERP 导出或自然语言 JSON 自动准备商品发布素材包时使用。URL 新任务先初始化持久并行编排，标题交接后立即召回类目，同时继续来源处理；只处理必填字段主链，完成发布前预检后再交给发品技能。",
+    "sha256": "cef036f3c0a454f7673a3aa377c21f058b2be7e92674c5ea7f08b3d66227bd32"
+  },
+  {
+    "name": "product-package-template",
+    "purpose": "当用户需要生成商品发布素材包、发品资料模板或未填写的商品信息表时使用。根据商品名称、类目 ID、类目名称或类目路径，为用户选择的平台确定叶子类目，并生成包含未填写商品信息表和空素材目录的 ZIP 压缩包。不生成实际素材，不解析或填写已有模板，也不创建或执行商品发布任务。",
+    "sha256": "819a38c9369b84c6af5244f8f6f4b9720eec91e3f65ae16ccd54be262646f8bc"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "dingtalk": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/mcp/provider.mjs",
+        "dingtalk",
+        "serve"
+      ],
+      "env": {
+        "XOPC_ACCOUNT_HOME": "${PLUGIN_ACCOUNTS}/dingtalk"
+      }
+    }
+  }
+}

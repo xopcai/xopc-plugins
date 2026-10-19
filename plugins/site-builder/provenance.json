@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "accio-site-builder",
+    "version": "0.0.29",
+    "manifestSha256": "dd61b5d7929872df019403cc2624b9dfe1adc12d51361edc0cadd4f6248df7f3",
+    "author": {
+      "name": "AccioWork"
+    },
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

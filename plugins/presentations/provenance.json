@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "presentations",
+    "version": "0.0.7",
+    "manifestSha256": "6b8834f2b4d38387c84e45562bd6005e6bc1bc78757d4a76dfe1525794fa2b23",
+    "author": "Accio",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

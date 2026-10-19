@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-radar",
+  "version": "1.0.1",
+  "description": "从公开采购、招标和社媒信息发现商机，核验证据并生成跟进草稿。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "lead-radar",
+    "marketing-sales"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.png"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Lead Radar",
+          "description": "从公开采购、招标和社媒信息发现商机，核验证据并生成跟进草稿。"
+        },
+        "zh-CN": {
+          "displayName": "商机雷达",
+          "description": "从公开采购、招标和社媒信息发现商机，核验证据并生成跟进草稿。"
+        }
+      },
+      "migration": {
+        "source": "global-lead-radar",
+        "sourceVersion": "0.1.2",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

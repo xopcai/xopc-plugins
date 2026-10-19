@@ -20,10 +20,10 @@ pnpm build
 
 - The plugin solves a distinct task; it is not a renamed prompt or a thin workflow checklist.
 - `plugin.json`, `README.md`, and at least one `skills/<name>/SKILL.md` are present.
-- The plugin combines at least two capability surfaces: Skill, MCP, App, Agent, Command, Hook, or executable scripts.
-- Skills declare inputs, method, deliverables, and safety guardrails.
-- Credentials are never committed or declared in `mcp.json`.
-- Remote MCP endpoints use public HTTPS and standard OAuth on first use.
+- The plugin combines domain-specific guidance with a usable runtime, high-quality specialist references or executable helpers. Unsupported app bindings, hooks and commands are not shipped as working capabilities.
+- Skills include task-specific inputs, decision criteria and deliverables without repeating generic boilerplate.
+- Credentials are never committed. MCP environment/header values reference declared userConfig fields; real values are saved locally.
+- Remote MCP endpoints use public HTTPS. Authorizations use the shared install/detail flow and support Skip for now.
 - External source material has an approved license and recorded provenance.
 - Installation, capability review, enablement, and one representative task have been tested in XOPC.
 

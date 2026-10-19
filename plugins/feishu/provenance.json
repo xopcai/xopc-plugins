@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "feishu-assistant",
+    "version": "0.2.0",
+    "manifestSha256": "660fcc71b659f785982763b7a5d6a054eda6ed4a948c6994fc7cf98e801bbcd8",
+    "author": "Accio",
+    "declaredLicense": "MIT"
+  },
+  "relationship": "official-cli-skill-adaptation",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

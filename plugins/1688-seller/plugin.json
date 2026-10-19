@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "1688-seller",
+  "version": "1.0.1",
+  "description": "分析用户导出的1688店铺、商品和客户数据，提供经营诊断、标题优化和客户跟进方案。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "1688-seller",
+    "ecommerce"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "1688 Seller",
+          "description": "分析用户导出的1688店铺、商品和客户数据，提供经营诊断、标题优化和客户跟进方案。"
+        },
+        "zh-CN": {
+          "displayName": "1688 生意助手",
+          "description": "分析用户导出的1688店铺、商品和客户数据，提供经营诊断、标题优化和客户跟进方案。"
+        }
+      },
+      "migration": {
+        "source": "1688-seller-assistant",
+        "sourceVersion": "0.0.19",
+        "edition": "independent-workflow"
+      }
+    }
+  }
+}

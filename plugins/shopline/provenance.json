@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "shopline-plugin",
+    "version": "1.7.0",
+    "manifestSha256": "f58e040538c0c6892b87f4ea92b6442b7e6d5185c39b2945dcde1cd45897c688",
+    "author": "SHOPLINE",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

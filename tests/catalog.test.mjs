@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import test from 'node:test'
 
@@ -9,17 +9,12 @@ const readJson = path => JSON.parse(readFileSync(join(root, path), 'utf8'))
 
 test('catalog contains a focused set of compound plugins', () => {
   const entries = readJson('catalog.json').plugins
-  assert.deepEqual(entries.map(entry => entry.name), [
-    'cloudflare-workspace',
-    'data-toolkit',
-    'expo',
-    'figma-workspace',
-    'linear-workspace',
-    'notion-workspace',
-    'supabase',
-    'zoom',
-  ])
-  assert.ok(entries.filter(entry => entry.authentication === 'oauth-on-first-use').length >= 6)
+  assert.equal(entries.length, 24)
+  const inventory = readJson('reports/accio-migration-2026-10-19/inventory.json')
+  assert.equal(inventory.plugins.length, 20)
+  assert.equal(new Set(inventory.plugins.map(p => p.source)).size, 20)
+  assert.ok(inventory.plugins.every(p => entries.some(e => e.name === p.name)))
+  assert.ok(!entries.some(e => ['cloudflare-workspace','figma-workspace','linear-workspace','notion-workspace'].includes(e.name)))
 })
 
 test('generated marketplace mirrors the catalog', () => {
@@ -36,3 +31,11 @@ test('build output is deterministic', () => {
   assert.deepEqual(second, first)
   assert.equal(first.plugins.length, readJson('catalog.json').plugins.length)
 })
+
+test('managed DingTalk skills use plugin MCP instead of requiring a system dws executable', () => {
+ for(const name of readdirSync(join(root,'plugins/dingtalk/skills'))){
+  const text=readFileSync(join(root,'plugins/dingtalk/skills',name,'SKILL.md'),'utf8');
+  assert(!text.split('---')[1].includes('bins:'),name+' requires a global CLI');
+  assert(text.includes('cli_run'),name+' lacks managed execution instructions');
+ }
+});

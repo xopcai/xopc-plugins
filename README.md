@@ -1,24 +1,28 @@
 # XOPC Plugins
 
-Official portable [Agent Plugins](https://agent-plugins.org/) maintained by XOPC. The catalog intentionally contains a small set of compound plugins that combine workflow guidance with executable tools, connectors, apps, agents, commands, or scripts.
+Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 20 capabilities migrated from an Accio installation and four retained specialist packages: Data Toolkit, Expo, Supabase and Zoom. Test-only Codex, Claude, OAuth and Extension packages remain on the Store for regression testing.
 
-## Install in xopc
+## Install
 
-Use the capability marketplace, or the CLI:
+Open XOPC → Extensions → Store. Select a plugin, review the declared capabilities, and install. Resources are prepared automatically. Connect an account or choose **Skip for now**; the installed card shows **Authorization required** until connected. Return to plugin details at any time to connect or retry. Plugins are available to all Agents.
 
-```bash
-xopc extensions install store:data-toolkit
-xopc extensions install store:linear-workspace
-xopc extensions install store:supabase
-xopc extensions install store:zoom
-xopc extensions install store:expo
+```sh
+xopc extensions install store:yuque
+xopc extensions install store:dingtalk
+xopc extensions install store:feishu
 ```
 
-Plugins install disabled. Review their declared capabilities before enabling them. Connector-backed plugins start the provider OAuth flow on first use; credentials remain in XOPC's local authorization store. `data-toolkit` runs a dependency-free local Node.js MCP process and never sends input data over the network.
+- **Yuque:** Access Token, validated against the real user API.
+- **DingTalk:** official managed CLI and local browser login.
+- **Feishu:** official managed CLI, QR application setup or App ID/Secret, then user authorization.
+- **Gmail:** local Google OAuth using your own Desktop OAuth client; Google requires this application configuration. Gmail API must be enabled and test accounts admitted where applicable.
+- **OpenBoost:** public remote MCP with provider OAuth and the user's own subscription.
 
-## Development and release
+Other migrated business plugins are explicitly **independent workflow editions**. They work with user data, public browser pages and already connected official tools. They include actual local analysis, HTML reporting and basic DOCX/XLSX/PPTX processing. They do not include Accio's private backend, account bridge or cloud publishing services. The migration report lists the scope of every package; this is not a claim of identical cloud functionality.
 
-```bash
+## Build and verify
+
+```sh
 pnpm install
 pnpm generate
 pnpm validate
@@ -26,31 +30,8 @@ pnpm test
 pnpm build
 ```
 
-`pnpm build` creates deterministic ZIP artifacts and `dist/release-manifest.json`. Maintainers sync a build to XOPC Store with:
+`generate` synchronizes the marketplace and self-contained runtime files without overwriting authored skills. `build` emits deterministic `.codex-plugin/plugin.json` and `.mcp.json` ZIP artifacts with SHA-256 digests. Runtime dependencies are pinned Store resources selected automatically for macOS/Linux/Windows on x64/arm64.
 
-```bash
-XOPC_STORE_URL=https://store.xopc.ai \
-XOPC_API_KEY=... \
-XOPC_ADMIN_API_KEY=... \
-pnpm publish:store
-```
+Use `pnpm publish:store -- --dry-run` to review a release. Publishing uses maintainer credentials through environment variables; no credentials belong in this repository. `scripts/publish-on-store.mjs` is the server-side release runner with an ephemeral key, hash checks, approval and idempotent resource uploads. Run it only in the Store workspace after uploading the release artifacts.
 
-`XOPC_ADMIN_API_KEY` is optional. Without it, uploads remain in the Store review queue. Publishing is incremental, skips byte-identical versions, continues independent uploads after a failure, and prints an aggregate result. Use `pnpm publish:store -- --dry-run` to verify the complete release locally or `XOPC_PUBLISH_PHASES=P0,P1` to select rollout phases.
-
-## Contributing and upstream review
-
-Use `pnpm new my-plugin productivity` to scaffold a community contribution. See [CONTRIBUTING.md](CONTRIBUTING.md) for acceptance criteria and [docs/roadmap.md](docs/roadmap.md) for the P0–P2 supply model.
-
-OpenAI's catalog can be classified without copying it:
-
-```bash
-pnpm analyze:openai /path/to/openai/plugins
-```
-
-The report separates portable candidates from plugins that need an XOPC adapter or license review.
-
-## Security
-
-See [SECURITY.md](SECURITY.md). Plugin releases are validated by the Store, bound to a source commit and SHA-256 digest, and installed by xopc only after an explicit capability review.
-
-Apache-2.0
+See [migration inventory](reports/accio-migration-2026-10-19/inventory.json), [CONTRIBUTING.md](CONTRIBUTING.md), and the release validation report in the same report directory. Wrapper/runtime code is Apache-2.0; retained official skills preserve upstream licensing and attribution in each package.

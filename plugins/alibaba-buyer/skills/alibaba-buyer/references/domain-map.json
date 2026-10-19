@@ -1,0 +1,192 @@
+[
+  {
+    "name": "accio-inquiry",
+    "purpose": "Prioritize this skill whenever the user's question or task touches inquiry or procurement on the buyer side — including RFQs, supplier communication and quotes, task progress, requirement changes, comparison and negotiation, auto-chat, and related controls. Do not default to email, search, or other skills first for these topics.",
+    "sha256": "b65e6cfbdb01814bb10ae603e7448e7d9de9d90d6f805fbc4131bf938c2ffb45"
+  },
+  {
+    "name": "accio-product-supplier-sourcing",
+    "purpose": "B2B product & supplier search with rich visual rendering",
+    "sha256": "d5c0ca0568f8fec0669f8f70c3bc4be318d46b9b26c02a45a7cbeeb46563b749"
+  },
+  {
+    "name": "ai-product-designer",
+    "purpose": "|",
+    "sha256": "698df70ebb1239367afcd3e4e7d9523df21835edb33974142693e0876795be1e"
+  },
+  {
+    "name": "alibaba-icbu-payment-action",
+    "purpose": ">",
+    "sha256": "ecbf19c6dd1537dd3938081e8e4d9af82b529fcde3515864433ca7fd61f8fc54"
+  },
+  {
+    "name": "alibaba-icbu-payment-link",
+    "purpose": ">",
+    "sha256": "93776b4245b3519ed47eeaa2d5cf445400298c91cba62024977ca49f52a1da9d"
+  },
+  {
+    "name": "alibaba-icbu-payment-result-detail",
+    "purpose": ">",
+    "sha256": "57f5cf910823a4f710a2c9e29f7abc0abaa552e6d43a7e8c1d900866188dc049"
+  },
+  {
+    "name": "alibaba-icbu-payment-status",
+    "purpose": ">",
+    "sha256": "536e49d130f463f685605679476216234bc105bb2e1a47c97f8536161371bc76"
+  },
+  {
+    "name": "alibaba-icbu-trade-after-sales-refund-guide",
+    "purpose": ">",
+    "sha256": "d9e16a997838a4b81e06760b8af861eb440fd681f627d50a9687940228339d54"
+  },
+  {
+    "name": "alibaba-icbu-trade-after-sales-refund-submit",
+    "purpose": ">",
+    "sha256": "9cb6bc84c488e74b873b0db8cbd1457e475887c3e0aa41dd7a05f8cb71a47e9d"
+  },
+  {
+    "name": "alibaba-icbu-trade-after-sales-status-query",
+    "purpose": ">",
+    "sha256": "b75edda2ca124b04aee91561c466ff2a39e0522ce1ebf0a8eb2a710b67e8e466"
+  },
+  {
+    "name": "alibaba-icbu-trade-agent-guide",
+    "purpose": ">",
+    "sha256": "2a290b67666054e5738713627404ab10d7fe98bc7cd1e5a4d689bc1af2c9a69f"
+  },
+  {
+    "name": "alibaba-icbu-trade-buyer-consignee-address-list-query",
+    "purpose": ">",
+    "sha256": "c1a1778b259ec27c3778115238afa7fc83d826ad265c71bfc780e5a85a8708cf"
+  },
+  {
+    "name": "alibaba-icbu-trade-buynow-order",
+    "purpose": ">",
+    "sha256": "9a438f5fcd40414e8310e972ee620af75e4f90d3b4ea80b537dd00ac7c106296"
+  },
+  {
+    "name": "alibaba-icbu-trade-contract-draft-view",
+    "purpose": ">",
+    "sha256": "66eaee8dfe17e96427f8e0406cd6345123ed58c26e90b732d616fa15850184f6"
+  },
+  {
+    "name": "alibaba-icbu-trade-order-create",
+    "purpose": ">",
+    "sha256": "350e634fbff849035adf8ac54219262fc672a92fe61fbf47f5552ef9d24022b1"
+  },
+  {
+    "name": "alibaba-icbu-trade-order-query",
+    "purpose": ">",
+    "sha256": "98e0b98e7292514908ba043c14126585ba5de71641b3b31cb9c5c026e7f77176"
+  },
+  {
+    "name": "alibaba-logistics-assistant-buyer",
+    "purpose": ">",
+    "sha256": "36286207455e87f1bc6a5139ddeaa6c71ba14c09a75194e235eb5236bd3db105"
+  },
+  {
+    "name": "buyer-payment-intent",
+    "purpose": "|",
+    "sha256": "fc40b5c14bf37365f3aa3a4ef2c00e3e29a9bf8a1acbc2cb650ef1b5809753c1"
+  },
+  {
+    "name": "buyer-trade-intent",
+    "purpose": "|",
+    "sha256": "7035b9b5d1e07f53f73a9a08f411eb2f87d98b8ba80776719488c30b9116eac7"
+  },
+  {
+    "name": "coarse-rank",
+    "purpose": ">",
+    "sha256": "438534c9d8d883820aac33a7fe45eb97429164e21549b2cca9c0362b3fa44989"
+  },
+  {
+    "name": "conversation-summary",
+    "purpose": ">-",
+    "sha256": "fa24a49a6e4b1a10f7a9531b578068088cb109115eaff6975827387823dfb09b"
+  },
+  {
+    "name": "cross-border-market-research",
+    "purpose": ">",
+    "sha256": "3372552ac57ac822fc6e9c49b1658eef0aaeea75254149dfa2473e0a0ec76bb2"
+  },
+  {
+    "name": "html-report-generator",
+    "purpose": "|",
+    "sha256": "1b43bf22022fe11d007cb1c1b3f1d417c443cdc90645957afaa1ee8d68830c3d"
+  },
+  {
+    "name": "im-conversation-reader",
+    "purpose": ">-",
+    "sha256": "c6cc9f01ed0dbf78ff444389484944c067aa2ad8d3a18006f15527cf4d5ffac6"
+  },
+  {
+    "name": "image-analysis",
+    "purpose": "Use when a buyer provides an image or public image URL and wants to identify, understand, find, source, or search for the pictured product; use Google Lens before Alibaba.com search, with risk detection only for matching restricted categories.",
+    "sha256": "4b7ce9887d294e4ab09a796ae564b4ec642b30bf3d8fed08c1796ef877895949"
+  },
+  {
+    "name": "negotiation-assist",
+    "purpose": ">-",
+    "sha256": "380042909e6da4aed3914376397d58394cef29949211ee52b6265bf5f2da87e6"
+  },
+  {
+    "name": "product-analysis-report",
+    "purpose": "|",
+    "sha256": "8cf7d625e3825c8b718aa86f3e28215f6d65f16c1f823e2e4d7e27b8594d1c85"
+  },
+  {
+    "name": "product-selection",
+    "purpose": ">",
+    "sha256": "9e46aa6468f49e9535ff69993338a4d277968341ceb13b3644cfe45b6d2500d3"
+  },
+  {
+    "name": "profit-calculator",
+    "purpose": "|",
+    "sha256": "53c7d432620ff99ac74346e8358e6c8a5030dcc7ea7a49b46e33a4dbea119d0b"
+  },
+  {
+    "name": "quotation-analysis",
+    "purpose": ">-",
+    "sha256": "dc2bec826e5adc416e0d7eb0f747ddb365d6d09192f7c63ae69346555780d8a6"
+  },
+  {
+    "name": "risk-analysis",
+    "purpose": ">-",
+    "sha256": "d229f5313c46792c7a75c78451c5d42dea9df03891687e6c4dede306cb491a9a"
+  },
+  {
+    "name": "sourcing-artifact-writer",
+    "purpose": ">",
+    "sha256": "e65b92872b649bd9d1d5bb3463bd268fdfcbfce7be4f3f294e93c7c1f4bc584c"
+  },
+  {
+    "name": "sourcing-requirement-collect",
+    "purpose": ">",
+    "sha256": "5efd2f4bb68de7812720fc869c000c163e77c709b17c235944831ad28ee1acdc"
+  },
+  {
+    "name": "supersourcing",
+    "purpose": ">",
+    "sha256": "262b02084520e5a9abee2ae565ef08acf69b3b51f652f2594347af951b314dc1"
+  },
+  {
+    "name": "supplier-verification-report",
+    "purpose": ">",
+    "sha256": "87a168acfd7e8c4458207296e2f07b014079e5fd209f2cfdd9faa84b96a6e4ce"
+  },
+  {
+    "name": "trade-knowledge",
+    "purpose": ">-",
+    "sha256": "1d2f7da75023fb1f19cd70b80379b8f6b80cca23425c2dc196abea04fcc87872"
+  },
+  {
+    "name": "trade-page-navigation",
+    "purpose": ">-",
+    "sha256": "a4d2b9bd93be1eba81b66847fbed37373d58ae5fc14552bfc5e68045db30a339"
+  },
+  {
+    "name": "write-compare-report",
+    "purpose": "|",
+    "sha256": "51d2759b39e2a9a91c65f7c44e60243a27693bcbe8c2ae83c5468ea121806bb6"
+  }
+]

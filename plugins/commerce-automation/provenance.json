@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "ecommerce-automation-toolkit",
+    "version": "0.3.11",
+    "manifestSha256": "037982bef63ada2c79ae6430f9577238c1d5de133e8eee0cc3a7209457478bc6",
+    "author": "Unknown",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

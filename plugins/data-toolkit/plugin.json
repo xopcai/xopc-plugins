@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "data-toolkit",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Inspect JSON and CSV data locally with a dependency-free MCP server and analysis workflow.",
   "author": {
     "name": "XOPC",

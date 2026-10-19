@@ -1,0 +1,192 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "feishu",
+  "version": "1.0.3",
+  "description": "使用官方飞书 CLI 操作文档、云盘、多维表格、日历及企业协作资源。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "MIT",
+  "keywords": [
+    "feishu",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "en": {
+          "displayName": "Feishu",
+          "description": "使用官方飞书 CLI 操作文档、云盘、多维表格、日历及企业协作资源。"
+        },
+        "zh-CN": {
+          "displayName": "飞书",
+          "description": "使用官方飞书 CLI 操作文档、云盘、多维表格、日历及企业协作资源。"
+        }
+      },
+      "migration": {
+        "source": "feishu-assistant",
+        "sourceVersion": "0.2.0",
+        "edition": "direct-provider"
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "feishu",
+            "title": "飞书",
+            "servers": [
+              "feishu"
+            ],
+            "methods": [
+              {
+                "id": "scan",
+                "title": "扫码连接",
+                "type": "cli",
+                "fields": [],
+                "login": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "feishu",
+                    "login-qr"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "check": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "feishu",
+                    "check"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "timeoutSeconds": 600,
+                "instructions": [
+                  "用飞书扫描二维码配置应用，随后完成用户授权。",
+                  "按官方 CLI 推荐权限授权，业务需要的额外权限仍由企业管理员决定。"
+                ]
+              },
+              {
+                "id": "manual",
+                "title": "手动填写",
+                "type": "cli",
+                "fields": [
+                  "clientKey",
+                  "clientSecret"
+                ],
+                "login": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "feishu",
+                    "login-manual"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "check": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "feishu",
+                    "check"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "timeoutSeconds": 600,
+                "instructions": [
+                  "在飞书开放平台创建企业自建应用，填写 App ID 与 App Secret。",
+                  "继续后会显示用户授权二维码；企业应用的权限及可用范围由管理员配置。"
+                ],
+                "helpUrl": "https://open.feishu.cn/app"
+              }
+            ]
+          }
+        ],
+        "resources": [
+          {
+            "id": "provider-cli",
+            "variants": [
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/57cf728b896254b8790e8973ce29627adc567e674938256b53ec5f356c406de5.bin",
+                "sha256": "57cf728b896254b8790e8973ce29627adc567e674938256b53ec5f356c406de5",
+                "platform": "darwin",
+                "arch": "x64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/2455021d03ab3055b3c956a59067fd38ba4a9aa20accca8a8136ce4d0fae73de.bin",
+                "sha256": "2455021d03ab3055b3c956a59067fd38ba4a9aa20accca8a8136ce4d0fae73de",
+                "platform": "darwin",
+                "arch": "arm64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/1e8930cff821b0e5774c9f2cb38b8627099e13ea36965c79677980e8d07088a2.bin",
+                "sha256": "1e8930cff821b0e5774c9f2cb38b8627099e13ea36965c79677980e8d07088a2",
+                "platform": "linux",
+                "arch": "x64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/01924a67b0884fef952d67716feaabd3747c982b5159a64b681d3f24e0d8ca90.bin",
+                "sha256": "01924a67b0884fef952d67716feaabd3747c982b5159a64b681d3f24e0d8ca90",
+                "platform": "linux",
+                "arch": "arm64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/527a2ed0b3ff161bc56e0b79ae829198389ccfa5db82be84258c8d60b852fed8.bin",
+                "sha256": "527a2ed0b3ff161bc56e0b79ae829198389ccfa5db82be84258c8d60b852fed8",
+                "platform": "win32",
+                "arch": "x64",
+                "executable": true
+              },
+              {
+                "url": "https://store.xopc.ai/files/assets/plugin-resources/a65c05263b7294279b78b0f13c76f1e470dc086367056fd36ead75ca8f806854.bin",
+                "sha256": "a65c05263b7294279b78b0f13c76f1e470dc086367056fd36ead75ca8f806854",
+                "platform": "win32",
+                "arch": "arm64",
+                "executable": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "com.openai": {
+      "userConfig": {
+        "clientKey": {
+          "type": "string",
+          "title": "App ID",
+          "required": true,
+          "default": ""
+        },
+        "clientSecret": {
+          "type": "string",
+          "title": "App Secret",
+          "required": true,
+          "sensitive": true,
+          "default": ""
+        }
+      }
+    }
+  }
+}

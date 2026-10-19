@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "shopify-plugin",
+    "version": "0.3.0",
+    "manifestSha256": "2c6064f23a60c9e2b585faec071fde21ada7ceeaa034d251593d273a4cfa48f8",
+    "author": "Accio",
+    "declaredLicense": null
+  },
+  "relationship": "independently-authored-workflow-and-provider-adapter",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}

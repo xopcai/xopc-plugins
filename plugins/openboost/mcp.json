@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "openboost": {
+      "type": "streamable-http",
+      "url": "https://mcp.microdata-inc.com/mcp-servers/oauth/proboost-tiktok-amazon-patent-mcp/sse",
+      "connectionAuth": {
+        "mode": "oauth"
+      }
+    }
+  }
+}

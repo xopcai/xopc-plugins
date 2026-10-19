@@ -12,9 +12,22 @@ if (!dryRun && !apiKey) throw new Error('XOPC_API_KEY is required unless --dry-r
 
 execFileSync(process.execPath, [join(root, 'scripts/build.mjs')], { stdio: 'inherit' })
 const release = JSON.parse(readFileSync(join(root, 'dist/release-manifest.json'), 'utf8'))
+const clean = !execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim()
 const commit = process.env.XOPC_SOURCE_COMMIT?.trim()
-  || execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
-if (!/^[a-f0-9]{40}$/.test(commit)) throw new Error('XOPC_SOURCE_COMMIT must be a full Git commit SHA')
+  || (clean ? execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim() : undefined)
+if (commit && !/^[a-f0-9]{40}$/.test(commit)) throw new Error('XOPC_SOURCE_COMMIT must be a full Git commit SHA')
+// A dirty checkout must not claim its old HEAD describes the newly built artifact.
+const resourceDirectory = process.env.XOPC_RESOURCE_DIR
+if (!dryRun && release.resources.length) {
+  if (!resourceDirectory) throw new Error('XOPC_RESOURCE_DIR must contain the pinned Store resource files')
+  for (const resource of release.resources) {
+    const response = await fetch(`${store}/api/v1/developer/resources/${resource.sha256}`, {
+      method: 'PUT', headers: { 'x-api-key': apiKey, 'content-type': 'application/octet-stream' },
+      body: readFileSync(join(resourceDirectory, resource.file)),
+    })
+    if (!response.ok) throw new Error(`Resource upload failed (${response.status}): ${resource.sha256}`)
+  }
+}
 
 const selected = release.plugins.filter(plugin => !requestedPhases.size || requestedPhases.has(plugin.phase ?? 'legacy'))
 if (!selected.length) throw new Error(`No plugins match phases: ${[...requestedPhases].join(', ')}`)
@@ -44,7 +57,7 @@ async function publish(plugin) {
   form.set('description', manifest.description)
   form.set('category', plugin.category)
   form.set('sourceRepository', release.repository)
-  form.set('sourceCommit', commit)
+  if (commit) form.set('sourceCommit', commit)
   form.set('file', new Blob([readFileSync(join(root, 'dist', plugin.artifact))], { type: 'application/zip' }), plugin.artifact)
   const response = await fetch(`${store}/api/v1/developer/packages/${encodeURIComponent(plugin.name)}/versions`, {
     method: 'POST', headers: { 'x-api-key': apiKey }, body: form,

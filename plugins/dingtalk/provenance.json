@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "plugin": "dingtalk-assistant",
+    "version": "0.2.0",
+    "manifestSha256": "1f908e04e69bb1bfe73b5b3811f73cc8838ca2a360c1d66ca06aa9db6c6182d0",
+    "author": "Accio",
+    "declaredLicense": "Apache-2.0"
+  },
+  "relationship": "official-cli-skill-adaptation",
+  "note": "Original authors and trademarks remain theirs. Original private services and account state are not redistributed. No runtime credentials copied."
+}
