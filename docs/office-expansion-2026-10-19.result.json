@@ -1,0 +1,130 @@
+{
+  "ok": true,
+  "newPlugins": 8,
+  "packages": [
+    {
+      "name": "calendar-ics",
+      "version": "1.0.0",
+      "sha256": "b3468f24e5b1f4a3d7b3ec55deaabf3793141fdb776880fa30f95ed7fd00154f",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": true,
+      "authorization": "not-required",
+      "global": true
+    },
+    {
+      "name": "notion-office",
+      "version": "1.0.0",
+      "sha256": "0e8502b151b6072a57463ff340ffa6e4fa6d59fbf9989af47d2c9d11f1e056e0",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": false,
+      "authorization": "deferred",
+      "global": true
+    },
+    {
+      "name": "obsidian",
+      "version": "1.0.0",
+      "sha256": "28a599548f1816102c339440a20b2d60447b397c2346e2da14d6fda7d40a7d3c",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": true,
+      "authorization": "not-required",
+      "global": true
+    },
+    {
+      "name": "pdf-reader",
+      "version": "1.0.0",
+      "sha256": "1736bca8745588cef41095411b0024738cede4fa720b285d08882313ae841461",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": true,
+      "authorization": "not-required",
+      "global": true
+    },
+    {
+      "name": "readwise-reader",
+      "version": "1.0.0",
+      "sha256": "9ccadc325decd95c09a43c5246174a34c1fecf17b825e564e3f592f8e9a2b208",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": false,
+      "authorization": "deferred",
+      "global": true
+    },
+    {
+      "name": "rss-reader",
+      "version": "1.0.0",
+      "sha256": "60dac6c7b7c497549256100219162414e8c55e8bac6bbb66251600bbdee6eb86",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": true,
+      "authorization": "not-required",
+      "global": true
+    },
+    {
+      "name": "todoist",
+      "version": "1.0.0",
+      "sha256": "335444f28576d7b28fae8d6e94a23e968100e35fe8926153fbd4ac7d4dd696a4",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": false,
+      "authorization": "deferred",
+      "global": true
+    },
+    {
+      "name": "web-clipper",
+      "version": "1.0.0",
+      "sha256": "a1fcc95295a0fdd025814d8a7fd239baafa0579e4a777e017f821a974c41c680",
+      "skills": 1,
+      "resources": 0,
+      "installed": true,
+      "actualToolCall": true,
+      "authorization": "not-required",
+      "global": true
+    }
+  ],
+  "realOfficialChallenges": [],
+  "realNativeOAuthChallenges": [
+    "notion"
+  ],
+  "productionAccountAuthorization": "Notion consent and real Todoist/Readwise account calls remain for user acceptance; no user credentials used.",
+  "checks": [
+    "authenticated Gateway API paths",
+    "actual public Store metadata and artifact integrity",
+    "all package inspections have no diagnostics",
+    "bundled executable resources prepared from Store",
+    "all installations completed or explicitly deferred",
+    "every local executable package called through native pi MCP",
+    "global availability in two Agents",
+    "durable receipts survive reload",
+    "real Notion OAuth challenge without account consent",
+    "deferred private tools stay unavailable"
+  ],
+  "nativeToolInvocation": "Deterministic model fixture selecting real native pi MCP tools; no simulated tool responses.",
+  "unitTests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "realPublicSources": [
+    {
+      "source": "https://sspai.com/feed",
+      "check": "RSS fetched and parsed; 2 items requested"
+    },
+    {
+      "source": "https://sspai.com/post/115125",
+      "check": "Article extracted; 13152 text characters"
+    },
+    {
+      "source": "https://example.com/",
+      "check": "Article extraction also exercised through Store-installed native MCP"
+    }
+  ]
+}

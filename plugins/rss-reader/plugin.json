@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rss-reader",
+  "version": "1.0.0",
+  "description": "订阅 RSS/Atom、导入 OPML，按时间筛选和去重，整理带出处的中英文资讯简报。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "rss-reader",
+    "office",
+    "research",
+    "中文",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "zh-CN": {
+          "displayName": "RSS 阅读与简报",
+          "description": "订阅 RSS/Atom、导入 OPML，按时间筛选和去重，整理带出处的中英文资讯简报。"
+        },
+        "en": {
+          "displayName": "RSS Reader",
+          "description": "订阅 RSS/Atom、导入 OPML，按时间筛选和去重，整理带出处的中英文资讯简报。"
+        }
+      }
+    }
+  }
+}

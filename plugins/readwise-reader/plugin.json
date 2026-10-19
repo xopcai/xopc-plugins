@@ -1,0 +1,74 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "readwise-reader",
+  "version": "1.0.0",
+  "description": "连接 Reader 阅读库、读取文章与标签，按用户要求保存资料链接，保留分页与来源。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "readwise-reader",
+    "office",
+    "research",
+    "中文",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "zh-CN": {
+          "displayName": "Readwise 阅读收集箱",
+          "description": "连接 Reader 阅读库、读取文章与标签，按用户要求保存资料链接，保留分页与来源。"
+        },
+        "en": {
+          "displayName": "Readwise Reader",
+          "description": "连接 Reader 阅读库、读取文章与标签，按用户要求保存资料链接，保留分页与来源。"
+        }
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "readwise-reader",
+            "title": "Readwise Reader",
+            "servers": [
+              "readwise-reader"
+            ],
+            "methods": [
+              {
+                "id": "token",
+                "title": "Access Token",
+                "type": "form",
+                "fields": [
+                  "accessToken"
+                ],
+                "instructions": [
+                  "打开官方设置页复制个人 API Token，粘贴后会实际验证账号。",
+                  "可以暂时跳过；Token 仅在本机加密保存，不上传 Store。"
+                ],
+                "helpUrl": "https://readwise.io/access_token"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "com.openai": {
+      "userConfig": {
+        "accessToken": {
+          "type": "string",
+          "title": "Access Token",
+          "required": true,
+          "sensitive": true,
+          "default": ""
+        }
+      }
+    }
+  }
+}

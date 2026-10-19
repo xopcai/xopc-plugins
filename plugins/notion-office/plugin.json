@@ -1,0 +1,61 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "notion-office",
+  "version": "1.0.0",
+  "description": "通过官方 OAuth 连接工作空间，检索资料、整理会议上下文、归档决策与知识。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "notion",
+    "office",
+    "research",
+    "中文",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "zh-CN": {
+          "displayName": "Notion 知识与会议",
+          "description": "通过官方 OAuth 连接工作空间，检索资料、整理会议上下文、归档决策与知识。"
+        },
+        "en": {
+          "displayName": "Notion Knowledge & Meetings",
+          "description": "通过官方 OAuth 连接工作空间，检索资料、整理会议上下文、归档决策与知识。"
+        }
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "notion",
+            "title": "Notion 工作空间",
+            "servers": [
+              "notion"
+            ],
+            "methods": [
+              {
+                "id": "oauth",
+                "title": "登录 Notion",
+                "type": "oauth",
+                "server": "notion",
+                "instructions": [
+                  "登录 Notion 并选择允许访问的工作空间。",
+                  "可以暂时跳过，之后从插件详情页连接。"
+                ],
+                "helpUrl": "https://developers.notion.com/guides/mcp/get-started-with-mcp"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

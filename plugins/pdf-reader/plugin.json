@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pdf-reader",
+  "version": "1.0.0",
+  "description": "按页读取本地 PDF，保留页码依据；明确区分文本页与需要 OCR 的扫描页。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "pdf-reader",
+    "office",
+    "research",
+    "中文",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "zh-CN": {
+          "displayName": "PDF 阅读助手",
+          "description": "按页读取本地 PDF，保留页码依据；明确区分文本页与需要 OCR 的扫描页。"
+        },
+        "en": {
+          "displayName": "PDF Reader",
+          "description": "按页读取本地 PDF，保留页码依据；明确区分文本页与需要 OCR 的扫描页。"
+        }
+      }
+    }
+  }
+}

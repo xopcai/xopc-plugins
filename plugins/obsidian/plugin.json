@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "obsidian",
+  "version": "1.0.0",
+  "description": "检索指定 Markdown 笔记库、读取双链笔记，并在用户要求时新增笔记，无需安装 Obsidian 扩展。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "obsidian",
+    "office",
+    "research",
+    "中文",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "zh-CN": {
+          "displayName": "Obsidian 本地笔记",
+          "description": "检索指定 Markdown 笔记库、读取双链笔记，并在用户要求时新增笔记，无需安装 Obsidian 扩展。"
+        },
+        "en": {
+          "displayName": "Obsidian Notes",
+          "description": "检索指定 Markdown 笔记库、读取双链笔记，并在用户要求时新增笔记，无需安装 Obsidian 扩展。"
+        }
+      }
+    }
+  }
+}

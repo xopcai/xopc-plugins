@@ -1,0 +1,74 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "todoist",
+  "version": "1.0.0",
+  "description": "读取项目与待办、整理每日计划，并按用户明确要求创建或完成任务。",
+  "author": {
+    "name": "XOPC",
+    "url": "https://xopc.ai"
+  },
+  "repository": "https://github.com/xopcai/xopc-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "todoist",
+    "office",
+    "research",
+    "中文",
+    "productivity"
+  ],
+  "extensions": {
+    "ai.xopc": {
+      "branding": {
+        "icon": "assets/icon.svg"
+      },
+      "localizations": {
+        "zh-CN": {
+          "displayName": "Todoist 待办助手",
+          "description": "读取项目与待办、整理每日计划，并按用户明确要求创建或完成任务。"
+        },
+        "en": {
+          "displayName": "Todoist",
+          "description": "读取项目与待办、整理每日计划，并按用户明确要求创建或完成任务。"
+        }
+      },
+      "setup": {
+        "version": 1,
+        "authorizations": [
+          {
+            "id": "todoist",
+            "title": "Todoist",
+            "servers": [
+              "todoist"
+            ],
+            "methods": [
+              {
+                "id": "token",
+                "title": "Access Token",
+                "type": "form",
+                "fields": [
+                  "accessToken"
+                ],
+                "instructions": [
+                  "打开官方设置页复制个人 API Token，粘贴后会实际验证账号。",
+                  "可以暂时跳过；Token 仅在本机加密保存，不上传 Store。"
+                ],
+                "helpUrl": "https://app.todoist.com/app/settings/integrations/developer"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "com.openai": {
+      "userConfig": {
+        "accessToken": {
+          "type": "string",
+          "title": "Access Token",
+          "required": true,
+          "sensitive": true,
+          "default": ""
+        }
+      }
+    }
+  }
+}

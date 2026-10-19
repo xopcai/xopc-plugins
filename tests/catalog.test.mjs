@@ -9,7 +9,8 @@ const readJson = path => JSON.parse(readFileSync(join(root, path), 'utf8'))
 
 test('catalog contains a focused set of compound plugins', () => {
   const entries = readJson('catalog.json').plugins
-  assert.equal(entries.length, 24)
+  assert.ok(entries.length >= 32)
+  for (const name of ['rss-reader','web-clipper','pdf-reader','calendar-ics','obsidian','notion-office','todoist','readwise-reader']) assert.ok(entries.some(entry => entry.name === name))
   const inventory = readJson('reports/accio-migration-2026-10-19/inventory.json')
   assert.equal(inventory.plugins.length, 20)
   assert.equal(new Set(inventory.plugins.map(p => p.source)).size, 20)

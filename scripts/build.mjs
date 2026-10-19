@@ -1,8 +1,10 @@
+import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { zipSync } from 'fflate';
 import { buildSync } from 'esbuild';
 import { catalog, filesUnder, root, sha256 } from './lib.mjs';
+execFileSync(process.execPath,[join(root,'scripts/build-office.mjs')],{stdio:'inherit'});
 const output=join(root,'dist');rmSync(output,{recursive:true,force:true});mkdirSync(output,{recursive:true});
 const local=buildSync({entryPoints:[join(root,'runtime/local.mjs')],bundle:true,platform:'node',format:'esm',target:'node22',write:false,minify:false}).outputFiles[0].contents;
 const sourceDate=new Date(1980,0,1,0,0,0);

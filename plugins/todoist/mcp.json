@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "todoist": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/mcp/server.mjs",
+        "todoist"
+      ],
+      "env": {
+        "ACCESS_TOKEN": "${user_config.accessToken}"
+      }
+    }
+  }
+}

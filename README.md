@@ -1,6 +1,6 @@
 # XOPC Plugins
 
-Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 20 capabilities migrated from an Accio installation and four retained specialist packages: Data Toolkit, Expo, Supabase and Zoom. Test-only Codex, Claude, OAuth and Extension packages remain on the Store for regression testing.
+Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 32 packages: 20 capabilities migrated from an Accio installation, four retained specialist packages, and eight focused office and information-collection plugins. Test-only Codex, Claude, OAuth and Extension packages remain on the Store for regression testing.
 
 ## Install
 
@@ -24,7 +24,6 @@ Other migrated business plugins are explicitly **independent workflow editions**
 
 ```sh
 pnpm install
-pnpm generate
 pnpm validate
 pnpm test
 pnpm build
@@ -35,3 +34,18 @@ pnpm build
 Use `pnpm publish:store -- --dry-run` to review a release. Publishing uses maintainer credentials through environment variables; no credentials belong in this repository. `scripts/publish-on-store.mjs` is the server-side release runner with an ephemeral key, hash checks, approval and idempotent resource uploads. Run it only in the Store workspace after uploading the release artifacts.
 
 See [migration inventory](reports/accio-migration-2026-10-19/inventory.json), [CONTRIBUTING.md](CONTRIBUTING.md), and the release validation report in the same report directory. Wrapper/runtime code is Apache-2.0; retained official skills preserve upstream licensing and attribution in each package.
+
+## Office and information collection
+
+| Plugin | Outcome | Setup |
+| --- | --- | --- |
+| RSS Reader | RSS/Atom briefs, OPML imports, deduplication with dates and links | None |
+| Web Clipper | Read public articles, save/search a private Markdown clip library | None |
+| PDF Reader | Page-cited PDF text; identifies scans needing OCR | None; local PDF |
+| Calendar ICS | Recurring events, exceptions and overlap checks from ICS exports | None; local/text/public calendar |
+| Obsidian | Search/read a selected Markdown vault; explicitly requested new notes | User supplies vault folder in chat |
+| Notion | Workspace research, meeting preparation and knowledge capture | Official Notion OAuth |
+| Todoist | Read projects/tasks; explicitly requested task creation/completion | API Token |
+| Readwise Reader | Read library/tags; save explicitly requested article URLs | Access Token |
+
+The local runtimes are bundled into the Store archive; installation does not run npm/pip or download code from third-party registries. Do not run `generate` merely to add catalog entries: it also synchronizes existing provider runtimes, which requires versioning affected releases. `build-office.mjs` only rebuilds the new office runtimes. SaaS account access is verified with the provider at connection time; release tests use synthetic accounts and do not claim production OAuth consent. See `docs/office-expansion-2026-10-19.md`.

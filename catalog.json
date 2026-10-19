@@ -27,6 +27,14 @@
       "migrationSource": "alibaba-com-seller-assistant"
     },
     {
+      "name": "calendar-ics",
+      "version": "1.0.0",
+      "path": "plugins/calendar-ics",
+      "category": "productivity",
+      "authentication": "none",
+      "officeRuntime": "calendar"
+    },
+    {
       "name": "commerce-automation",
       "version": "1.0.1",
       "path": "plugins/commerce-automation",
@@ -128,6 +136,21 @@
       "migrationSource": "global-lead-radar"
     },
     {
+      "name": "notion-office",
+      "version": "1.0.0",
+      "path": "plugins/notion-office",
+      "category": "productivity",
+      "authentication": "on-install"
+    },
+    {
+      "name": "obsidian",
+      "version": "1.0.0",
+      "path": "plugins/obsidian",
+      "category": "productivity",
+      "authentication": "none",
+      "officeRuntime": "vault"
+    },
+    {
       "name": "openboost",
       "version": "1.0.1",
       "path": "plugins/openboost",
@@ -136,12 +159,36 @@
       "migrationSource": "openboost"
     },
     {
+      "name": "pdf-reader",
+      "version": "1.0.0",
+      "path": "plugins/pdf-reader",
+      "category": "productivity",
+      "authentication": "none",
+      "officeRuntime": "pdf"
+    },
+    {
       "name": "presentations",
       "version": "1.0.1",
       "path": "plugins/presentations",
       "category": "productivity",
       "authentication": "none",
       "migrationSource": "presentations"
+    },
+    {
+      "name": "readwise-reader",
+      "version": "1.0.0",
+      "path": "plugins/readwise-reader",
+      "category": "research",
+      "authentication": "on-install",
+      "officeRuntime": "saas"
+    },
+    {
+      "name": "rss-reader",
+      "version": "1.0.0",
+      "path": "plugins/rss-reader",
+      "category": "research",
+      "authentication": "none",
+      "officeRuntime": "rss"
     },
     {
       "name": "shopify",
@@ -188,6 +235,22 @@
         "license": "MIT"
       },
       "generated": false
+    },
+    {
+      "name": "todoist",
+      "version": "1.0.0",
+      "path": "plugins/todoist",
+      "category": "productivity",
+      "authentication": "on-install",
+      "officeRuntime": "saas"
+    },
+    {
+      "name": "web-clipper",
+      "version": "1.0.0",
+      "path": "plugins/web-clipper",
+      "category": "research",
+      "authentication": "none",
+      "officeRuntime": "clipper"
     },
     {
       "name": "yuque",

@@ -1,0 +1,4 @@
+# Bundled Store executables are reproducible from runtime/office and locked dependencies.
+plugins/*/mcp/server.mjs linguist-generated=true -whitespace
+# Preserve upstream license text verbatim.
+plugins/*/THIRD_PARTY_NOTICES.txt -whitespace

@@ -41,6 +41,18 @@
       "category": "ecommerce"
     },
     {
+      "name": "calendar-ics",
+      "source": {
+        "source": "local",
+        "path": "./plugins/calendar-ics"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_DEMAND"
+      },
+      "category": "productivity"
+    },
+    {
       "name": "commerce-automation",
       "source": {
         "source": "local",
@@ -185,6 +197,30 @@
       "category": "marketing-sales"
     },
     {
+      "name": "notion-office",
+      "source": {
+        "source": "local",
+        "path": "./plugins/notion-office"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "obsidian",
+      "source": {
+        "source": "local",
+        "path": "./plugins/obsidian"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_DEMAND"
+      },
+      "category": "productivity"
+    },
+    {
       "name": "openboost",
       "source": {
         "source": "local",
@@ -197,6 +233,18 @@
       "category": "ecommerce"
     },
     {
+      "name": "pdf-reader",
+      "source": {
+        "source": "local",
+        "path": "./plugins/pdf-reader"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_DEMAND"
+      },
+      "category": "productivity"
+    },
+    {
       "name": "presentations",
       "source": {
         "source": "local",
@@ -207,6 +255,30 @@
         "authentication": "ON_DEMAND"
       },
       "category": "productivity"
+    },
+    {
+      "name": "readwise-reader",
+      "source": {
+        "source": "local",
+        "path": "./plugins/readwise-reader"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "research"
+    },
+    {
+      "name": "rss-reader",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rss-reader"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_DEMAND"
+      },
+      "category": "research"
     },
     {
       "name": "shopify",
@@ -267,6 +339,30 @@
         "authentication": "ON_INSTALL"
       },
       "category": "engineering"
+    },
+    {
+      "name": "todoist",
+      "source": {
+        "source": "local",
+        "path": "./plugins/todoist"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "web-clipper",
+      "source": {
+        "source": "local",
+        "path": "./plugins/web-clipper"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_DEMAND"
+      },
+      "category": "research"
     },
     {
       "name": "yuque",

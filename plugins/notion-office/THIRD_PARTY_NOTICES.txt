@@ -1,0 +1,1 @@
+XOPC-authored workflows: Apache-2.0. This package connects to Notion's official hosted MCP and bundles no third-party executable runtime.
