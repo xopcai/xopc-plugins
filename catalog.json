@@ -8,7 +8,9 @@
       "path": "plugins/1688-seller",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "1688-seller-assistant"
+      "migrationSource": "1688-seller-assistant",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有 1688 API、店铺连接或商品执行器；只是在相同通用工具上叠加经营建议 Skill。"
     },
     {
       "name": "alibaba-buyer",
@@ -16,7 +18,9 @@
       "path": "plugins/alibaba-buyer",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "accio-com-buyer-assistant"
+      "migrationSource": "accio-com-buyer-assistant",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有采购/供应商检索数据源，仅通用表格统计和采购指导。"
     },
     {
       "name": "alibaba-seller",
@@ -24,7 +28,9 @@
       "path": "plugins/alibaba-seller",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "alibaba-com-seller-assistant"
+      "migrationSource": "alibaba-com-seller-assistant",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有国际站店铺接入或询盘执行工具，仅通用统计与 Skill。"
     },
     {
       "name": "calendar-ics",
@@ -32,7 +38,9 @@
       "path": "plugins/calendar-ics",
       "category": "productivity",
       "authentication": "none",
-      "officeRuntime": "calendar"
+      "officeRuntime": "calendar",
+      "storeStatus": "published",
+      "storeDecisionReason": "重复日程、例外日期、冲突计算；区别于在线日历账户服务。"
     },
     {
       "name": "commerce-automation",
@@ -40,14 +48,18 @@
       "path": "plugins/commerce-automation",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "ecommerce-automation-toolkit"
+      "migrationSource": "ecommerce-automation-toolkit",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有触发器、调度或平台执行器，不能交付宣称的自动化运行链路。"
     },
     {
       "name": "data-toolkit",
       "version": "1.2.1",
       "category": "data-analysis",
       "path": "plugins/data-toolkit",
-      "generated": false
+      "generated": false,
+      "storeStatus": "published",
+      "storeDecisionReason": "独立 CSV 统计与 JSON 路径提取工具。"
     },
     {
       "name": "dingtalk",
@@ -55,7 +67,9 @@
       "path": "plugins/dingtalk",
       "category": "productivity",
       "authentication": "on-install",
-      "migrationSource": "dingtalk-assistant"
+      "migrationSource": "dingtalk-assistant",
+      "storeStatus": "published",
+      "storeDecisionReason": "官方 CLI 的托管准备、账号登录与真实工具执行。"
     },
     {
       "name": "documents",
@@ -63,7 +77,9 @@
       "path": "plugins/documents",
       "category": "productivity",
       "authentication": "none",
-      "migrationSource": "documents"
+      "migrationSource": "documents",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "有基础 DOCX/Office XML 读写，但与另 14 包工具及程序完全相同，缺少文档渲染兼容验收；待统一为成熟办公文件插件。"
     },
     {
       "name": "europe-commerce",
@@ -71,7 +87,9 @@
       "path": "plugins/europe-commerce",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "europe-accio"
+      "migrationSource": "europe-accio",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有跨站迁移或上架集成，只是通用工具与本地化说明。"
     },
     {
       "name": "expo",
@@ -85,7 +103,9 @@
         "commit": "1e285826e604f66f7208f7ac4dba0fe8341d1f57",
         "license": "MIT"
       },
-      "generated": false
+      "generated": false,
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "主要是开发指导 Skill，没有插件托管的独立执行/服务能力；可留作技能资源，先退出插件市场。"
     },
     {
       "name": "feishu",
@@ -93,7 +113,9 @@
       "path": "plugins/feishu",
       "category": "productivity",
       "authentication": "on-install",
-      "migrationSource": "feishu-assistant"
+      "migrationSource": "feishu-assistant",
+      "storeStatus": "published",
+      "storeDecisionReason": "官方 CLI 的托管资源、扫码/手填配置、用户授权与实际工具执行。"
     },
     {
       "name": "file-organizer",
@@ -101,7 +123,9 @@
       "path": "plugins/file-organizer",
       "category": "productivity",
       "authentication": "none",
-      "officeRuntime": "files"
+      "officeRuntime": "files",
+      "storeStatus": "published",
+      "storeDecisionReason": "文件预览、指纹校验、不覆盖移动、日志撤销。"
     },
     {
       "name": "geo-research",
@@ -109,7 +133,9 @@
       "path": "plugins/geo-research",
       "category": "marketing-sales",
       "authentication": "none",
-      "migrationSource": "geo-agent"
+      "migrationSource": "geo-agent",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有独立搜索可见性测量、引用追踪或采集后端，只是分析指导。"
     },
     {
       "name": "gmail",
@@ -117,7 +143,9 @@
       "path": "plugins/gmail",
       "category": "communication",
       "authentication": "on-install",
-      "migrationSource": "gmail"
+      "migrationSource": "gmail",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "确有 Gmail API 和 OAuth 代码，但仍要求用户自行注册 Google Client ID/Secret，缺少平台应用及真实账号验收，先下架待简化接入。"
     },
     {
       "name": "inquiry-desk",
@@ -125,7 +153,9 @@
       "path": "plugins/inquiry-desk",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "multi-channel-inquiry-plugin"
+      "migrationSource": "multi-channel-inquiry-plugin",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有多渠道会话连接/收件或回复执行器，只分析用户手工提供数据。"
     },
     {
       "name": "knowledge-base",
@@ -133,7 +163,9 @@
       "path": "plugins/knowledge-base",
       "category": "productivity",
       "authentication": "none",
-      "migrationSource": "knowledge-base-plugin"
+      "migrationSource": "knowledge-base-plugin",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有知识索引、检索/引用工具；实际工具只有通用统计/Office，已有 Obsidian/剪藏可提供实际检索。"
     },
     {
       "name": "lead-radar",
@@ -141,14 +173,18 @@
       "path": "plugins/lead-radar",
       "category": "marketing-sales",
       "authentication": "none",
-      "migrationSource": "global-lead-radar"
+      "migrationSource": "global-lead-radar",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "没有商机采集或追踪后端，无法按插件声明独立提供商机来源。"
     },
     {
       "name": "notion-office",
       "version": "1.0.0",
       "path": "plugins/notion-office",
       "category": "productivity",
-      "authentication": "on-install"
+      "authentication": "on-install",
+      "storeStatus": "published",
+      "storeDecisionReason": "官方远程 MCP，直接浏览器 OAuth，无用户自建应用要求。"
     },
     {
       "name": "obsidian",
@@ -156,7 +192,9 @@
       "path": "plugins/obsidian",
       "category": "productivity",
       "authentication": "none",
-      "officeRuntime": "vault"
+      "officeRuntime": "vault",
+      "storeStatus": "published",
+      "storeDecisionReason": "指定笔记库的搜索、读取、双链和明确确认后的新建笔记。"
     },
     {
       "name": "openboost",
@@ -164,7 +202,9 @@
       "path": "plugins/openboost",
       "category": "ecommerce",
       "authentication": "on-install",
-      "migrationSource": "openboost"
+      "migrationSource": "openboost",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "有真实第三方 OAuth 接口，但依赖第三方付费订阅，尚无真实业务结果验收；不能把 HTTP 401 当作可交付数据证明。"
     },
     {
       "name": "pdf-reader",
@@ -172,7 +212,9 @@
       "path": "plugins/pdf-reader",
       "category": "productivity",
       "authentication": "none",
-      "officeRuntime": "pdf"
+      "officeRuntime": "pdf",
+      "storeStatus": "published",
+      "storeDecisionReason": "独立 PDF 文本提取与本地中英文扫描 OCR。"
     },
     {
       "name": "presentations",
@@ -180,7 +222,9 @@
       "path": "plugins/presentations",
       "category": "productivity",
       "authentication": "none",
-      "migrationSource": "presentations"
+      "migrationSource": "presentations",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "基础 PPTX ZIP/XML 生成与文档/表格完全共用工具，未完成 Office/渲染验收，不作为精品演示插件保留。"
     },
     {
       "name": "readwise-reader",
@@ -188,7 +232,9 @@
       "path": "plugins/readwise-reader",
       "category": "research",
       "authentication": "on-install",
-      "officeRuntime": "saas"
+      "officeRuntime": "saas",
+      "storeStatus": "published",
+      "storeDecisionReason": "Reader API 的阅读库、标签查询与确认后的文章保存。"
     },
     {
       "name": "rss-reader",
@@ -196,7 +242,9 @@
       "path": "plugins/rss-reader",
       "category": "research",
       "authentication": "none",
-      "officeRuntime": "rss"
+      "officeRuntime": "rss",
+      "storeStatus": "published",
+      "storeDecisionReason": "RSS/Atom 解析、OPML、去重及日期过滤。"
     },
     {
       "name": "shopify",
@@ -204,7 +252,9 @@
       "path": "plugins/shopify",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "shopify-plugin"
+      "migrationSource": "shopify-plugin",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "无 Shopify 账号或 API 接入，仅相同通用工具与后台操作说明。"
     },
     {
       "name": "shopline",
@@ -212,7 +262,9 @@
       "path": "plugins/shopline",
       "category": "ecommerce",
       "authentication": "none",
-      "migrationSource": "shopline-plugin"
+      "migrationSource": "shopline-plugin",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "无 SHOPLINE 账号或 API 接入，仅相同通用工具与操作说明。"
     },
     {
       "name": "site-builder",
@@ -220,7 +272,9 @@
       "path": "plugins/site-builder",
       "category": "engineering",
       "authentication": "none",
-      "migrationSource": "accio-site-builder"
+      "migrationSource": "accio-site-builder",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "实际只有 HTML 证据报告生成，没有网站项目构建、预览或部署能力。"
     },
     {
       "name": "spreadsheets",
@@ -228,7 +282,9 @@
       "path": "plugins/spreadsheets",
       "category": "data-analysis",
       "authentication": "none",
-      "migrationSource": "spreadsheets"
+      "migrationSource": "spreadsheets",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "基础 XLSX ZIP/XML 读写与文档/演示完全重复，没有公式计算/表格引擎或 Office 兼容验收。"
     },
     {
       "name": "supabase",
@@ -242,7 +298,9 @@
         "commit": "1e285826e604f66f7208f7ac4dba0fe8341d1f57",
         "license": "MIT"
       },
-      "generated": false
+      "generated": false,
+      "storeStatus": "published",
+      "storeDecisionReason": "官方 MCP 的数据库/项目能力及原生浏览器 OAuth。"
     },
     {
       "name": "todoist",
@@ -250,7 +308,9 @@
       "path": "plugins/todoist",
       "category": "productivity",
       "authentication": "on-install",
-      "officeRuntime": "saas"
+      "officeRuntime": "saas",
+      "storeStatus": "published",
+      "storeDecisionReason": "Todoist API 的项目/任务查询、确认新增/完成任务。"
     },
     {
       "name": "web-clipper",
@@ -258,7 +318,9 @@
       "path": "plugins/web-clipper",
       "category": "research",
       "authentication": "none",
-      "officeRuntime": "clipper"
+      "officeRuntime": "clipper",
+      "storeStatus": "published",
+      "storeDecisionReason": "公开网页正文提取和带出处的本地剪藏与检索。"
     },
     {
       "name": "yuque",
@@ -266,7 +328,9 @@
       "path": "plugins/yuque",
       "category": "productivity",
       "authentication": "on-install",
-      "migrationSource": "yuque-plugin"
+      "migrationSource": "yuque-plugin",
+      "storeStatus": "published",
+      "storeDecisionReason": "直接调用语雀 API，并用用户接口校验 Token。"
     },
     {
       "name": "zoom",
@@ -280,7 +344,9 @@
         "commit": "1e285826e604f66f7208f7ac4dba0fe8341d1f57",
         "license": "MIT"
       },
-      "generated": false
+      "generated": false,
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "本轮原生授权实际失败：Authorization server does not support dynamic client registration；当前清单没有可用 Client 配置，先下架。"
     }
   ]
 }

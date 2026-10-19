@@ -1,6 +1,6 @@
 # XOPC Plugins
 
-Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 33 packages: 20 capabilities migrated from an Accio installation, four retained specialist packages, and nine focused office and information-collection plugins. Test-only Codex, Claude, OAuth and Extension packages are unpublished from the public Store; their version records and archives are retained for maintainer regression testing.
+Focused plugins for XOPC, packaged as standard Codex-compatible archives. The source catalog preserves 33 packages; **14 reviewed plugins are publicly listed**. Nineteen duplicate, instruction-only, or currently unready packages are unpublished. Test-only Codex, Claude, OAuth and Extension packages are also unpublished, with archives retained for maintainers. See the [33-package value audit](docs/plugin-value-audit-2026-10-19.md).
 
 ## Install
 
@@ -18,7 +18,7 @@ xopc extensions install store:feishu
 - **Gmail:** local Google OAuth using your own Desktop OAuth client; Google requires this application configuration. Gmail API must be enabled and test accounts admitted where applicable.
 - **OpenBoost:** public remote MCP with provider OAuth and the user's own subscription.
 
-Other migrated business plugins are explicitly **independent workflow editions**. They work with user data, public browser pages and already connected official tools. They include actual local analysis, HTML reporting and basic DOCX/XLSX/PPTX processing. They do not include Accio's private backend, account bridge or cloud publishing services. The migration report lists the scope of every package; this is not a claim of identical cloud functionality.
+Archived migrated business plugins are explicitly **independent workflow editions**, and are no longer publicly recommended. They work with user data, public browser pages and already connected official tools. They include actual local analysis, HTML reporting and basic DOCX/XLSX/PPTX processing. They do not include Accio's private backend, account bridge or cloud publishing services. The migration report lists the scope of every package; this is not a claim of identical cloud functionality.
 
 ## Build and verify
 
@@ -55,4 +55,4 @@ This batch: [OCR, file organization and domestic integration report](docs/office
 
 ## Public catalog curation
 
-The public Store exposes 33 user-facing plugins. On 2026-10-19, four test packages and eleven legacy/internal Extension packages were unpublished. Image/voice provider configuration and bundled channels belong in their existing product entry points. Synapse is also withheld until its missing integrity metadata and installation are repaired and verified. Do not bulk republish these internal packages; see [curation record](docs/store-curation-2026-10-19.md).
+The initial curation left 33 packages; the subsequent full value audit reduced the public Store to 14. On 2026-10-19, four test packages and eleven legacy/internal Extension packages were unpublished. Image/voice provider configuration and bundled channels belong in their existing product entry points. Synapse is also withheld until its missing integrity metadata and installation are repaired and verified. Do not bulk republish these internal packages; see [curation record](docs/store-curation-2026-10-19.md).

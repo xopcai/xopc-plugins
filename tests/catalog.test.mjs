@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process'
 import { readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import test from 'node:test'
+import { publishedPlugins } from '../scripts/lib.mjs'
 
 const root = new URL('..', import.meta.url).pathname.replace(/\/$/, '')
 const readJson = path => JSON.parse(readFileSync(join(root, path), 'utf8'))
@@ -18,10 +19,10 @@ test('catalog contains a focused set of compound plugins', () => {
   assert.ok(!entries.some(e => ['cloudflare-workspace','figma-workspace','linear-workspace','notion-workspace'].includes(e.name)))
 })
 
-test('generated marketplace mirrors the catalog', () => {
+test('marketplace contains only reviewed public catalog entries', () => {
   const catalog = readJson('catalog.json').plugins
   const marketplace = readJson('.agents/plugins/marketplace.json').plugins
-  assert.deepEqual(marketplace.map(entry => entry.name), catalog.map(entry => entry.name))
+  assert.deepEqual(marketplace.map(entry => entry.name), publishedPlugins(catalog).map(entry => entry.name))
 })
 
 test('build output is deterministic', () => {

@@ -1,8 +1,8 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { catalog, filesUnder, root } from './lib.mjs';
+import { catalog, filesUnder, root, publishedPlugins } from './lib.mjs';
 const errors=[],check=(value,text)=>{if(!value)errors.push(text);};
-const entries=catalog().plugins,names=new Set();
+const entries=catalog().plugins,published=publishedPlugins(entries),names=new Set();
 for(const d of readdirSync(join(root,'plugins'),{withFileTypes:true}).filter(d=>d.isDirectory()))check(entries.some(e=>e.path===`plugins/${d.name}`),`${d.name}: uncatalogued package`);
 for(const entry of entries){
  check(!names.has(entry.name),`Duplicate ${entry.name}`);names.add(entry.name);
@@ -43,5 +43,5 @@ for(const entry of entries){
  }
 }
 const market=JSON.parse(readFileSync(join(root,'.agents/plugins/marketplace.json'),'utf8'));
-check(JSON.stringify(market.plugins.map(e=>e.name))===JSON.stringify(entries.map(e=>e.name)),'Marketplace differs from catalog');
+check(JSON.stringify(market.plugins.map(e=>e.name))===JSON.stringify(published.map(e=>e.name)),'Marketplace differs from reviewed public catalog');
 if(errors.length){for(const e of errors)console.error(e);process.exit(1);}console.log(`Validated ${entries.length} packages: Skills, MCP, auth, resource variants and credential references`);

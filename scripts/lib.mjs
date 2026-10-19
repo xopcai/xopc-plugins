@@ -26,3 +26,12 @@ export function filesUnder(directory) {
 export function sha256(data) {
   return createHash('sha256').update(data).digest('hex')
 }
+
+export function publishedPlugins(entries = catalog().plugins) {
+  for (const entry of entries) {
+    if (!['published', 'unpublished'].includes(entry.storeStatus) || !entry.storeDecisionReason?.trim()) {
+      throw new Error(`Explicit Store review required: ${entry.name}`)
+    }
+  }
+  return entries.filter(entry => entry.storeStatus === 'published')
+}

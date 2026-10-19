@@ -1,11 +1,11 @@
 import {readFile,mkdir,copyFile,writeFile} from 'node:fs/promises';
 import {join,resolve} from 'node:path';
-import {root,sha256} from './lib.mjs';
+import {root,sha256,publishedPlugins} from './lib.mjs';
 const [target,...names]=process.argv.slice(2);
 if(!target||!names.length||new Set(names).size!==names.length)throw Error('Usage: node scripts/stage-release.mjs /absolute/release-dir plugin-name [...]');
 const directory=resolve(target),release=JSON.parse(await readFile(join(root,'dist/release-manifest.json'),'utf8'));
-const selected=release.plugins.filter(value=>names.includes(value.name));
-if(selected.length!==names.length)throw Error('Unknown release package');
+const selected=publishedPlugins(release.plugins).filter(value=>names.includes(value.name));
+if(selected.length!==names.length)throw Error('Unknown or unpublished release package');
 await mkdir(join(directory,'resources'),{recursive:true});
 const hashes=new Set();
 for(const pkg of selected){

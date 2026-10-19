@@ -5,42 +5,6 @@
   },
   "plugins": [
     {
-      "name": "1688-seller",
-      "source": {
-        "source": "local",
-        "path": "./plugins/1688-seller"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
-    },
-    {
-      "name": "alibaba-buyer",
-      "source": {
-        "source": "local",
-        "path": "./plugins/alibaba-buyer"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
-    },
-    {
-      "name": "alibaba-seller",
-      "source": {
-        "source": "local",
-        "path": "./plugins/alibaba-seller"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
-    },
-    {
       "name": "calendar-ics",
       "source": {
         "source": "local",
@@ -51,18 +15,6 @@
         "authentication": "ON_DEMAND"
       },
       "category": "productivity"
-    },
-    {
-      "name": "commerce-automation",
-      "source": {
-        "source": "local",
-        "path": "./plugins/commerce-automation"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
     },
     {
       "name": "data-toolkit",
@@ -89,42 +41,6 @@
       "category": "productivity"
     },
     {
-      "name": "documents",
-      "source": {
-        "source": "local",
-        "path": "./plugins/documents"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "productivity"
-    },
-    {
-      "name": "europe-commerce",
-      "source": {
-        "source": "local",
-        "path": "./plugins/europe-commerce"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
-    },
-    {
-      "name": "expo",
-      "source": {
-        "source": "local",
-        "path": "./plugins/expo"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "engineering"
-    },
-    {
       "name": "feishu",
       "source": {
         "source": "local",
@@ -147,66 +63,6 @@
         "authentication": "ON_DEMAND"
       },
       "category": "productivity"
-    },
-    {
-      "name": "geo-research",
-      "source": {
-        "source": "local",
-        "path": "./plugins/geo-research"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "marketing-sales"
-    },
-    {
-      "name": "gmail",
-      "source": {
-        "source": "local",
-        "path": "./plugins/gmail"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "communication"
-    },
-    {
-      "name": "inquiry-desk",
-      "source": {
-        "source": "local",
-        "path": "./plugins/inquiry-desk"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
-    },
-    {
-      "name": "knowledge-base",
-      "source": {
-        "source": "local",
-        "path": "./plugins/knowledge-base"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "productivity"
-    },
-    {
-      "name": "lead-radar",
-      "source": {
-        "source": "local",
-        "path": "./plugins/lead-radar"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "marketing-sales"
     },
     {
       "name": "notion-office",
@@ -233,34 +89,10 @@
       "category": "productivity"
     },
     {
-      "name": "openboost",
-      "source": {
-        "source": "local",
-        "path": "./plugins/openboost"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "ecommerce"
-    },
-    {
       "name": "pdf-reader",
       "source": {
         "source": "local",
         "path": "./plugins/pdf-reader"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "productivity"
-    },
-    {
-      "name": "presentations",
-      "source": {
-        "source": "local",
-        "path": "./plugins/presentations"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -291,54 +123,6 @@
         "authentication": "ON_DEMAND"
       },
       "category": "research"
-    },
-    {
-      "name": "shopify",
-      "source": {
-        "source": "local",
-        "path": "./plugins/shopify"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
-    },
-    {
-      "name": "shopline",
-      "source": {
-        "source": "local",
-        "path": "./plugins/shopline"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "ecommerce"
-    },
-    {
-      "name": "site-builder",
-      "source": {
-        "source": "local",
-        "path": "./plugins/site-builder"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "engineering"
-    },
-    {
-      "name": "spreadsheets",
-      "source": {
-        "source": "local",
-        "path": "./plugins/spreadsheets"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_DEMAND"
-      },
-      "category": "data-analysis"
     },
     {
       "name": "supabase",
@@ -387,18 +171,6 @@
         "authentication": "ON_INSTALL"
       },
       "category": "productivity"
-    },
-    {
-      "name": "zoom",
-      "source": {
-        "source": "local",
-        "path": "./plugins/zoom"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "communication"
     }
   ]
 }

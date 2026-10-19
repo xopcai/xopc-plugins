@@ -9,6 +9,7 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '/var/www/xopc-platform/.env', quiet: true });
 const dir=process.argv[2]||'/tmp/xopc-production-plugin-release';
 const release=JSON.parse(await readFile(join(dir,'release-manifest.json'),'utf8'));
+if(!release.plugins.length||release.plugins.some(pkg=>pkg.storeStatus!=='published'||!pkg.storeDecisionReason?.trim()))throw new Error('Release contains packages without an approved Store listing decision; stage only reviewed public packages');
 const env=loadAuthEnv(process.env),auth=createAuth(env),db=getAuthDatabase(env);
 const key=await auth.api.createApiKey({body:{name:'plugin-release-'+randomUUID().slice(0,12),userId:'xopc-plugins-publisher',configId:STORE_CLI_CONFIG_ID,expiresIn:86400}});
 async function api(path,options={}){

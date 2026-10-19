@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { root } from './lib.mjs'
+import { root, publishedPlugins } from './lib.mjs'
 
 const store = (process.env.XOPC_STORE_URL ?? 'https://store.xopc.ai').replace(/\/$/, '')
 const dryRun = process.argv.includes('--dry-run') || process.env.XOPC_DRY_RUN === 'true'
@@ -12,6 +12,8 @@ if (!dryRun && !apiKey) throw new Error('XOPC_API_KEY is required unless --dry-r
 
 execFileSync(process.execPath, [join(root, 'scripts/build.mjs')], { stdio: 'inherit' })
 const release = JSON.parse(readFileSync(join(root, 'dist/release-manifest.json'), 'utf8'))
+const selected = publishedPlugins(release.plugins).filter(plugin => !requestedPhases.size || requestedPhases.has(plugin.phase ?? 'legacy'))
+if (!selected.length) throw new Error(`No plugins match phases: ${[...requestedPhases].join(', ')}`)
 const clean = !execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim()
 const commit = process.env.XOPC_SOURCE_COMMIT?.trim()
   || (clean ? execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim() : undefined)
@@ -28,9 +30,6 @@ if (!dryRun && release.resources.length) {
     if (!response.ok) throw new Error(`Resource upload failed (${response.status}): ${resource.sha256}`)
   }
 }
-
-const selected = release.plugins.filter(plugin => !requestedPhases.size || requestedPhases.has(plugin.phase ?? 'legacy'))
-if (!selected.length) throw new Error(`No plugins match phases: ${[...requestedPhases].join(', ')}`)
 
 async function publishedVersion(plugin) {
   const response = await fetch(`${store}/api/v1/packages/${encodeURIComponent(plugin.name)}`, {

@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-19T09:21:51.147Z",
+  "results": [
+    {
+      "name": "notion-office",
+      "version": "1.0.0",
+      "nativeAuthorizationChallenge": true,
+      "authorizationHost": "mcp.notion.com",
+      "accountConsent": false
+    },
+    {
+      "name": "supabase",
+      "version": "1.2.1",
+      "nativeAuthorizationChallenge": true,
+      "authorizationHost": "api.supabase.com",
+      "accountConsent": false
+    },
+    {
+      "name": "zoom",
+      "nativeAuthorizationChallenge": false,
+      "error": "AssertionError [ERR_ASSERTION]: {\"id\":\"b54b0625-516d-42cd-a516-4de930a54623\",\"serverId\":\"plugin_zoom_8356339d5224_ce36baf9a2e4d6c8\",\"state\":\"error\",\"error\":\"Sign-in failed: Authorization server does not support dynamic client registration\",\"acceptsRedirect\":false}"
+    }
+  ]
+}

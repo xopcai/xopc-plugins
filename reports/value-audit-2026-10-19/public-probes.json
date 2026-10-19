@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-19T09:20:30.869Z",
+  "credentialsUsed": false,
+  "results": [
+    {
+      "name": "notion",
+      "url": "https://mcp.notion.com/mcp",
+      "status": 401,
+      "contentType": null,
+      "authChallenge": "Bearer realm=\"OAuth\", resource_metadata=\"https://mcp.notion.com/.well-known/oauth-protected-resource/mcp\", scope=\"default\"",
+      "body": ""
+    },
+    {
+      "name": "supabase",
+      "url": "https://mcp.supabase.com/mcp",
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "authChallenge": "Bearer resource_metadata=\"https://mcp.supabase.com/.well-known/oauth-protected-resource/mcp\"",
+      "body": "{\"message\":\"No access token provided\"}"
+    },
+    {
+      "name": "zoom",
+      "url": "https://mcp.zoom.us/mcp/meeting/streamable",
+      "status": 401,
+      "contentType": "application/json",
+      "authChallenge": "Bearer resource_metadata=\"https://zoom.us/.well-known/oauth-protected-resource/mcp/meeting/streamable\"",
+      "body": "{\"error\":{\"code\":-32003,\"message\":\"Access token is required\"},\"id\":1,\"jsonrpc\":\"2.0\"}"
+    },
+    {
+      "name": "openboost",
+      "url": "https://mcp.microdata-inc.com/mcp-servers/oauth/proboost-tiktok-amazon-patent-mcp/sse",
+      "status": 401,
+      "contentType": "application/json;charset=ISO-8859-1",
+      "authChallenge": "Bearer resource_metadata=\"https://mcp.microdata-inc.com/.well-known/oauth-protected-resource/proboost-tiktok-amazon-patent-mcp\"",
+      "body": "{\"error\":\"unauthorized\",\"resource_metadata\":\"https://mcp.microdata-inc.com/.well-known/oauth-protected-resource/proboost-tiktok-amazon-patent-mcp\"}"
+    },
+    {
+      "name": "todoist",
+      "url": "https://api.todoist.com/api/v1/user",
+      "status": 401,
+      "body": "{\"error\":\"Unauthorized\",\"error_code\":477,\"error_extra\":{\"event_id\":\"64108a0d887943ccb5cce1230c2e0860\",\"retry_after\":1},\"error_tag\":\"UNAUTHORIZED\",\"http_code\":401}"
+    },
+    {
+      "name": "readwise",
+      "url": "https://readwise.io/api/v2/auth/",
+      "status": 401,
+      "body": "{\"detail\":\"Authentication credentials were not provided.\"}"
+    },
+    {
+      "name": "yuque",
+      "url": "https://www.yuque.com/api/v2/user",
+      "status": 401,
+      "body": "{\"status\":401,\"message\":\"Unauthorized\"}"
+    }
+  ]
+}

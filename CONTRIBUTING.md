@@ -34,3 +34,7 @@ pnpm build
 - **Community**: reviewed for packaging and safety, without an XOPC maintenance commitment.
 
 Every release remains subject to Store malware, archive, capability, and provenance checks.
+
+## Store publication review
+
+Every catalog entry must explicitly declare `storeStatus` (`published` or `unpublished`) and `storeDecisionReason`. Build artifacts preserve archived packages for development; the public marketplace, default publisher and release staging include only reviewed `published` entries. A Skill-only guide or a copy of a generic runtime is not sufficient evidence for a distinct public plugin. Record executable behavior, account prerequisites and the actual validation level before changing an archived entry back to `published`. See `docs/plugin-value-audit-2026-10-19.md`.

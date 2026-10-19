@@ -1,0 +1,286 @@
+{
+  "evaluated": 33,
+  "keep": 14,
+  "unpublish": 19,
+  "rows": [
+    {
+      "name": "1688-seller",
+      "version": "1.0.1",
+      "displayName": "1688 生意助手",
+      "decision": "unpublish",
+      "reason": "没有 1688 API、店铺连接或商品执行器；只是在相同通用工具上叠加经营建议 Skill。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "alibaba-buyer",
+      "version": "1.0.1",
+      "displayName": "跨境采购助手",
+      "decision": "unpublish",
+      "reason": "没有采购/供应商检索数据源，仅通用表格统计和采购指导。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "alibaba-seller",
+      "version": "1.0.1",
+      "displayName": "国际站经营助手",
+      "decision": "unpublish",
+      "reason": "没有国际站店铺接入或询盘执行工具，仅通用统计与 Skill。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "calendar-ics",
+      "version": "1.0.0",
+      "displayName": "日历文件助手",
+      "decision": "keep",
+      "reason": "重复日程、例外日期、冲突计算；区别于在线日历账户服务。",
+      "evidence": "本地真实 ICS 测试"
+    },
+    {
+      "name": "commerce-automation",
+      "version": "1.0.1",
+      "displayName": "电商运营自动化",
+      "decision": "unpublish",
+      "reason": "没有触发器、调度或平台执行器，不能交付宣称的自动化运行链路。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "data-toolkit",
+      "version": "1.2.1",
+      "displayName": "数据工具箱",
+      "decision": "keep",
+      "reason": "独立 CSV 统计与 JSON 路径提取工具。",
+      "evidence": "打包 MCP 实际调用测试"
+    },
+    {
+      "name": "dingtalk",
+      "version": "1.0.5",
+      "displayName": "钉钉",
+      "decision": "keep",
+      "reason": "官方 CLI 的托管准备、账号登录与真实工具执行。",
+      "evidence": "此前用户账号完整链路；本轮回归测试"
+    },
+    {
+      "name": "documents",
+      "version": "1.0.1",
+      "displayName": "文档",
+      "decision": "unpublish",
+      "reason": "有基础 DOCX/Office XML 读写，但与另 14 包工具及程序完全相同，缺少文档渲染兼容验收；待统一为成熟办公文件插件。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "europe-commerce",
+      "version": "1.0.1",
+      "displayName": "欧洲电商工作室",
+      "decision": "unpublish",
+      "reason": "没有跨站迁移或上架集成，只是通用工具与本地化说明。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "expo",
+      "version": "1.2.1",
+      "displayName": "Expo 移动开发",
+      "decision": "unpublish",
+      "reason": "主要是开发指导 Skill，没有插件托管的独立执行/服务能力；可留作技能资源，先退出插件市场。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测"
+    },
+    {
+      "name": "feishu",
+      "version": "1.0.5",
+      "displayName": "飞书",
+      "decision": "keep",
+      "reason": "官方 CLI 的托管资源、扫码/手填配置、用户授权与实际工具执行。",
+      "evidence": "此前用户身份读取；日历授权不作为本轮已验收能力"
+    },
+    {
+      "name": "file-organizer",
+      "version": "1.0.1",
+      "displayName": "文件整理助手",
+      "decision": "keep",
+      "reason": "文件预览、指纹校验、不覆盖移动、日志撤销。",
+      "evidence": "真实模型对话与独立文件读回"
+    },
+    {
+      "name": "geo-research",
+      "version": "1.0.1",
+      "displayName": "GEO 与搜索研究",
+      "decision": "unpublish",
+      "reason": "没有独立搜索可见性测量、引用追踪或采集后端，只是分析指导。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "gmail",
+      "version": "1.0.3",
+      "displayName": "Gmail",
+      "decision": "unpublish",
+      "reason": "确有 Gmail API 和 OAuth 代码，但仍要求用户自行注册 Google Client ID/Secret，缺少平台应用及真实账号验收，先下架待简化接入。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测"
+    },
+    {
+      "name": "inquiry-desk",
+      "version": "1.0.1",
+      "displayName": "多渠道询盘工作台",
+      "decision": "unpublish",
+      "reason": "没有多渠道会话连接/收件或回复执行器，只分析用户手工提供数据。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "knowledge-base",
+      "version": "1.0.1",
+      "displayName": "知识库",
+      "decision": "unpublish",
+      "reason": "没有知识索引、检索/引用工具；实际工具只有通用统计/Office，已有 Obsidian/剪藏可提供实际检索。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "lead-radar",
+      "version": "1.0.1",
+      "displayName": "商机雷达",
+      "decision": "unpublish",
+      "reason": "没有商机采集或追踪后端，无法按插件声明独立提供商机来源。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "notion-office",
+      "version": "1.0.0",
+      "displayName": "Notion 知识与会议",
+      "decision": "keep",
+      "reason": "官方远程 MCP，直接浏览器 OAuth，无用户自建应用要求。",
+      "evidence": "本轮宿主原生 OAuth challenge；未进行账号业务验收"
+    },
+    {
+      "name": "obsidian",
+      "version": "1.0.0",
+      "displayName": "Obsidian 本地笔记",
+      "decision": "keep",
+      "reason": "指定笔记库的搜索、读取、双链和明确确认后的新建笔记。",
+      "evidence": "真实文件夹读写与边界测试"
+    },
+    {
+      "name": "openboost",
+      "version": "1.0.1",
+      "displayName": "OpenBoost 跨境数据",
+      "decision": "unpublish",
+      "reason": "有真实第三方 OAuth 接口，但依赖第三方付费订阅，尚无真实业务结果验收；不能把 HTTP 401 当作可交付数据证明。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测"
+    },
+    {
+      "name": "pdf-reader",
+      "version": "1.1.1",
+      "displayName": "PDF 阅读与 OCR",
+      "decision": "keep",
+      "reason": "独立 PDF 文本提取与本地中英文扫描 OCR。",
+      "evidence": "离线真实扫描件与真实模型对话"
+    },
+    {
+      "name": "presentations",
+      "version": "1.0.1",
+      "displayName": "演示文稿",
+      "decision": "unpublish",
+      "reason": "基础 PPTX ZIP/XML 生成与文档/表格完全共用工具，未完成 Office/渲染验收，不作为精品演示插件保留。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "readwise-reader",
+      "version": "1.0.0",
+      "displayName": "Readwise 阅读收集箱",
+      "decision": "keep",
+      "reason": "Reader API 的阅读库、标签查询与确认后的文章保存。",
+      "evidence": "官方 API 核查、未授权 401、适配测试；无生产账号验收"
+    },
+    {
+      "name": "rss-reader",
+      "version": "1.0.0",
+      "displayName": "RSS 阅读与简报",
+      "decision": "keep",
+      "reason": "RSS/Atom 解析、OPML、去重及日期过滤。",
+      "evidence": "打包 MCP 与真实内容解析测试"
+    },
+    {
+      "name": "shopify",
+      "version": "1.0.1",
+      "displayName": "Shopify 运营",
+      "decision": "unpublish",
+      "reason": "无 Shopify 账号或 API 接入，仅相同通用工具与后台操作说明。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "shopline",
+      "version": "1.0.1",
+      "displayName": "SHOPLINE 运营",
+      "decision": "unpublish",
+      "reason": "无 SHOPLINE 账号或 API 接入，仅相同通用工具与操作说明。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "site-builder",
+      "version": "1.0.1",
+      "displayName": "网站搭建",
+      "decision": "unpublish",
+      "reason": "实际只有 HTML 证据报告生成，没有网站项目构建、预览或部署能力。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "spreadsheets",
+      "version": "1.0.1",
+      "displayName": "电子表格",
+      "decision": "unpublish",
+      "reason": "基础 XLSX ZIP/XML 读写与文档/演示完全重复，没有公式计算/表格引擎或 Office 兼容验收。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测",
+      "sharedRuntimeSha256": "2ab601f575f542a78e209f9bb96d1e4a1796d917f1096896eb1ce45059df5b5f"
+    },
+    {
+      "name": "supabase",
+      "version": "1.2.1",
+      "displayName": "Supabase 开发平台",
+      "decision": "keep",
+      "reason": "官方 MCP 的数据库/项目能力及原生浏览器 OAuth。",
+      "evidence": "本轮宿主原生 OAuth challenge；未进行账号业务验收"
+    },
+    {
+      "name": "todoist",
+      "version": "1.0.0",
+      "displayName": "Todoist 待办助手",
+      "decision": "keep",
+      "reason": "Todoist API 的项目/任务查询、确认新增/完成任务。",
+      "evidence": "官方 API 核查、未授权 401、适配测试；无生产账号验收"
+    },
+    {
+      "name": "web-clipper",
+      "version": "1.0.0",
+      "displayName": "网页剪藏",
+      "decision": "keep",
+      "reason": "公开网页正文提取和带出处的本地剪藏与检索。",
+      "evidence": "真实 HTML、剪藏文件及 MCP 调用测试"
+    },
+    {
+      "name": "yuque",
+      "version": "1.0.3",
+      "displayName": "语雀",
+      "decision": "keep",
+      "reason": "直接调用语雀 API，并用用户接口校验 Token。",
+      "evidence": "公开真实接口 401、鉴权与请求适配测试；需用户 Token"
+    },
+    {
+      "name": "zoom",
+      "version": "1.2.1",
+      "displayName": "Zoom 协作与开发",
+      "decision": "unpublish",
+      "reason": "本轮原生授权实际失败：Authorization server does not support dynamic client registration；当前清单没有可用 Client 配置，先下架。",
+      "evidence": "逐项读取 Skill、MCP 清单与实现；参考本轮远程授权探测"
+    }
+  ]
+}
