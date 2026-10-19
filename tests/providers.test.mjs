@@ -70,3 +70,17 @@ test('DingTalk explicitly reuses a selected system account without copying secre
  assert((await server.call(3,'tools/call',{name:'cli_run',arguments:{argv:['contact','user','get-self','--profile','other']}})).result.isError);
  assert(!(await readdir(home)).some(name=>/token|\.enc/.test(name)));
 });
+
+test('Feishu reports recoverable calendar permission gaps and explicitly requests the missing scope', async t => {
+ const {writeFile,mkdir,chmod}=await import('node:fs/promises');
+ const home=await mkdtemp(join(tmpdir(),'xopc-calendar-permissions-'));t.after(()=>rm(home,{recursive:true,force:true}));
+ const resources=join(home,'resources');await mkdir(resources);await mkdir(join(home,'.lark-cli'));
+ await writeFile(join(home,'.lark-cli/config.json'),JSON.stringify({apps:[{appId:'cli_test',appSecret:{ref:'private'}}]}));
+ const executable=join(resources,'provider-cli');
+ await writeFile(executable,`#!${process.execPath}\nconst fs=require('fs'),p=require('path'),a=process.argv.slice(2),home=process.env.HOME;if(a[0]==='calendar'){if(!fs.existsSync(p.join(home,'calendar-granted'))){console.log(JSON.stringify({ok:false,error:{missing_scopes:['calendar:calendar.event:read'],secret:'must-not-leak'}}));process.exit(3)}console.log(JSON.stringify({ok:true,identity:'user',data:[]}));}else if(a.includes('--no-wait')){if(!a.includes('--scope')||a[a.indexOf('--scope')+1]!=='calendar:calendar.event:read')process.exit(9);console.log(JSON.stringify({verification_url:'https://accounts.feishu.cn/calendar',device_code:'private-device'}));}else if(a.includes('--device-code')){fs.writeFileSync(p.join(home,'calendar-granted'),'yes');}else console.log(JSON.stringify({identity:'user',verified:true}));\n`);await chmod(executable,0o700);
+ const env={XOPC_ACCOUNT_HOME:home,PLUGIN_RESOURCES:resources};
+ const before=await launch(t,'feishu','check',env);await once(before.child,'exit');assert.equal(before.child.exitCode,0);
+ const check=before.messages.find(v=>v.authenticated===true);assert.deepEqual(check.issues[0].scopes,['calendar:calendar.event:read']);assert.equal(check.issues[0].method,'calendar');assert(!JSON.stringify(check).includes('must-not-leak'));
+ const login=await launch(t,'feishu','login-calendar',env);await once(login.child,'exit');assert.equal(login.child.exitCode,0,login.getErrors());assert(login.messages.some(v=>v.type==='challenge'));assert(!JSON.stringify(login.messages).includes('private-device'));
+ const after=await launch(t,'feishu','check',env);await once(after.child,'exit');assert.deepEqual(after.messages.find(v=>v.authenticated).issues,[]);
+});

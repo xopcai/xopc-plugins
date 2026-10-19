@@ -74,7 +74,7 @@ function run(args, { input, challenge = false, message, timeout = 30000 } = {}) 
     }
     child.stdout.on('data', data => chunk('out', data.toString())); child.stderr.on('data', data => chunk('err', data.toString()));
     child.on('error', error => { if (!settled) { settled = true; clearTimeout(timer); children.delete(child); reject(error); } });
-    child.on('close', code => { if (settled) return; settled = true; clearTimeout(timer); children.delete(child); if (code !== 0) reject(new Error('Official CLI operation failed; check account permissions or reconnect in plugin details.')); else resolve(stdout); });
+    child.on('close', code => { if (settled) return; settled = true; clearTimeout(timer); children.delete(child); if (code !== 0) { const error = new Error('Official CLI operation failed; check account permissions or reconnect in plugin details.'); error.missingScopes = [...new Set((stdout + stderr).match(/calendar:calendar\.event:read/g) || [])]; reject(error); } else resolve(stdout); });
     child.stdin.end(input);
   });
 }
@@ -151,7 +151,7 @@ async function login() {
       try { configured = parse(await readFile(join(home, '.lark-cli', 'config.json'), 'utf8')).apps?.some(app => app.appId && app.appSecret) === true; } catch {}
       if (!configured) await run(['config','init','--new','--brand','feishu'], { challenge: true, message: '第 1 步：用飞书扫码配置应用。完成后还需扫描用户授权二维码。', timeout: 290000 });
     }
-    const started = parse(await run(['auth','login','--recommend','--no-wait','--json']));
+    const started = parse(await run(['auth','login','--recommend', ...(mode === 'login-calendar' ? ['--scope','calendar:calendar.event:read'] : []), '--no-wait','--json']));
     if (!started.verification_url || !started.device_code) throw new Error('Missing Feishu authorization challenge');
     const url = new URL(started.verification_url); if (url.protocol !== 'https:' || !/(^|\.)(feishu\.cn|larksuite\.com)$/.test(url.hostname)) throw new Error('Invalid Feishu authorization URL');
     console.log(JSON.stringify({ type:'challenge',kind:'qr',url:started.verification_url,message:'第 2 步：请扫描此二维码并确认用户授权。验证成功后会自动连接。' }));
@@ -189,7 +189,22 @@ async function execute(input) {
   try { return redact(JSON.parse(output)); } catch { return redact(output); }
 }
 if (mode.startsWith('login')) { await login(); if (!await identity()) throw new Error('Account verification failed'); if (kind === 'dingtalk' && mode !== 'login-existing') { const { unlink } = await import('node:fs/promises'); await unlink(join(home, 'dingtalk-source.json')).catch(error => { if (error.code !== 'ENOENT') throw error; }); } }
-else if (mode === 'check') { let authenticated = false; try { authenticated = await identity(); } catch {} console.log(JSON.stringify({ authenticated })); }
+else if (mode === 'check') {
+  let authenticated = false; const issues = [];
+  try { authenticated = await identity(); } catch {}
+  if (authenticated && kind === 'feishu') {
+    try { await run(['calendar','+agenda','--as','user'], { timeout: 10000 }); }
+    catch (error) {
+      const missing = error.missingScopes?.length > 0;
+      let helpUrl = 'https://open.feishu.cn/app';
+      try { const config = parse(await readFile(join(home,'.lark-cli','config.json'),'utf8')); const app = config.apps?.find(value => value.appId); if (/^cli_[a-zA-Z0-9]+$/.test(app?.appId)) helpUrl += '/' + app.appId + '/auth'; } catch {}
+      issues.push({ id:'calendar', title:missing ? '日历需要补充读取权限' : '日历权限暂未验证通过', scopes:missing ? error.missingScopes : [],
+        instructions:missing ? ['若应用尚未开通此权限，请在飞书开放平台开通并发布；已开通可直接补充授权。','应用权限生效后，点击补充授权并扫码确认。','授权完成后自动检查；也可点击重新检查权限。'] : ['检查网络和飞书服务状态后，重新检查权限。'],
+        ...(missing ? { method:'calendar', helpUrl } : {}) });
+    }
+  }
+  console.log(JSON.stringify({ authenticated, issues }));
+}
 else {
   if (!await identity()) throw new Error('Authorization required. Connect this account in plugin details.');
   const schema = kind === 'yuque' || kind === 'gmail' ? { type:'object', properties:{ path:{type:'string'},method:{type:'string',enum:['GET','POST','PUT','PATCH','DELETE']},body:{type:'object',additionalProperties:true} }, required:['path'],additionalProperties:false } : {type:'object',properties:{argv:{type:'array',items:{type:'string'},minItems:1,maxItems:80}},required:['argv'],additionalProperties:false};

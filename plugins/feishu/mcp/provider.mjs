@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process';
 import { mkdir, readFile, writeFile, readdir } from 'node:fs/promises';
-import { join } from 'node:path';
+import { join, isAbsolute } from 'node:path';
 import { createServer } from 'node:http';
 import { randomBytes, createHash, timingSafeEqual, createCipheriv, createDecipheriv } from 'node:crypto';
 import { createInterface } from 'node:readline';
@@ -15,6 +15,20 @@ Object.assign(env, { HOME: home, USERPROFILE: home, XDG_CONFIG_HOME: join(home, 
 // Managed accounts use the official encrypted file backend in their private home.
 // A synthetic HOME has no macOS login keychain; never ask the OS to reset it.
 if (kind === 'dingtalk') env.DWS_DISABLE_KEYCHAIN = '1';
+let systemAccount;
+if (kind === 'dingtalk') {
+  if (mode === 'login-existing') systemAccount = { profile: process.env.DWS_PROFILE || '' };
+  else if (!mode.startsWith('login')) {
+    try { systemAccount = JSON.parse(await readFile(join(home, 'dingtalk-source.json'), 'utf8')); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+  }
+  if (systemAccount) {
+    const host = process.env.PLUGIN_HOST_HOME;
+    if (!host || !isAbsolute(host) || !systemAccount.profile || typeof systemAccount.profile !== 'string') throw new Error('Choose an existing local DingTalk account in plugin details.');
+    Object.assign(env, { HOME: host, USERPROFILE: host, XDG_CONFIG_HOME: join(host, '.config'), DWS_CONFIG_DIR: join(host, '.dws') });
+    delete env.DWS_DISABLE_KEYCHAIN;
+  }
+}
 if (kind === 'feishu' && process.platform === 'darwin') {
   const vault = join(home, 'Library', 'Application Support', 'lark-cli');
   await mkdir(vault, { recursive: true, mode: 0o700 });
@@ -32,7 +46,7 @@ const children = new Set();
 for (const event of ['SIGTERM', 'SIGINT']) process.on(event, () => { for (const child of children) child.kill(event); process.exit(1); });
 function run(args, { input, challenge = false, message, timeout = 30000 } = {}) {
   return new Promise((resolve, reject) => {
-    const child = spawn(bin, args, { env, stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true }); children.add(child);
+    const child = spawn(bin, systemAccount ? ['--profile', systemAccount.profile, ...args] : args, { env, stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true }); children.add(child);
     let stdout = '', stderr = '', sent = new Set(), settled = false;
     const pending = { out: '', err: '' };
     function inspect(line) {
@@ -60,7 +74,7 @@ function run(args, { input, challenge = false, message, timeout = 30000 } = {}) 
     }
     child.stdout.on('data', data => chunk('out', data.toString())); child.stderr.on('data', data => chunk('err', data.toString()));
     child.on('error', error => { if (!settled) { settled = true; clearTimeout(timer); children.delete(child); reject(error); } });
-    child.on('close', code => { if (settled) return; settled = true; clearTimeout(timer); children.delete(child); if (code !== 0) reject(new Error('Official CLI operation failed; check account permissions or reconnect in plugin details.')); else resolve(stdout); });
+    child.on('close', code => { if (settled) return; settled = true; clearTimeout(timer); children.delete(child); if (code !== 0) { const error = new Error('Official CLI operation failed; check account permissions or reconnect in plugin details.'); error.missingScopes = [...new Set((stdout + stderr).match(/calendar:calendar\.event:read/g) || [])]; reject(error); } else resolve(stdout); });
     child.stdin.end(input);
   });
 }
@@ -119,6 +133,15 @@ async function googleLogin() {
   await encryptedTokens({ ...tokens, client_id, client_secret, expires_at: Date.now() + tokens.expires_in * 1000 });
 }
 async function login() {
+  if (kind === 'dingtalk' && mode === 'login-existing') {
+    const profiles = parse(await run(['profile','list','--format','json'])).profiles;
+    const matches = (profiles || []).filter(p => p.profile === systemAccount.profile || p.corpName === systemAccount.profile && p.isOrgCurrent === true);
+    if (matches.length !== 1) throw new Error('Select one unambiguous local DingTalk account.');
+    systemAccount.profile = matches[0].profile;
+    if (!await identity()) throw new Error('The selected local DingTalk account is not signed in.');
+    await writeFile(join(home, 'dingtalk-source.json'), JSON.stringify({ profile: systemAccount.profile }), { mode: 0o600 });
+    return;
+  }
   if (kind === 'gmail') return googleLogin();
   if (kind === 'dingtalk') return run(['auth', 'login', '--recommend', '--no-browser', '--format', 'json'], { challenge: true, timeout: 290000 });
   if (kind === 'feishu') {
@@ -128,7 +151,7 @@ async function login() {
       try { configured = parse(await readFile(join(home, '.lark-cli', 'config.json'), 'utf8')).apps?.some(app => app.appId && app.appSecret) === true; } catch {}
       if (!configured) await run(['config','init','--new','--brand','feishu'], { challenge: true, message: '第 1 步：用飞书扫码配置应用。完成后还需扫描用户授权二维码。', timeout: 290000 });
     }
-    const started = parse(await run(['auth','login','--recommend','--no-wait','--json']));
+    const started = parse(await run(['auth','login','--recommend', ...(mode === 'login-calendar' ? ['--scope','calendar:calendar.event:read'] : []), '--no-wait','--json']));
     if (!started.verification_url || !started.device_code) throw new Error('Missing Feishu authorization challenge');
     const url = new URL(started.verification_url); if (url.protocol !== 'https:' || !/(^|\.)(feishu\.cn|larksuite\.com)$/.test(url.hostname)) throw new Error('Invalid Feishu authorization URL');
     console.log(JSON.stringify({ type:'challenge',kind:'qr',url:started.verification_url,message:'第 2 步：请扫描此二维码并确认用户授权。验证成功后会自动连接。' }));
@@ -159,13 +182,29 @@ async function execute(input) {
   }
   const args = input.argv;
   if (!Array.isArray(args) || !args.length || args.length > 80 || args.some(v => typeof v !== 'string' || v.includes('\0'))) throw new Error('argv must be a non-empty string array');
+  if (systemAccount && args.some(v => v === '--profile' || v.startsWith('--profile='))) throw new Error('This plugin is bound to the account selected in plugin details.');
   if (/^(auth|config|profile|upgrade|update|skill|completion|mcp)$/.test(args[0]) && !(args.includes('--help') || ['status','list','show'].includes(args[1]))) throw new Error('Manage installation and accounts in plugin details.');
   if (args.some(v => ['--mock','--client-secret','--token','--app-secret'].includes(v))) throw new Error('Mock data and credential arguments are not permitted.');
   const output = await run(args, { timeout: 120000 });
   try { return redact(JSON.parse(output)); } catch { return redact(output); }
 }
-if (mode.startsWith('login')) { await login(); if (!await identity()) throw new Error('Account verification failed'); }
-else if (mode === 'check') { let authenticated = false; try { authenticated = await identity(); } catch {} console.log(JSON.stringify({ authenticated })); }
+if (mode.startsWith('login')) { await login(); if (!await identity()) throw new Error('Account verification failed'); if (kind === 'dingtalk' && mode !== 'login-existing') { const { unlink } = await import('node:fs/promises'); await unlink(join(home, 'dingtalk-source.json')).catch(error => { if (error.code !== 'ENOENT') throw error; }); } }
+else if (mode === 'check') {
+  let authenticated = false; const issues = [];
+  try { authenticated = await identity(); } catch {}
+  if (authenticated && kind === 'feishu') {
+    try { await run(['calendar','+agenda','--as','user'], { timeout: 10000 }); }
+    catch (error) {
+      const missing = error.missingScopes?.length > 0;
+      let helpUrl = 'https://open.feishu.cn/app';
+      try { const config = parse(await readFile(join(home,'.lark-cli','config.json'),'utf8')); const app = config.apps?.find(value => value.appId); if (/^cli_[a-zA-Z0-9]+$/.test(app?.appId)) helpUrl += '/' + app.appId + '/auth'; } catch {}
+      issues.push({ id:'calendar', title:missing ? '日历需要补充读取权限' : '日历权限暂未验证通过', scopes:missing ? error.missingScopes : [],
+        instructions:missing ? ['若应用尚未开通此权限，请在飞书开放平台开通并发布；已开通可直接补充授权。','应用权限生效后，点击补充授权并扫码确认。','授权完成后自动检查；也可点击重新检查权限。'] : ['检查网络和飞书服务状态后，重新检查权限。'],
+        ...(missing ? { method:'calendar', helpUrl } : {}) });
+    }
+  }
+  console.log(JSON.stringify({ authenticated, issues }));
+}
 else {
   if (!await identity()) throw new Error('Authorization required. Connect this account in plugin details.');
   const schema = kind === 'yuque' || kind === 'gmail' ? { type:'object', properties:{ path:{type:'string'},method:{type:'string',enum:['GET','POST','PUT','PATCH','DELETE']},body:{type:'object',additionalProperties:true} }, required:['path'],additionalProperties:false } : {type:'object',properties:{argv:{type:'array',items:{type:'string'},minItems:1,maxItems:80}},required:['argv'],additionalProperties:false};

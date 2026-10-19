@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "feishu",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "使用官方飞书 CLI 操作文档、云盘、多维表格、日历及企业协作资源。",
   "author": {
     "name": "XOPC",
@@ -114,6 +114,42 @@
                 "instructions": [
                   "在飞书开放平台创建企业自建应用，填写 App ID 与 App Secret。",
                   "继续后会显示用户授权二维码；企业应用的权限及可用范围由管理员配置。"
+                ],
+                "helpUrl": "https://open.feishu.cn/app"
+              },
+              {
+                "id": "calendar",
+                "title": "补充日历权限",
+                "type": "cli",
+                "fields": [],
+                "login": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "feishu",
+                    "login-calendar"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "check": {
+                  "command": "node",
+                  "args": [
+                    "${PLUGIN_ROOT}/mcp/provider.mjs",
+                    "feishu",
+                    "check"
+                  ],
+                  "env": {
+                    "CLIENT_KEY": "${user_config.clientKey}",
+                    "CLIENT_SECRET": "${user_config.clientSecret}"
+                  }
+                },
+                "timeoutSeconds": 600,
+                "instructions": [
+                  "若应用尚未开通日历读取权限，请先开通并发布；已开通可直接扫码。",
+                  "扫码补充日历读取授权；已有应用配置会保留。"
                 ],
                 "helpUrl": "https://open.feishu.cn/app"
               }
