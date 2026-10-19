@@ -348,5 +348,97 @@
       "storeStatus": "unpublished",
       "storeDecisionReason": "本轮原生授权实际失败：Authorization server does not support dynamic client registration；当前清单没有可用 Client 配置，先下架。"
     }
+  ],
+  "retiredPackages": [
+    {
+      "name": "xopc-plugin-lab-codex",
+      "type": "plugin",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "回归测试包，仅用于维护者验证，不属于用户功能插件。"
+    },
+    {
+      "name": "xopc-plugin-lab-claude",
+      "type": "plugin",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "回归测试包，仅用于维护者验证，不属于用户功能插件。"
+    },
+    {
+      "name": "xopc-plugin-auth-lab",
+      "type": "plugin",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "授权回归测试包，避免真实用户误安装合成账号测试工具。"
+    },
+    {
+      "name": "xopc-extension-lab",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "Extension 回归测试包，不属于用户功能插件。"
+    },
+    {
+      "name": "dashscope",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "fal",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "google",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "minimax",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "openai",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "feishu-tools",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "内置通道工具组件；插件市场已有独立飞书插件，避免混淆。"
+    },
+    {
+      "name": "telegram",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "内置消息通道，统一从消息通道入口管理。"
+    },
+    {
+      "name": "weixin",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "内置消息通道，统一从消息通道入口管理。"
+    },
+    {
+      "name": "groq-stt",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "语音服务配置组件，统一从设置中的语音能力配置。"
+    },
+    {
+      "name": "tts-local-cli",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "高级本地语音适配组件，统一从语音配置入口管理。"
+    },
+    {
+      "name": "synapse",
+      "type": "extension",
+      "storeStatus": "unpublished",
+      "storeDecisionReason": "独立功能有价值，但当前发布缺少完整性摘要、详情无法安装；修复与验收后再上架。"
+    }
   ]
 }

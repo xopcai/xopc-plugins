@@ -38,3 +38,5 @@ Every release remains subject to Store malware, archive, capability, and provena
 ## Store publication review
 
 Every catalog entry must explicitly declare `storeStatus` (`published` or `unpublished`) and `storeDecisionReason`. Build artifacts preserve archived packages for development; the public marketplace, default publisher and release staging include only reviewed `published` entries. A Skill-only guide or a copy of a generic runtime is not sufficient evidence for a distinct public plugin. Record executable behavior, account prerequisites and the actual validation level before changing an archived entry back to `published`. See `docs/plugin-value-audit-2026-10-19.md`.
+
+Official plugin changes must start here. Update catalog and source before any Store mutation; after publishing run `pnpm store:sync` (preview), `pnpm store:sync -- --apply` when needed, and `pnpm store:check`. Include historical retired entries in catalog, not a separate server-only list. See [single-source workflow](docs/store-source-of-truth.md).

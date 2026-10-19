@@ -11,7 +11,10 @@
     "validate": "node scripts/validate.mjs",
     "test": "node scripts/prepare-ocr-resources.mjs && node --test tests/*.test.mjs",
     "build": "node scripts/build.mjs",
-    "publish:store": "node scripts/publish-store.mjs"
+    "publish:store": "node scripts/publish-store.mjs",
+    "store:check": "node scripts/store-sync.mjs --check",
+    "store:sync": "node scripts/store-sync.mjs",
+    "marketplace:sync": "node scripts/sync-marketplace.mjs"
   },
   "devDependencies": {
     "@tesseract.js-data/chi_sim": "1.0.0",

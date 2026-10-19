@@ -42,6 +42,10 @@ for(const entry of entries){
   }
  }
 }
+for(const entry of catalog().retiredPackages??[]){
+ check(!names.has(entry.name),`Retired package duplicates a source entry: ${entry.name}`);names.add(entry.name);
+ check(entry.storeStatus==='unpublished'&&['plugin','extension'].includes(entry.type)&&entry.storeDecisionReason?.trim(),`Invalid retired package policy: ${entry.name}`);
+}
 const market=JSON.parse(readFileSync(join(root,'.agents/plugins/marketplace.json'),'utf8'));
 check(JSON.stringify(market.plugins.map(e=>e.name))===JSON.stringify(published.map(e=>e.name)),'Marketplace differs from reviewed public catalog');
 if(errors.length){for(const e of errors)console.error(e);process.exit(1);}console.log(`Validated ${entries.length} packages: Skills, MCP, auth, resource variants and credential references`);

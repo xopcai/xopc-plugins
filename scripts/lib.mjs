@@ -35,3 +35,14 @@ export function publishedPlugins(entries = catalog().plugins) {
   }
   return entries.filter(entry => entry.storeStatus === 'published')
 }
+
+export function marketplaceManifest(entries = catalog().plugins) {
+  return {
+    name: 'xopc-official', interface: { displayName: 'XOPC Official' },
+    plugins: publishedPlugins(entries).map(entry => ({
+      name: entry.name, source: { source: 'local', path: `./${entry.path}` },
+      policy: { installation: 'AVAILABLE', authentication: entry.authentication && entry.authentication !== 'none' ? 'ON_INSTALL' : 'ON_DEMAND' },
+      category: entry.category,
+    })),
+  }
+}

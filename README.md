@@ -2,6 +2,10 @@
 
 Focused plugins for XOPC, packaged as standard Codex-compatible archives. The source catalog preserves 33 packages; **14 reviewed plugins are publicly listed**. Nineteen duplicate, instruction-only, or currently unready packages are unpublished. Test-only Codex, Claude, OAuth and Extension packages are also unpublished, with archives retained for maintainers. See the [33-package value audit](docs/plugin-value-audit-2026-10-19.md).
 
+## Source of truth
+
+This repository is the single source of truth for official plugins. `catalog.json` owns listing and retirement decisions; `plugins/` owns source, manifests, icons, resources and authorization declarations. Store is the distribution projection. Run `pnpm store:sync` to preview directory changes and `pnpm store:check` to detect drift. See [maintenance workflow](docs/store-source-of-truth.md).
+
 ## Install
 
 Open XOPC → 插件 → 插件市场. Select a plugin, review the declared capabilities, and install. Resources are prepared automatically. Connect an account or choose **Skip for now**; the installed card shows **Authorization required** until connected. Return to plugin details at any time to connect or retry. Plugins are available to all Agents.
