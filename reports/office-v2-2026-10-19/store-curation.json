@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-10-19T09:13:05.814Z",
+  "counts": {
+    "plugin": 33,
+    "extension": 0
+  },
+  "unpublished": [
+    {
+      "name": "xopc-plugin-lab-codex",
+      "type": "plugin",
+      "reason": "回归测试包，仅用于维护者验证，不属于用户功能插件。"
+    },
+    {
+      "name": "xopc-plugin-lab-claude",
+      "type": "plugin",
+      "reason": "回归测试包，仅用于维护者验证，不属于用户功能插件。"
+    },
+    {
+      "name": "xopc-plugin-auth-lab",
+      "type": "plugin",
+      "reason": "授权回归测试包，避免真实用户误安装合成账号测试工具。"
+    },
+    {
+      "name": "xopc-extension-lab",
+      "type": "extension",
+      "reason": "Extension 回归测试包，不属于用户功能插件。"
+    },
+    {
+      "name": "dashscope",
+      "type": "extension",
+      "reason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "fal",
+      "type": "extension",
+      "reason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "google",
+      "type": "extension",
+      "reason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "minimax",
+      "type": "extension",
+      "reason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "openai",
+      "type": "extension",
+      "reason": "绘图服务配置组件，用户应从设置中的绘图能力配置。"
+    },
+    {
+      "name": "feishu-tools",
+      "type": "extension",
+      "reason": "内置通道工具组件；插件市场已有独立飞书插件，避免混淆。"
+    },
+    {
+      "name": "telegram",
+      "type": "extension",
+      "reason": "内置消息通道，统一从消息通道入口管理。"
+    },
+    {
+      "name": "weixin",
+      "type": "extension",
+      "reason": "内置消息通道，统一从消息通道入口管理。"
+    },
+    {
+      "name": "groq-stt",
+      "type": "extension",
+      "reason": "语音服务配置组件，统一从设置中的语音能力配置。"
+    },
+    {
+      "name": "tts-local-cli",
+      "type": "extension",
+      "reason": "高级本地语音适配组件，统一从语音配置入口管理。"
+    },
+    {
+      "name": "synapse",
+      "type": "extension",
+      "reason": "独立功能有价值，但当前发布缺少完整性摘要、详情无法安装；修复与验收后再上架。"
+    }
+  ],
+  "retainedPackageChecks": [
+    "pdf-reader",
+    "file-organizer",
+    "dingtalk",
+    "feishu",
+    "yuque",
+    "web-clipper"
+  ],
+  "serverAudit": "/var/www/xopc-platform/backups/store-curation-2026-10-19",
+  "publicCatalogVerified": true
+}

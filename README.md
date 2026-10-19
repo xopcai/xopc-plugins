@@ -1,6 +1,6 @@
 # XOPC Plugins
 
-Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 33 packages: 20 capabilities migrated from an Accio installation, four retained specialist packages, and nine focused office and information-collection plugins. Test-only Codex, Claude, OAuth and Extension packages remain on the Store for regression testing.
+Focused plugins for XOPC, packaged as standard Codex-compatible archives. The catalog contains 33 packages: 20 capabilities migrated from an Accio installation, four retained specialist packages, and nine focused office and information-collection plugins. Test-only Codex, Claude, OAuth and Extension packages are unpublished from the public Store; their version records and archives are retained for maintainer regression testing.
 
 ## Install
 
@@ -52,3 +52,7 @@ See [migration inventory](reports/accio-migration-2026-10-19/inventory.json), [C
 The local runtimes are bundled into the Store archive; installation does not run npm/pip or download code from third-party registries. Do not run `generate` merely to add catalog entries: it also synchronizes existing provider runtimes, which requires versioning affected releases. `build-office.mjs` only rebuilds the new office runtimes. SaaS account access is verified with the provider at connection time; release tests use synthetic accounts and do not claim production OAuth consent. See `docs/office-expansion-2026-10-19.md`.
 
 This batch: [OCR, file organization and domestic integration report](docs/office-v2-2026-10-19.md). Microsoft 365 is deferred until an XOPC application Client ID is available; no placeholder is published.
+
+## Public catalog curation
+
+The public Store exposes 33 user-facing plugins. On 2026-10-19, four test packages and eleven legacy/internal Extension packages were unpublished. Image/voice provider configuration and bundled channels belong in their existing product entry points. Synapse is also withheld until its missing integrity metadata and installation are repaired and verified. Do not bulk republish these internal packages; see [curation record](docs/store-curation-2026-10-19.md).
